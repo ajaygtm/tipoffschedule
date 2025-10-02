@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipOffSchedule</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Minimal NBA regular season schedule viewer (Date & Team views + ICS exports)." />
+  <link rel="preload" as="image" href="assets/logos/LAL.png" />
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/util.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1 class="app-title">TipOffSchedule</h1>
+    <div id="timezone-label" class="tz-label" aria-live="polite"></div>
+  </header>
+
+  <main id="main">
+    <section id="date-view" aria-labelledby="date-view-heading">
+      <h2 id="date-view-heading" class="visually-hidden">Date View</h2>
+      <div id="date-strip" class="date-strip" role="tablist" aria-label="Select date"></div>
+      <div id="game-list" class="game-list" aria-live="polite"></div>
+      <div class="exports">
+        <button id="btn-export-all" type="button">Download All Teams Full Season (.ics)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
+  </footer>
+
+  <script type="module" src="src/js/index.js" defer></script>
+</body>
+</html>
