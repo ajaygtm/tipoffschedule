@@ -1,0 +1,16 @@
+[
+  { "team_id": 1610612747, "tri": "LAL", "name": "Los Angeles Lakers", "primary": "#552583", "secondary": "#FDB927", "conference": "West", "division": "Pacific" },
+  { "team_id": 1610612738, "tri": "BOS", "name": "Boston Celtics", "primary": "#007A33", "secondary": "#BA9653", "conference": "East", "division": "Atlantic" },
+  { "team_id": 1610612761, "tri": "TOR", "name": "Toronto Raptors", "primary": "#CE1141", "secondary": "#000000", "conference": "East", "division": "Atlantic" },
+  { "team_id": 1610612737, "tri": "ATL", "name": "Atlanta Hawks", "primary": "#E03A3E", "secondary": "#C1D32F", "conference": "East", "division": "Southeast" },
+  { "team_id": 1610612743, "tri": "DEN", "name": "Denver Nuggets", "primary": "#0E2240", "secondary": "#FEC524", "conference": "West", "division": "Northwest" },
+  { "team_id": 1610612745, "tri": "HOU", "name": "Houston Rockets", "primary": "#CE1141", "secondary": "#000000", "conference": "West", "division": "Southwest" },
+  { "team_id": 1610612754, "tri": "IND", "name": "Indiana Pacers", "primary": "#002D62", "secondary": "#FDBB30", "conference": "East", "division": "Central" },
+  { "team_id": 1610612751, "tri": "BKN", "name": "Brooklyn Nets", "primary": "#000000", "secondary": "#FFFFFF", "conference": "East", "division": "Atlantic" },
+  { "team_id": 1610612748, "tri": "MIA", "name": "Miami Heat", "primary": "#98002E", "secondary": "#F9A01B", "conference": "East", "division": "Southeast" },
+  { "team_id": 1610612741, "tri": "CHI", "name": "Chicago Bulls", "primary": "#CE1141", "secondary": "#000000", "conference": "East", "division": "Central" },
+  { "team_id": 1610612755, "tri": "PHI", "name": "Philadelphia 76ers", "primary": "#006BB6", "secondary": "#ED174C", "conference": "East", "division": "Atlantic" },
+  { "team_id": 1610612739, "tri": "CLE", "name": "Cleveland Cavaliers", "primary": "#6F263D", "secondary": "#FFB81C", "conference": "East", "division": "Central" },
+  { "team_id": 1610612757, "tri": "POR", "name": "Portland Trail Blazers", "primary": "#E03A3E", "secondary": "#000000", "conference": "West", "division": "Northwest" },
+  { "team_id": 1610612744, "tri": "GSW", "name": "Golden State Warriors", "primary": "#1D428A", "secondary": "#FFC72C", "conference": "West", "division": "Pacific" }
+]

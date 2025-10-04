@@ -1,0 +1,45 @@
+{
+  "league": "NBA",
+  "season": "2024-25",
+  "generated_utc": "2025-10-03T12:00:00Z",
+  "games": [
+    { "game_id": "0022403001", "date_utc": "2025-10-03T16:00:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403002", "date_utc": "2025-10-03T21:30:00Z", "home_team_id": 1610612761, "home_tri": "TOR", "away_team_id": 1610612737, "away_tri": "ATL", "venue": "Scotiabank Arena" },
+    { "game_id": "0022403003", "date_utc": "2025-10-04T01:00:00Z", "home_team_id": 1610612743, "home_tri": "DEN", "away_team_id": 1610612745, "away_tri": "HOU", "venue": "Ball Arena" },
+
+    { "game_id": "0022403100", "date_utc": "2025-10-05T16:00:00Z", "home_team_id": 1610612754, "home_tri": "IND", "away_team_id": 1610612751, "away_tri": "BKN", "venue": "Gainbridge Fieldhouse" },
+    { "game_id": "0022403101", "date_utc": "2025-10-05T16:30:00Z", "home_team_id": 1610612748, "home_tri": "MIA", "away_team_id": 1610612741, "away_tri": "CHI", "venue": "Kaseya Center" },
+    { "game_id": "0022403102", "date_utc": "2025-10-05T17:00:00Z", "home_team_id": 1610612755, "home_tri": "PHI", "away_team_id": 1610612739, "away_tri": "CLE", "venue": "Wells Fargo Center" },
+    { "game_id": "0022403103", "date_utc": "2025-10-05T17:30:00Z", "home_team_id": 1610612757, "home_tri": "POR", "away_team_id": 1610612744, "away_tri": "GSW", "venue": "Moda Center" },
+    { "game_id": "0022403104", "date_utc": "2025-10-05T18:00:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403105", "date_utc": "2025-10-05T18:30:00Z", "home_team_id": 1610612761, "home_tri": "TOR", "away_team_id": 1610612737, "away_tri": "ATL", "venue": "Scotiabank Arena" },
+    { "game_id": "0022403106", "date_utc": "2025-10-05T19:00:00Z", "home_team_id": 1610612743, "home_tri": "DEN", "away_team_id": 1610612745, "away_tri": "HOU", "venue": "Ball Arena" },
+    { "game_id": "0022403107", "date_utc": "2025-10-05T19:30:00Z", "home_team_id": 1610612754, "home_tri": "IND", "away_team_id": 1610612751, "away_tri": "BKN", "venue": "Gainbridge Fieldhouse" },
+    { "game_id": "0022403108", "date_utc": "2025-10-05T20:00:00Z", "home_team_id": 1610612748, "home_tri": "MIA", "away_team_id": 1610612741, "away_tri": "CHI", "venue": "Kaseya Center" },
+    { "game_id": "0022403109", "date_utc": "2025-10-05T20:30:00Z", "home_team_id": 1610612755, "home_tri": "PHI", "away_team_id": 1610612739, "away_tri": "CLE", "venue": "Wells Fargo Center" },
+    { "game_id": "0022403110", "date_utc": "2025-10-05T21:00:00Z", "home_team_id": 1610612757, "home_tri": "POR", "away_team_id": 1610612744, "away_tri": "GSW", "venue": "Moda Center" },
+    { "game_id": "0022403111", "date_utc": "2025-10-05T21:30:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403112", "date_utc": "2025-10-05T22:00:00Z", "home_team_id": 1610612761, "home_tri": "TOR", "away_team_id": 1610612737, "away_tri": "ATL", "venue": "Scotiabank Arena" },
+    { "game_id": "0022403113", "date_utc": "2025-10-05T22:30:00Z", "home_team_id": 1610612743, "home_tri": "DEN", "away_team_id": 1610612745, "away_tri": "HOU", "venue": "Ball Arena" },
+    { "game_id": "0022403114", "date_utc": "2025-10-05T23:00:00Z", "home_team_id": 1610612754, "home_tri": "IND", "away_team_id": 1610612751, "away_tri": "BKN", "venue": "Gainbridge Fieldhouse" },
+
+    { "game_id": "0022403200", "date_utc": "2025-10-07T18:00:00Z", "home_team_id": 1610612748, "home_tri": "MIA", "away_team_id": 1610612741, "away_tri": "CHI", "venue": "Kaseya Center" },
+    { "game_id": "0022403201", "date_utc": "2025-10-07T19:30:00Z", "home_team_id": 1610612755, "home_tri": "PHI", "away_team_id": 1610612739, "away_tri": "CLE", "venue": "Wells Fargo Center" },
+    { "game_id": "0022403202", "date_utc": "2025-10-07T20:30:00Z", "home_team_id": 1610612757, "home_tri": "POR", "away_team_id": 1610612744, "away_tri": "GSW", "venue": "Moda Center" },
+    { "game_id": "0022403203", "date_utc": "2025-10-07T21:00:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403204", "date_utc": "2025-10-07T22:00:00Z", "home_team_id": 1610612761, "home_tri": "TOR", "away_team_id": 1610612737, "away_tri": "ATL", "venue": "Scotiabank Arena" },
+    { "game_id": "0022403205", "date_utc": "2025-10-07T23:00:00Z", "home_team_id": 1610612743, "home_tri": "DEN", "away_team_id": 1610612745, "away_tri": "HOU", "venue": "Ball Arena" },
+
+    { "game_id": "0022403300", "date_utc": "2025-10-09T18:00:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403301", "date_utc": "2025-10-09T19:40:00Z", "home_team_id": 1610612748, "home_tri": "MIA", "away_team_id": 1610612741, "away_tri": "CHI", "venue": "Kaseya Center" },
+    { "game_id": "0022403302", "date_utc": "2025-10-09T22:15:00Z", "home_team_id": 1610612754, "home_tri": "IND", "away_team_id": 1610612751, "away_tri": "BKN", "venue": "Gainbridge Fieldhouse" },
+
+    { "game_id": "0022403400", "date_utc": "2025-10-12T17:00:00Z", "home_team_id": 1610612748, "home_tri": "MIA", "away_team_id": 1610612741, "away_tri": "CHI", "venue": "Kaseya Center" },
+    { "game_id": "0022403401", "date_utc": "2025-10-12T20:30:00Z", "home_team_id": 1610612743, "home_tri": "DEN", "away_team_id": 1610612745, "away_tri": "HOU", "venue": "Ball Arena" },
+    { "game_id": "0022403402", "date_utc": "2025-10-13T19:00:00Z", "home_team_id": 1610612755, "home_tri": "PHI", "away_team_id": 1610612739, "away_tri": "CLE", "venue": "Wells Fargo Center" },
+    { "game_id": "0022403403", "date_utc": "2025-10-14T21:30:00Z", "home_team_id": 1610612747, "home_tri": "LAL", "away_team_id": 1610612738, "away_tri": "BOS", "venue": "Crypto.com Arena" },
+    { "game_id": "0022403404", "date_utc": "2025-10-15T23:00:00Z", "home_team_id": 1610612757, "home_tri": "POR", "away_team_id": 1610612744, "away_tri": "GSW", "venue": "Moda Center" },
+    { "game_id": "0022403405", "date_utc": "2025-10-16T18:45:00Z", "home_team_id": 1610612761, "home_tri": "TOR", "away_team_id": 1610612737, "away_tri": "ATL", "venue": "Scotiabank Arena" }
+  ],
+  "meta": { "preseason_included": false }
+}

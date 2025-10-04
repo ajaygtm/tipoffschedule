@@ -5,26 +5,53 @@
   <title>TipOffSchedule</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Minimal NBA regular season schedule viewer (Date & Team views + ICS exports)." />
-  <link rel="preload" as="image" href="assets/logos/LAL.png" />
+  <!-- Single bright basketball emoji favicon -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+
+  <!-- Body font + backup graffiti (Rubik Spray Paint) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="src/css/base.css" />
   <link rel="stylesheet" href="src/css/util.css" />
 </head>
-<body>
+<body class="layout">
   <header class="app-header">
-    <h1 class="app-title">TipOffSchedule</h1>
-    <div id="timezone-label" class="tz-label" aria-live="polite"></div>
+    <!-- Left: NBA Logo -->
+    <div class="header-cell header-left">
+      <img
+        src="assets/logos/NBA.png"
+        srcset="assets/logos/NBA@2x.png 2x"
+        alt="NBA Logo"
+        class="nba-logo"
+        onerror="this.style.visibility='hidden'">
+    </div>
+    <!-- Center: Title -->
+    <div class="header-cell header-center">
+      <h1 class="site-title">TipOff Schedule</h1>
+    </div>
+    <!-- Right: Local time pill -->
+    <div class="header-cell header-right">
+      <div class="local-pill">LOCAL TIME</div>
+    </div>
   </header>
 
-  <main id="main">
-    <section id="date-view" aria-labelledby="date-view-heading">
+  <main class="main">
+    <section aria-labelledby="date-view-heading" class="date-view">
       <h2 id="date-view-heading" class="visually-hidden">Date View</h2>
-      <div id="date-strip" class="date-strip" role="tablist" aria-label="Select date"></div>
-      <div id="game-list" class="game-list" aria-live="polite"></div>
-      <div class="exports">
-        <button id="btn-export-all" type="button">Download All Teams Full Season (.ics)</button>
+
+      <div class="date-bar">
+        <button id="date-prev" type="button" class="nav-arrow" aria-label="Previous day window">←</button>
+        <div id="date-strip" class="date-strip" role="tablist" aria-label="Select date"></div>
+        <button id="date-next" type="button" class="nav-arrow" aria-label="Next day window">→</button>
       </div>
+
+      <div id="game-list" class="game-list fade" aria-live="polite"></div>
     </section>
   </main>
+
+  <button id="btn-export-all" class="btn-float" type="button" disabled>Download Schedule</button>
 
   <footer class="footer">
     <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
