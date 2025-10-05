@@ -9,18 +9,29 @@ import {
   getLocalToday
 } from "./dateUtils.js";
 
-/* Config */
+/*
+  Commit 3 refinement – Filtering REMOVED
+
+  Changes vs previous version:
+  - Deleted all team tri filtering / alias logic (shows every game from schedule).
+  - Removed team set / unknown warnings / STRICT_HIDE_UNKNOWN flags.
+  - Kept season_stage (Preseason / Regular Season) display.
+  - Kept venue (name only, no city).
+  - Kept countdown for any future game within 48h.
+  - No game numbering logic (already removed earlier).
+*/
+
 const WINDOW_SIZE = 7;
 const USE_24H_TIME = true;
+
 const LOW_DENSITY_MAX = 4;
 const HIGH_DENSITY_MIN = 10;
+
 const COUNTDOWN_REFRESH_MS = 60_000;
 const COUNTDOWN_MAX_FUTURE_HOURS = 48;
 
-/* Add light logos (white-dominant) here for shadow contrast */
-const LIGHT_LOGO_TRIS = new Set([
-  'BKN'
-]);
+// Light logos needing contrast tweak (expand if necessary)
+const LIGHT_LOGO_TRIS = new Set(['BKN']);
 
 const state = {
   schedule: null,
@@ -50,6 +61,7 @@ async function init() {
   detectDuplicateLoad();
 }
 
+/* Data */
 async function loadData() {
   const [schedule, teams] = await Promise.all([loadSchedule(), loadTeams()]);
   state.schedule = schedule;
@@ -69,6 +81,7 @@ function validateDates() {
   }
 }
 
+/* Date range / window */
 function buildFullDateRange() {
   const bounds = findScheduleDateBounds(state.schedule);
   if (!bounds) return;
@@ -99,6 +112,7 @@ function computeWindowFor(centerDate) {
   state.windowDates = state.fullDateRange.slice(start, end + 1);
 }
 
+/* Navigation */
 function attachWindowNav() {
   document.getElementById("date-prev")?.addEventListener("click", () => shiftWindow(-1));
   document.getElementById("date-next")?.addEventListener("click", () => shiftWindow(1));
@@ -121,6 +135,7 @@ function shiftWindow(direction) {
   updateCountdowns();
 }
 
+/* Date strip */
 function renderDateStrip() {
   const strip = document.getElementById("date-strip");
   strip.innerHTML = "";
@@ -149,6 +164,7 @@ function renderDateStrip() {
   });
 }
 
+/* Render games */
 function renderGamesForSelectedDate() {
   const list = document.getElementById("game-list");
   list.classList.remove("ready");
@@ -173,7 +189,7 @@ function renderGamesForSelectedDate() {
     return;
   }
 
-  for (const g of games) list.appendChild(renderGameCard(g));
+  games.forEach(g => list.appendChild(renderGameCard(g)));
   requestAnimationFrame(() => list.classList.add("ready"));
   updateCountdowns();
 }
@@ -187,46 +203,57 @@ function showNoGames(message) {
   requestAnimationFrame(() => list.classList.add("ready"));
 }
 
+/* Game card */
 function renderGameCard(game) {
   const localDate = toLocal(game.date_utc);
   const card = document.createElement("div");
   card.className = "game-card";
   card.setAttribute("data-tipoff", game.date_utc);
 
+  // Logos
   const logos = document.createElement("div");
   logos.className = "logos-row";
   logos.appendChild(createLogoElement(game.away_tri));
   logos.appendChild(createLogoElement(game.home_tri));
 
+  // Matchup
   const matchup = document.createElement("div");
   matchup.className = "matchup";
   matchup.textContent = `${game.away_tri} @ ${game.home_tri}`;
 
-  if (game.venue) {
-    const venue = document.createElement("div");
-    venue.className = "venue-line";
-    venue.textContent = game.venue;
-    matchup.after(venue);
-  }
-
+  // Countdown area
   const countdownLine = document.createElement("div");
   countdownLine.className = "countdown-line";
   countdownLine.style.display = "none";
 
-  const timeEl = document.createElement("div");
-  timeEl.className = "time-line";
-  timeEl.textContent = timeDisplay(localDate);
+  // Meta block
+  const metaBlock = document.createElement("div");
+  metaBlock.className = "meta-block";
 
+  const seasonLine = document.createElement("div");
+  seasonLine.className = "meta-line season-line";
+  seasonLine.textContent = game.season_stage || "Regular Season";
+
+  const venueLine = document.createElement("div");
+  venueLine.className = "meta-line venue-line";
+  venueLine.textContent = game.venue || "";
+
+  const timeLine = document.createElement("div");
+  timeLine.className = "meta-line time-line";
+  timeLine.textContent = timeDisplay(localDate);
+
+  metaBlock.appendChild(seasonLine);
+  metaBlock.appendChild(venueLine);
+  metaBlock.appendChild(timeLine);
+
+  // ARIA label
   const awayTeam = getTeamByTri(game.away_tri);
   const homeTeam = getTeamByTri(game.home_tri);
   const fullAway = awayTeam ? awayTeam.name : game.away_tri;
   const fullHome = homeTeam ? homeTeam.name : game.home_tri;
   const ariaTime = localDate.toLocaleTimeString(undefined, {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: !USE_24H_TIME
+    hour: "2-digit", minute: "2-digit", hour12: !USE_24H_TIME
   });
-
   card.setAttribute(
     "aria-label",
     `${fullAway} at ${fullHome}${game.venue ? " in " + game.venue : ""}, ${ariaTime} ${getShortTimeZone()}`
@@ -235,7 +262,7 @@ function renderGameCard(game) {
   card.appendChild(logos);
   card.appendChild(matchup);
   card.appendChild(countdownLine);
-  card.appendChild(timeEl);
+  card.appendChild(metaBlock);
   return card;
 }
 
@@ -248,7 +275,6 @@ function createLogoElement(tri) {
   img.decoding = "async";
   img.loading = "lazy";
   img.onerror = () => {
-    // Fallback text if SVG missing
     const span = document.createElement("div");
     span.className = "tri-fallback";
     span.textContent = tri;
@@ -257,6 +283,7 @@ function createLogoElement(tri) {
   return img;
 }
 
+/* Countdown (any game in next 48h) */
 function startCountdownLoop() {
   if (state.countdownTimer) clearInterval(state.countdownTimer);
   state.countdownTimer = setInterval(updateCountdowns, COUNTDOWN_REFRESH_MS);
@@ -265,10 +292,6 @@ function startCountdownLoop() {
 
 function updateCountdowns() {
   const now = Date.now();
-  const today = getLocalToday();
-  const tomorrow = new Date(today.getTime());
-  tomorrow.setDate(today.getDate() + 1);
-
   document.querySelectorAll("[data-tipoff]").forEach(card => {
     const iso = card.getAttribute("data-tipoff");
     const ts = Date.parse(iso);
@@ -277,25 +300,15 @@ function updateCountdowns() {
     const el = card.querySelector(".countdown-line");
     if (!el) return;
 
-    const localGame = toLocal(iso);
-    const isToday = sameDay(localGame, today);
-    const isTomorrow = sameDay(localGame, tomorrow);
-
-    if (!isToday && !isTomorrow) {
-      el.style.display = "none";
-      return;
-    }
     if (diffMs <= 0) { el.style.display = "none"; return; }
 
     const diffH = diffMs / 3_600_000;
     if (diffH > COUNTDOWN_MAX_FUTURE_HOURS) { el.style.display = "none"; return; }
 
-    if (isTomorrow && diffH >= 24) {
-      el.textContent = "in 1d";
-      el.style.display = "";
-      return;
-    }
-    if (diffH >= 1) {
+    if (diffH >= 24) {
+      const d = Math.floor(diffH / 24);
+      el.textContent = `in ${d}d`;
+    } else if (diffH >= 1) {
       const h = Math.floor(diffH);
       const m = Math.round((diffH - h) * 60);
       el.textContent = `in ${h}h ${m}m`;
@@ -307,15 +320,17 @@ function updateCountdowns() {
   });
 }
 
+/* Time helpers */
 function timeDisplay(dateObj) {
   if (USE_24H_TIME) return `${formatTime24(dateObj)} ${getShortTimeZone()}`;
-  return `${dateObj.toLocaleTimeString(undefined,
-    { hour:"numeric", minute:"2-digit", hour12:true }).replace(" ","")} ${getShortTimeZone()}`;
+  return `${dateObj.toLocaleTimeString(undefined, {
+    hour: "numeric", minute: "2-digit", hour12: true
+  }).replace(" ", "")} ${getShortTimeZone()}`;
 }
 
 function getShortTimeZone() {
   try {
-    const dtf = new Intl.DateTimeFormat(undefined, { timeZoneName:"short" });
+    const dtf = new Intl.DateTimeFormat(undefined, { timeZoneName: "short" });
     const parts = dtf.formatToParts(new Date());
     const tz = parts.find(p => p.type === "timeZoneName");
     return tz ? tz.value : Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -324,6 +339,7 @@ function getShortTimeZone() {
   }
 }
 
+/* Errors */
 function showError(msg) {
   const list = document.getElementById("game-list");
   if (list) {
@@ -332,7 +348,7 @@ function showError(msg) {
     div.className = "no-games";
     div.textContent = msg;
     list.appendChild(div);
-    requestAnimationFrame(()=>list.classList.add("ready"));
+    requestAnimationFrame(() => list.classList.add("ready"));
   }
   const strip = document.getElementById("date-strip");
   if (strip) strip.innerHTML = "";

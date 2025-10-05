@@ -1,8 +1,10 @@
+/* Commit 3 additions: card meta-block layout & meta-line styling */
+
 @font-face {
   font-family: 'TipOffGraff';
   src:
     url('../../assets/fonts/DemonSayHi.woff2') format('woff2'),
-    url('../../assets/fonts/DemonSayHi.ttf') format('truetype');
+    url('../../assets/fonts/a_another_tag.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -43,7 +45,6 @@
   --date-pill-height:108px;
   --arrow-height:56px;
 
-  /* Logo display sizes (SVG source, no upscaling blur) */
   --logo-size-base:68px;
   --logo-size-low:76px;
   --logo-size-high:56px;
@@ -78,14 +79,7 @@ body{font-size:15px;line-height:1.42;}
 .header-center{justify-self:center;}
 .header-right{justify-self:end;display:flex;align-items:center;gap:var(--space-2);}
 
-.nba-logo{
-  height:76px;
-  width:auto;
-  display:block;
-  object-fit:contain;
-  background:none;
-  border:none;
-}
+.nba-logo{height:76px;width:auto;display:block;object-fit:contain;background:none;border:none;}
 
 .site-title{
   margin:0;
@@ -158,14 +152,10 @@ body{font-size:15px;line-height:1.42;}
   user-select:none;padding:10px 6px 8px;
 }
 .date-pill.sunday{background:var(--sunday-tint);}
-.date-pill .dow{
-  font-size:.60rem;text-transform:uppercase;letter-spacing:1.25px;
-  margin-top:6px;color:var(--text-faint);font-weight:600;
-}
+.date-pill .dow{font-size:.60rem;text-transform:uppercase;letter-spacing:1.25px;margin-top:6px;color:var(--text-faint);font-weight:600;}
 .date-pill.today:not([aria-selected="true"])::after{
-  content:"";position:absolute;bottom:8px;left:50%;
-  width:6px;height:6px;background:var(--accent);border-radius:50%;
-  transform:translateX(-50%);box-shadow:0 0 0 2px var(--surface);
+  content:"";position:absolute;bottom:8px;left:50%;width:6px;height:6px;
+  background:var(--accent);border-radius:50%;transform:translateX(-50%);box-shadow:0 0 0 2px var(--surface);
 }
 .date-pill:hover:not([aria-selected="true"]){
   background:var(--surface-faint);
@@ -207,7 +197,6 @@ body{font-size:15px;line-height:1.42;}
   gap:var(--space-5);margin-top:2px;
 }
 
-/* REMOVED SQUARE BACKGROUND & BORDER */
 .logo,.tri-fallback{
   width:var(--logo-size-base);
   height:var(--logo-size-base);
@@ -215,28 +204,22 @@ body{font-size:15px;line-height:1.42;}
   background:transparent;
   border:none;
   border-radius:0;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:.66rem;
-  font-weight:600;
-  letter-spacing:.5px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.66rem;font-weight:600;letter-spacing:.5px;
   color:var(--text-faint);
   image-rendering:-webkit-optimize-contrast;
   -webkit-user-drag:none;
 }
-.logo--contrast{
-  filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25));
-}
+.logo--contrast{filter:drop-shadow(0 1px 2px rgba(0,0,0,0.25));}
 
-/* Adaptive sizes */
 .game-list.density-low .logo,
 .game-list.density-low .tri-fallback{width:var(--logo-size-low);height:var(--logo-size-low);}
 .game-list.density-high .logo,
 .game-list.density-high .tri-fallback{width:var(--logo-size-high);height:var(--logo-size-high);}
 
+/* Adjusted layout for game card order & spacing (matchup lower, meta block spacing tighter). */
 .matchup{
-  margin:3px 0 0;
+  margin:6px 0 0;            /* was 3px; moved slightly down */
   text-align:center;
   font-size:1.18rem;
   font-weight:700;
@@ -244,27 +227,39 @@ body{font-size:15px;line-height:1.42;}
   line-height:1.06;
   color:var(--text);
 }
-.venue-line{
-  text-align:center;
-  font-size:.58rem;
-  text-transform:uppercase;
-  letter-spacing:1.1px;
-  font-weight:600;
-  color:var(--text-faint);
-  line-height:1.1;
-  margin-top:-2px;
+
+.meta-block{
+  display:flex;
+  flex-direction:column;
+  gap:3px;                   /* slightly tighter */
+  margin-top:4px;
+  padding-top:2px;
 }
-.countdown-line,.time-line{
+
+.meta-line{
+  text-align:center;
+  font-size:.56rem;          /* tiny bump for readability after removing game # */
+  letter-spacing:1.05px;
+  text-transform:uppercase;
+  font-weight:600;
+  line-height:1.12;
+  color:var(--text-faint);
+}
+
+.season-line{color:var(--text-dim);}
+.venue-line{color:var(--text-faint);}
+.time-line{color:var(--text-faint);}
+
+.countdown-line{
   text-align:center;
   font-size:.60rem;
   letter-spacing:1px;
   font-weight:600;
   text-transform:uppercase;
   line-height:1.1;
-  margin-top:1px;
+  margin-top:4px;            /* a bit more gap below matchup */
+  color:var(--accent-dark);
 }
-.countdown-line{color:var(--accent-dark);}
-.time-line{color:var(--text-faint);margin-top:auto;padding-bottom:2px;}
 
 .game-list.density-low .matchup{font-size:1.26rem;}
 .game-list.density-high .matchup{font-size:1.03rem;}
