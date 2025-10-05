@@ -15,7 +15,12 @@ const USE_24H_TIME = true;
 const LOW_DENSITY_MAX = 4;
 const HIGH_DENSITY_MIN = 10;
 const COUNTDOWN_REFRESH_MS = 60_000;
-const COUNTDOWN_MAX_FUTURE_HOURS = 48; // only today & tomorrow timeframe
+const COUNTDOWN_MAX_FUTURE_HOURS = 48;
+
+/* Add light logos (white-dominant) here for shadow contrast */
+const LIGHT_LOGO_TRIS = new Set([
+  'BKN'
+]);
 
 const state = {
   schedule: null,
@@ -29,7 +34,7 @@ const state = {
 
 init().catch(err => {
   console.error("[TipOffSchedule] Init error:", err);
-  showError("Failed to initialize (see console).");
+  showError("Failed to initialize.");
 });
 
 async function init() {
@@ -45,7 +50,6 @@ async function init() {
   detectDuplicateLoad();
 }
 
-/* Data */
 async function loadData() {
   const [schedule, teams] = await Promise.all([loadSchedule(), loadTeams()]);
   state.schedule = schedule;
@@ -65,7 +69,6 @@ function validateDates() {
   }
 }
 
-/* Date Range */
 function buildFullDateRange() {
   const bounds = findScheduleDateBounds(state.schedule);
   if (!bounds) return;
@@ -96,7 +99,6 @@ function computeWindowFor(centerDate) {
   state.windowDates = state.fullDateRange.slice(start, end + 1);
 }
 
-/* Navigation */
 function attachWindowNav() {
   document.getElementById("date-prev")?.addEventListener("click", () => shiftWindow(-1));
   document.getElementById("date-next")?.addEventListener("click", () => shiftWindow(1));
@@ -119,7 +121,6 @@ function shiftWindow(direction) {
   updateCountdowns();
 }
 
-/* Render: Dial */
 function renderDateStrip() {
   const strip = document.getElementById("date-strip");
   strip.innerHTML = "";
@@ -148,7 +149,6 @@ function renderDateStrip() {
   });
 }
 
-/* Render: Games */
 function renderGamesForSelectedDate() {
   const list = document.getElementById("game-list");
   list.classList.remove("ready");
@@ -174,7 +174,6 @@ function renderGamesForSelectedDate() {
   }
 
   for (const g of games) list.appendChild(renderGameCard(g));
-
   requestAnimationFrame(() => list.classList.add("ready"));
   updateCountdowns();
 }
@@ -196,8 +195,8 @@ function renderGameCard(game) {
 
   const logos = document.createElement("div");
   logos.className = "logos-row";
-  logos.appendChild(createLogoOrFallback(game.away_tri));
-  logos.appendChild(createLogoOrFallback(game.home_tri));
+  logos.appendChild(createLogoElement(game.away_tri));
+  logos.appendChild(createLogoElement(game.home_tri));
 
   const matchup = document.createElement("div");
   matchup.className = "matchup";
@@ -240,16 +239,16 @@ function renderGameCard(game) {
   return card;
 }
 
-/* Logos */
-function createLogoOrFallback(tri) {
+function createLogoElement(tri) {
   const img = document.createElement("img");
   img.className = "logo";
-  img.loading = "lazy";
-  img.decoding = "async";
+  if (LIGHT_LOGO_TRIS.has(tri)) img.classList.add("logo--contrast");
   img.alt = `${tri} logo`;
-  img.src = `assets/logos/${tri}.png`;
-  img.srcset = `assets/logos/${tri}@2x.png 2x`;
+  img.src = `assets/logos/${tri}.svg`;
+  img.decoding = "async";
+  img.loading = "lazy";
   img.onerror = () => {
+    // Fallback text if SVG missing
     const span = document.createElement("div");
     span.className = "tri-fallback";
     span.textContent = tri;
@@ -258,7 +257,6 @@ function createLogoOrFallback(tri) {
   return img;
 }
 
-/* Countdown (today + tomorrow only) */
 function startCountdownLoop() {
   if (state.countdownTimer) clearInterval(state.countdownTimer);
   state.countdownTimer = setInterval(updateCountdowns, COUNTDOWN_REFRESH_MS);
@@ -309,15 +307,15 @@ function updateCountdowns() {
   });
 }
 
-/* Time helpers */
 function timeDisplay(dateObj) {
   if (USE_24H_TIME) return `${formatTime24(dateObj)} ${getShortTimeZone()}`;
-  return `${dateObj.toLocaleTimeString(undefined, { hour: "numeric", minute: "2-digit", hour12: true }).replace(" ", "")} ${getShortTimeZone()}`;
+  return `${dateObj.toLocaleTimeString(undefined,
+    { hour:"numeric", minute:"2-digit", hour12:true }).replace(" ","")} ${getShortTimeZone()}`;
 }
 
 function getShortTimeZone() {
   try {
-    const dtf = new Intl.DateTimeFormat(undefined, { timeZoneName: "short" });
+    const dtf = new Intl.DateTimeFormat(undefined, { timeZoneName:"short" });
     const parts = dtf.formatToParts(new Date());
     const tz = parts.find(p => p.type === "timeZoneName");
     return tz ? tz.value : Intl.DateTimeFormat().resolvedOptions().timeZone;
@@ -326,7 +324,6 @@ function getShortTimeZone() {
   }
 }
 
-/* Error / Diagnostics */
 function showError(msg) {
   const list = document.getElementById("game-list");
   if (list) {
@@ -335,7 +332,7 @@ function showError(msg) {
     div.className = "no-games";
     div.textContent = msg;
     list.appendChild(div);
-    requestAnimationFrame(() => list.classList.add("ready"));
+    requestAnimationFrame(()=>list.classList.add("ready"));
   }
   const strip = document.getElementById("date-strip");
   if (strip) strip.innerHTML = "";

@@ -5,33 +5,26 @@
   <title>TipOffSchedule</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Minimal NBA regular season schedule viewer (Date & Team views + ICS exports)." />
-  <!-- Single bright basketball emoji favicon -->
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
-
-  <!-- Body font + backup graffiti (Rubik Spray Paint) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="src/css/base.css" />
   <link rel="stylesheet" href="src/css/util.css" />
 </head>
 <body class="layout">
   <header class="app-header">
-    <!-- Left: NBA Logo -->
     <div class="header-cell header-left">
+      <!-- Updated to SVG -->
       <img
-        src="assets/logos/NBA.png"
-        srcset="assets/logos/NBA@2x.png 2x"
+        src="assets/logos/NBA.svg"
         alt="NBA Logo"
         class="nba-logo"
         onerror="this.style.visibility='hidden'">
     </div>
-    <!-- Center: Title -->
     <div class="header-cell header-center">
       <h1 class="site-title">TipOff Schedule</h1>
     </div>
-    <!-- Right: Local time pill -->
     <div class="header-cell header-right">
       <div class="local-pill">LOCAL TIME</div>
     </div>
