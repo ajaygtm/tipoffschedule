@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>TipOffSchedule</title>
+  <title>TipOffSchedule – Dates</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Minimal NBA regular season schedule viewer (Date & Team views + ICS exports)." />
+  <meta name="description" content="Minimal NBA regular season schedule viewer – Date view." />
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,34 +17,44 @@
     <div class="header-cell header-left">
       <img src="assets/logos/NBA.svg" alt="NBA Logo" class="nba-logo" onerror="this.style.visibility='hidden'">
     </div>
+
     <div class="header-cell header-center">
       <h1 class="site-title">TipOff Schedule</h1>
+      <nav class="main-tabs" aria-label="Primary Views">
+        <a href="index.html" class="main-tab is-active" aria-current="page">Dates</a>
+        <a href="teams.html" class="main-tab">Teams</a>
+      </nav>
     </div>
+
     <div class="header-cell header-right">
-      <div class="local-pill">LOCAL TIME</div>
+      <div class="tz-wrapper">
+        <button id="tz-trigger" class="tz-pill" type="button" aria-haspopup="menu" aria-expanded="false">
+          TIMEZONES
+        </button>
+        <div id="tz-menu" class="tz-menu" role="menu" aria-label="Select timezone"></div>
+      </div>
     </div>
   </header>
 
   <main class="main">
-    <section aria-labelledby="date-view-heading" class="date-view">
+    <section id="view-dates" aria-labelledby="date-view-heading" class="date-view">
       <h2 id="date-view-heading" class="visually-hidden">Date View</h2>
-
       <div class="date-bar">
-        <button id="date-prev" type="button" class="nav-arrow" aria-label="Previous day window">←</button>
+        <button id="date-prev" type="button" class="nav-arrow" aria-label="Previous days">←</button>
         <div id="date-strip" class="date-strip" role="tablist" aria-label="Select date"></div>
-        <button id="date-next" type="button" class="nav-arrow" aria-label="Next day window">→</button>
+        <button id="date-next" type="button" class="nav-arrow" aria-label="Next days">→</button>
       </div>
-
       <div id="game-list" class="game-list fade" aria-live="polite"></div>
     </section>
   </main>
 
-  <button id="btn-export-all" class="btn-float" type="button" disabled>Download Schedule</button>
+  <div id="announce" class="visually-hidden" aria-live="polite"></div>
 
   <footer class="footer">
     <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
   </footer>
 
+  <script type="module" src="src/js/teamColors.js" defer></script>
   <script type="module" src="src/js/index.js" defer></script>
 </body>
 </html>

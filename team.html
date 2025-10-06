@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipOffSchedule – Team Calendar</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NBA regular season per-team monthly calendar." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <style>
+    /* ===== TEAM CALENDAR PAGE OVERRIDES ===== */
+
+    /* Adjust ONLY this to scale internal calendar content (logos, time, day number) */
+    :root { --cal-scale: 1; }
+
+    body.team-cal-page .app-header {
+      padding:14px 20px 0 !important; /* tightened bottom padding */
+    }
+    body.team-cal-page .main { padding-top:0 !important; }
+    body.team-cal-page .team-cal-shell { margin-top:0 !important; }
+
+    /* ROW 1: Month navigation only */
+    .month-row {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+      margin:0 0 6px;
+      position:relative;
+    }
+    .month-row .month-btn {
+      padding:6px 12px;
+      font-size:.60rem;
+      font-weight:600;
+      letter-spacing:.7px;
+      text-transform:uppercase;
+    }
+    .month-row #month-label {
+      font-size:.85rem;
+      font-weight:600;
+      letter-spacing:.55px;
+      min-width:150px;
+      text-align:center;
+      color:var(--text-dim);
+    }
+
+    /* ROW 2: Back link left + centered Team Season heading */
+    .team-line {
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+      margin:0 0 10px;
+    }
+    .team-line .link-back {
+      position:absolute;
+      left:85px;
+      top:50%;
+      transform:translateY(-50%);
+      margin:0;
+      font-size:.60rem;
+      font-weight:600;
+      letter-spacing:.9px;
+      text-transform:uppercase;
+    }
+    /* Slightly larger title (increase this font-size to make bigger again) */
+    .team-season-heading {
+      margin:0;
+      font-size:1.23 rem;  /* slightly bigger than previous 1.30rem (+ ~0.5rem over old small version) */
+      font-weight:700;
+      letter-spacing:.95px;
+      text-transform:uppercase;
+      line-height:1.08;
+      text-align:center;
+      color:var(--text);
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    /* Calendar wrapper width control: change max-width or set 100% */
+    .team-cal-wrapper {
+      max-width:1120px; /* increase for wider cells, decrease for narrower, or 100% */
+      margin:0 auto;
+      padding:12px 14px 16px;
+    }
+
+    /* Respect your tuned gap variable */
+    .team-calendar-grid {
+      gap: var(--tc-gap, 10px) !important;
+    }
+  </style>
+</head>
+<body class="layout team-cal-page">
+  <header class="app-header">
+    <div class="header-cell header-left">
+      <img src="assets/logos/NBA.svg" alt="NBA Logo" class="nba-logo" onerror="this.style.visibility='hidden'">
+    </div>
+    <div class="header-cell header-center">
+      <h1 class="site-title">TipOff Schedule</h1>
+    </div>
+    <div class="header-cell header-right">
+      <div class="tz-wrapper">
+        <button id="tz-trigger" class="tz-pill" type="button" aria-haspopup="menu" aria-expanded="false">
+          TIMEZONES
+        </button>
+        <div id="tz-menu" class="tz-menu" role="menu" aria-label="Select timezone"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="team-cal-shell" aria-labelledby="team-cal-heading">
+      <!-- ROW 1: Month Nav -->
+      <div class="month-row">
+        <button id="month-prev" class="month-btn" type="button" aria-label="Previous month">←</button>
+        <div id="month-label" aria-live="polite"></div>
+        <button id="month-next" class="month-btn" type="button" aria-label="Next month">→</button>
+      </div>
+
+      <!-- ROW 2: Back + Team Season Heading -->
+      <div class="team-line">
+        <a href="teams.html" class="link-back" aria-label="Back to team selector">← Teams</a>
+        <h2 id="team-cal-heading" class="team-season-heading"></h2>
+      </div>
+
+      <div class="team-cal-wrapper">
+        <div id="team-calendar-grid" class="team-calendar-grid" role="grid" aria-label="Team Month Calendar">
+          <div class="cal-dow">Mon</div>
+          <div class="cal-dow">Tue</div>
+          <div class="cal-dow">Wed</div>
+          <div class="cal-dow">Thu</div>
+          <div class="cal-dow">Fri</div>
+          <div class="cal-dow">Sat</div>
+          <div class="cal-dow">Sun</div>
+          <!-- Day cells injected by JS -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="announce" class="visually-hidden" aria-live="polite"></div>
+
+  <footer class="footer">
+    <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
+  </footer>
+
+  <script type="module" src="src/js/teamColors.js" defer></script>
+  <script type="module" src="src/js/teamCalendarPage.js" defer></script>
+</body>
+</html>

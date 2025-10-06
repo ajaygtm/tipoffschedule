@@ -1,232 +1,231 @@
-import { loadSchedule, getGamesByDate, findScheduleDateBounds } from "./scheduleLoader.js";
+import { loadSchedule } from "./scheduleLoader.js";
 import { loadTeams, getTeamByTri } from "./teamsLoader.js";
 import {
-  toLocal,
-  buildContinuousDateArray,
   formatTime24,
-  sameDay,
-  dayKey,
-  getLocalToday
+  getLocalToday,
+  dateKeyInZone,
+  dateFromKeyUTC,
+  formatTimeInZone
 } from "./dateUtils.js";
 
-/*
-  Commit 3 refinement – Filtering REMOVED
-
-  Changes vs previous version:
-  - Deleted all team tri filtering / alias logic (shows every game from schedule).
-  - Removed team set / unknown warnings / STRICT_HIDE_UNKNOWN flags.
-  - Kept season_stage (Preseason / Regular Season) display.
-  - Kept venue (name only, no city).
-  - Kept countdown for any future game within 48h.
-  - No game numbering logic (already removed earlier).
-*/
+/* Date View only (team view removed from this file). */
 
 const WINDOW_SIZE = 7;
 const USE_24H_TIME = true;
-
 const LOW_DENSITY_MAX = 4;
 const HIGH_DENSITY_MIN = 10;
-
 const COUNTDOWN_REFRESH_MS = 60_000;
 const COUNTDOWN_MAX_FUTURE_HOURS = 48;
 
-// Light logos needing contrast tweak (expand if necessary)
+const TZ_STORAGE_KEY = "tos_tz_pref";
+const FIXED_ZONE_ABBR = {
+  "America/New_York": "ET",
+  "America/Los_Angeles": "PT",
+  "America/Chicago": "CT"
+};
+const TIMEZONE_OPTIONS = [
+  { key: "local", label: "MY TIMEZONE", zone: null, menuHint: "" },
+  { key: "ET", label: "ET", zone: "America/New_York", menuHint: "(Eastern)" },
+  { key: "PT", label: "PT", zone: "America/Los_Angeles", menuHint: "(Pacific)" },
+  { key: "CT", label: "CT", zone: "America/Chicago", menuHint: "(Central)" }
+];
+
 const LIGHT_LOGO_TRIS = new Set(['BKN']);
 
 const state = {
   schedule: null,
   teams: null,
-  gamesByUtcDate: null,
-  fullDateRange: [],
-  selectedDate: null,
-  windowDates: [],
+  selectedZone: "local",
+  zoneGameCache: {},
+  currentDateKeys: [],
+  selectedDateKey: null,
   countdownTimer: null
 };
 
-init().catch(err => {
-  console.error("[TipOffSchedule] Init error:", err);
+init().catch(e=>{
+  console.error(e);
   showError("Failed to initialize.");
 });
 
 async function init() {
+  restoreTimezonePreference();
   await loadData();
   validateDates();
-  buildFullDateRange();
-  pickInitialDate();
-  computeWindowFor(state.selectedDate);
+  buildTimezoneIndexIfNeeded(state.selectedZone);
+  pickInitialDateKey();
+  attachWindowNav();
+  initTimezoneMenu();
   renderDateStrip();
   renderGamesForSelectedDate();
-  attachWindowNav();
   startCountdownLoop();
-  detectDuplicateLoad();
 }
 
-/* Data */
-async function loadData() {
+async function loadData(){
   const [schedule, teams] = await Promise.all([loadSchedule(), loadTeams()]);
   state.schedule = schedule;
   state.teams = teams;
-  state.gamesByUtcDate = getGamesByDate(schedule);
 }
 
-function validateDates() {
+function validateDates(){
   if (!state.schedule?.games) return;
-  const bad = [];
-  for (const g of state.schedule.games) {
-    if (!g.date_utc || isNaN(Date.parse(g.date_utc))) bad.push(g.game_id);
-  }
-  if (bad.length) {
-    console.error("Invalid date_utc values:", bad);
-    throw new Error("Invalid date strings in schedule JSON.");
+  for (const g of state.schedule.games){
+    if (!g.date_utc || isNaN(Date.parse(g.date_utc))){
+      throw new Error("Invalid date_utc in schedule");
+    }
   }
 }
 
-/* Date range / window */
-function buildFullDateRange() {
-  const bounds = findScheduleDateBounds(state.schedule);
-  if (!bounds) return;
-  const startLocal = toLocal(bounds.start);
-  const endLocal = toLocal(bounds.end);
-  state.fullDateRange = buildContinuousDateArray(startLocal, endLocal);
+/* Timezone logic */
+function restoreTimezonePreference(){
+  try {
+    const stored = localStorage.getItem(TZ_STORAGE_KEY);
+    if (stored && TIMEZONE_OPTIONS.some(o => (o.zone||o.key)===stored || o.key===stored)){
+      const byZone = TIMEZONE_OPTIONS.find(o => o.zone===stored);
+      state.selectedZone = byZone ? byZone.key : stored;
+    }
+  } catch {}
 }
-
-function pickInitialDate() {
-  const today = getLocalToday();
-  const match = state.fullDateRange.find(d => sameDay(d, today));
-  state.selectedDate = match || state.fullDateRange[0] || today;
+function persistTimezonePreference(){
+  try {
+    const opt = getSelectedTzOption();
+    localStorage.setItem(TZ_STORAGE_KEY, opt.zone || opt.key);
+  } catch {}
 }
-
-function computeWindowFor(centerDate) {
-  if (!state.fullDateRange.length) { state.windowDates = []; return; }
-  const idx = state.fullDateRange.findIndex(d => sameDay(d, centerDate));
-  if (idx === -1) { state.windowDates = []; return; }
-  const half = Math.floor(WINDOW_SIZE / 2);
-  let start = idx - half;
-  let end = idx + half;
-  if (start < 0) { end += -start; start = 0; }
-  if (end >= state.fullDateRange.length) {
-    const over = end - (state.fullDateRange.length - 1);
-    start = Math.max(0, start - over);
-    end = state.fullDateRange.length - 1;
+function getSelectedTzOption(){
+  return TIMEZONE_OPTIONS.find(o=>o.key===state.selectedZone)||TIMEZONE_OPTIONS[0];
+}
+function currentZoneId(){
+  const opt = getSelectedTzOption();
+  return opt.zone || Intl.DateTimeFormat().resolvedOptions().timeZone;
+}
+function buildTimezoneIndexIfNeeded(zoneKey){
+  if (state.zoneGameCache[zoneKey]){
+    state.currentDateKeys = state.zoneGameCache[zoneKey].dateKeys;
+    return;
   }
-  state.windowDates = state.fullDateRange.slice(start, end + 1);
+  const opt = TIMEZONE_OPTIONS.find(o=>o.key===zoneKey);
+  const zone = opt? opt.zone : null;
+  const map = new Map();
+  for (const g of state.schedule.games){
+    const key = dateKeyInZone(g.date_utc, zone);
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(g);
+  }
+  for (const arr of map.values()){
+    arr.sort((a,b)=>a.date_utc.localeCompare(b.date_utc));
+  }
+  const dateKeys = Array.from(map.keys()).sort();
+  state.zoneGameCache[zoneKey] = { map, dateKeys };
+  state.currentDateKeys = dateKeys;
 }
-
-/* Navigation */
-function attachWindowNav() {
-  document.getElementById("date-prev")?.addEventListener("click", () => shiftWindow(-1));
-  document.getElementById("date-next")?.addEventListener("click", () => shiftWindow(1));
-  window.addEventListener("keydown", e => {
-    if (e.key === "ArrowLeft") shiftWindow(-1);
-    if (e.key === "ArrowRight") shiftWindow(1);
-  });
-}
-
-function shiftWindow(direction) {
-  if (!state.selectedDate) return;
-  const idx = state.fullDateRange.findIndex(d => sameDay(d, state.selectedDate));
-  if (idx === -1) return;
-  const target = idx + direction;
-  if (target < 0 || target >= state.fullDateRange.length) return;
-  state.selectedDate = state.fullDateRange[target];
-  computeWindowFor(state.selectedDate);
-  renderDateStrip();
-  renderGamesForSelectedDate();
-  updateCountdowns();
+function pickInitialDateKey(){
+  const zone = currentZoneId();
+  const todayKey = dateKeyInZone(new Date().toISOString(), zone);
+  state.selectedDateKey = state.currentDateKeys.includes(todayKey)
+    ? todayKey
+    : state.currentDateKeys[0] || null;
 }
 
 /* Date strip */
-function renderDateStrip() {
+function renderDateStrip(){
   const strip = document.getElementById("date-strip");
   strip.innerHTML = "";
-  state.windowDates.forEach(d => {
-    const pill = document.createElement("button");
-    pill.className = "date-pill";
-    if (d.getDay() === 0) pill.classList.add("sunday");
-    if (sameDay(d, getLocalToday())) pill.classList.add("today");
+  if (!state.selectedDateKey) return;
+  const windowKeys = computeWindowKeys(state.selectedDateKey);
+  windowKeys.forEach(key=>{
+    const btn = document.createElement("button");
+    btn.className = "date-pill";
+    const zone = currentZoneId();
+    const dateObj = dateFromKeyUTC(key);
+    const monthStr = new Intl.DateTimeFormat(undefined,{month:"short", timeZone:zone}).format(dateObj);
+    const dayNum   = new Intl.DateTimeFormat(undefined,{day:"numeric", timeZone:zone}).format(dateObj);
+    const weekday  = new Intl.DateTimeFormat(undefined,{weekday:"long", timeZone:zone}).format(dateObj);
+    const weekdayShort = new Intl.DateTimeFormat("en-US",{weekday:"short", timeZone:zone}).format(dateObj);
+    if (weekdayShort==="Sun") btn.classList.add("sunday");
+    const localTodayKey = dateKeyInZone(new Date().toISOString(), null);
+    if (key===localTodayKey) btn.classList.add("today");
 
-    const month = d.toLocaleString(undefined, { month: "short" });
-    pill.innerHTML = `
-      <span class="dom">${month} ${d.getDate()}</span>
-      <span class="dow">${d.toLocaleString(undefined, { weekday: "long" })}</span>
-    `;
-    pill.dataset.dateKey = dayKey(d);
-    pill.setAttribute("role", "tab");
-    pill.setAttribute("aria-selected", sameDay(d, state.selectedDate) ? "true" : "false");
-    pill.addEventListener("click", () => {
-      state.selectedDate = d;
-      computeWindowFor(d);
+    btn.innerHTML = `<span class="dom">${monthStr} ${dayNum}</span><span class="dow">${weekday}</span>`;
+    btn.setAttribute("role","tab");
+    btn.setAttribute("aria-selected", key===state.selectedDateKey ? "true":"false");
+    btn.addEventListener("click", ()=>{
+      state.selectedDateKey = key;
       renderDateStrip();
       renderGamesForSelectedDate();
       updateCountdowns();
     });
-    strip.appendChild(pill);
+    strip.appendChild(btn);
   });
 }
+function computeWindowKeys(centerKey){
+  const keys = state.currentDateKeys;
+  const idx = keys.indexOf(centerKey);
+  if (idx===-1) return [];
+  const half = Math.floor(WINDOW_SIZE/2);
+  let start=idx-half;
+  let end=idx+half;
+  if (start<0){ end += -start; start=0; }
+  if (end>=keys.length){
+    const over = end-(keys.length-1);
+    start = Math.max(0, start-over);
+    end = keys.length-1;
+  }
+  return keys.slice(start,end+1);
+}
 
-/* Render games */
-function renderGamesForSelectedDate() {
+/* Games list */
+function renderGamesForSelectedDate(){
   const list = document.getElementById("game-list");
   list.classList.remove("ready");
   list.innerHTML = "";
-
-  if (!state.selectedDate || !state.schedule?.games?.length) {
+  if (!state.selectedDateKey){
     showNoGames("No games loaded.");
     return;
   }
+  const zoneData = state.zoneGameCache[state.selectedZone];
+  const games = zoneData?.map.get(state.selectedDateKey) || [];
 
-  const games = state.schedule.games.filter(g => {
-    const local = toLocal(g.date_utc);
-    return sameDay(local, state.selectedDate);
-  });
-
-  list.classList.remove("density-low", "density-high");
+  list.classList.remove("density-low","density-high");
   if (games.length <= LOW_DENSITY_MAX) list.classList.add("density-low");
   else if (games.length >= HIGH_DENSITY_MIN) list.classList.add("density-high");
 
-  if (!games.length) {
+  if (!games.length){
     showNoGames("No games on this date.");
     return;
   }
-
-  games.forEach(g => list.appendChild(renderGameCard(g)));
-  requestAnimationFrame(() => list.classList.add("ready"));
+  for (const g of games){
+    list.appendChild(renderGameCard(g));
+  }
+  requestAnimationFrame(()=>list.classList.add("ready"));
   updateCountdowns();
 }
-
-function showNoGames(message) {
+function showNoGames(msg){
   const list = document.getElementById("game-list");
   const div = document.createElement("div");
   div.className = "no-games";
-  div.textContent = message;
+  div.textContent = msg;
   list.appendChild(div);
-  requestAnimationFrame(() => list.classList.add("ready"));
+  requestAnimationFrame(()=>list.classList.add("ready"));
 }
 
-/* Game card */
-function renderGameCard(game) {
-  const localDate = toLocal(game.date_utc);
+function renderGameCard(game){
   const card = document.createElement("div");
   card.className = "game-card";
   card.setAttribute("data-tipoff", game.date_utc);
 
-  // Logos
   const logos = document.createElement("div");
   logos.className = "logos-row";
-  logos.appendChild(createLogoElement(game.away_tri));
-  logos.appendChild(createLogoElement(game.home_tri));
+  logos.appendChild(createLogo(game.away_tri));
+  logos.appendChild(createLogo(game.home_tri));
 
-  // Matchup
   const matchup = document.createElement("div");
   matchup.className = "matchup";
   matchup.textContent = `${game.away_tri} @ ${game.home_tri}`;
 
-  // Countdown area
-  const countdownLine = document.createElement("div");
-  countdownLine.className = "countdown-line";
-  countdownLine.style.display = "none";
+  const countdown = document.createElement("div");
+  countdown.className = "countdown-line";
+  countdown.style.display = "none";
 
-  // Meta block
   const metaBlock = document.createElement("div");
   metaBlock.className = "meta-block";
 
@@ -240,40 +239,35 @@ function renderGameCard(game) {
 
   const timeLine = document.createElement("div");
   timeLine.className = "meta-line time-line";
-  timeLine.textContent = timeDisplay(localDate);
+  const zoneId = currentZoneId();
+  const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
+  const displayAbbr = state.selectedZone==="local" ? (abbr||"") : (FIXED_ZONE_ABBR[zoneId]||abbr||"");
+  timeLine.textContent = `${time} ${displayAbbr}`.trim();
 
   metaBlock.appendChild(seasonLine);
   metaBlock.appendChild(venueLine);
   metaBlock.appendChild(timeLine);
 
-  // ARIA label
-  const awayTeam = getTeamByTri(game.away_tri);
-  const homeTeam = getTeamByTri(game.home_tri);
-  const fullAway = awayTeam ? awayTeam.name : game.away_tri;
-  const fullHome = homeTeam ? homeTeam.name : game.home_tri;
-  const ariaTime = localDate.toLocaleTimeString(undefined, {
-    hour: "2-digit", minute: "2-digit", hour12: !USE_24H_TIME
-  });
-  card.setAttribute(
-    "aria-label",
-    `${fullAway} at ${fullHome}${game.venue ? " in " + game.venue : ""}, ${ariaTime} ${getShortTimeZone()}`
-  );
+  const awayName = getTeamByTri(game.away_tri)?.name || game.away_tri;
+  const homeName = getTeamByTri(game.home_tri)?.name || game.home_tri;
+  card.setAttribute("aria-label",
+    `${awayName} at ${homeName}${game.venue? " in " + game.venue:""}, ${time} ${displayAbbr}`);
 
   card.appendChild(logos);
   card.appendChild(matchup);
-  card.appendChild(countdownLine);
+  card.appendChild(countdown);
   card.appendChild(metaBlock);
   return card;
 }
 
-function createLogoElement(tri) {
+function createLogo(tri){
   const img = document.createElement("img");
   img.className = "logo";
   if (LIGHT_LOGO_TRIS.has(tri)) img.classList.add("logo--contrast");
   img.alt = `${tri} logo`;
   img.src = `assets/logos/${tri}.svg`;
-  img.decoding = "async";
   img.loading = "lazy";
+  img.decoding = "async";
   img.onerror = () => {
     const span = document.createElement("div");
     span.className = "tri-fallback";
@@ -283,80 +277,145 @@ function createLogoElement(tri) {
   return img;
 }
 
-/* Countdown (any game in next 48h) */
-function startCountdownLoop() {
+/* Countdown */
+function startCountdownLoop(){
   if (state.countdownTimer) clearInterval(state.countdownTimer);
   state.countdownTimer = setInterval(updateCountdowns, COUNTDOWN_REFRESH_MS);
   updateCountdowns();
 }
-
-function updateCountdowns() {
+function updateCountdowns(){
   const now = Date.now();
-  document.querySelectorAll("[data-tipoff]").forEach(card => {
+  document.querySelectorAll("[data-tipoff]").forEach(card=>{
     const iso = card.getAttribute("data-tipoff");
     const ts = Date.parse(iso);
     if (isNaN(ts)) return;
     const diffMs = ts - now;
     const el = card.querySelector(".countdown-line");
     if (!el) return;
-
-    if (diffMs <= 0) { el.style.display = "none"; return; }
-
+    if (diffMs <= 0){ el.style.display="none"; return; }
     const diffH = diffMs / 3_600_000;
-    if (diffH > COUNTDOWN_MAX_FUTURE_HOURS) { el.style.display = "none"; return; }
+    if (diffH > COUNTDOWN_MAX_FUTURE_HOURS){ el.style.display="none"; return; }
 
-    if (diffH >= 24) {
-      const d = Math.floor(diffH / 24);
+    if (diffH >= 24){
+      const d = Math.floor(diffH/24);
       el.textContent = `in ${d}d`;
-    } else if (diffH >= 1) {
+    } else if (diffH >= 1){
       const h = Math.floor(diffH);
-      const m = Math.round((diffH - h) * 60);
+      const m = Math.round((diffH - h)*60);
       el.textContent = `in ${h}h ${m}m`;
     } else {
-      const m = Math.max(1, Math.round(diffMs / 60000));
+      const m = Math.max(1, Math.round(diffMs/60000));
       el.textContent = `in ${m}m`;
     }
-    el.style.display = "";
+    el.style.display="";
   });
 }
 
-/* Time helpers */
-function timeDisplay(dateObj) {
-  if (USE_24H_TIME) return `${formatTime24(dateObj)} ${getShortTimeZone()}`;
-  return `${dateObj.toLocaleTimeString(undefined, {
-    hour: "numeric", minute: "2-digit", hour12: true
-  }).replace(" ", "")} ${getShortTimeZone()}`;
+/* Navigation */
+function attachWindowNav(){
+  document.getElementById("date-prev")?.addEventListener("click",()=>shiftWindow(-1));
+  document.getElementById("date-next")?.addEventListener("click",()=>shiftWindow(1));
+  window.addEventListener("keydown", e=>{
+    if (e.key==="ArrowLeft") shiftWindow(-1);
+    if (e.key==="ArrowRight") shiftWindow(1);
+  });
+}
+function shiftWindow(direction){
+  if (!state.selectedDateKey) return;
+  const keys = state.currentDateKeys;
+  const idx = keys.indexOf(state.selectedDateKey);
+  if (idx===-1) return;
+  const target = idx + direction;
+  if (target<0 || target>=keys.length) return;
+  state.selectedDateKey = keys[target];
+  renderDateStrip();
+  renderGamesForSelectedDate();
+  updateCountdowns();
 }
 
-function getShortTimeZone() {
-  try {
-    const dtf = new Intl.DateTimeFormat(undefined, { timeZoneName: "short" });
-    const parts = dtf.formatToParts(new Date());
-    const tz = parts.find(p => p.type === "timeZoneName");
-    return tz ? tz.value : Intl.DateTimeFormat().resolvedOptions().timeZone;
-  } catch {
-    return Intl.DateTimeFormat().resolvedOptions().timeZone;
+/* Timezone menu */
+function initTimezoneMenu(){
+  const trigger = document.getElementById("tz-trigger");
+  const menu = document.getElementById("tz-menu");
+  if (!trigger || !menu) return;
+  buildTimezoneMenu(menu);
+
+  trigger.addEventListener("click", ()=>{
+    const expanded = trigger.getAttribute("aria-expanded")==="true";
+    setMenuOpen(!expanded);
+  });
+  document.addEventListener("click", e=>{
+    if (!menu.contains(e.target) && e.target!==trigger) setMenuOpen(false);
+  });
+  document.addEventListener("keydown", e=>{
+    if (e.key==="Escape") setMenuOpen(false);
+  });
+
+  function setMenuOpen(open){
+    trigger.setAttribute("aria-expanded", open?"true":"false");
+    menu.classList.toggle("open", open);
+    if (open){
+      const selectedBtn = menu.querySelector('[data-selected="true"]')||menu.querySelector(".tz-option");
+      selectedBtn?.focus({preventScroll:true});
+    }
   }
+}
+
+function buildTimezoneMenu(menu){
+  menu.innerHTML = "";
+  const localAbbr = deriveLocalAbbrev();
+  TIMEZONE_OPTIONS.forEach(opt=>{
+    const btn = document.createElement("button");
+    btn.type="button";
+    btn.className="tz-option";
+    const selected = opt.key===state.selectedZone;
+    btn.dataset.selected = selected? "true":"false";
+    let label = opt.label;
+    if (opt.key==="local" && localAbbr) label += ` (${localAbbr})`;
+    if (opt.menuHint) label += ` ${opt.menuHint}`;
+    btn.textContent = label;
+    btn.setAttribute("role","menuitemradio");
+    btn.setAttribute("aria-checked", selected?"true":"false");
+    btn.addEventListener("click", ()=>{
+      if (state.selectedZone !== opt.key){
+        state.selectedZone = opt.key;
+        persistTimezonePreference();
+        buildTimezoneIndexIfNeeded(opt.key);
+        if (!state.currentDateKeys.includes(state.selectedDateKey)){
+          pickInitialDateKey();
+        }
+        renderDateStrip();
+        renderGamesForSelectedDate();
+        updateCountdowns();
+      }
+      const trigger = document.getElementById("tz-trigger");
+      trigger?.setAttribute("aria-expanded","false");
+      menu.classList.remove("open");
+      buildTimezoneMenu(menu);
+    });
+    menu.appendChild(btn);
+  });
+}
+function deriveLocalAbbrev(){
+  try{
+    const parts = new Intl.DateTimeFormat(undefined,{
+      timeZoneName:"short",
+      hour:"2-digit",
+      minute:"2-digit"
+    }).formatToParts(new Date());
+    const tz = parts.find(p=>p.type==="timeZoneName");
+    return tz? tz.value : "";
+  }catch{return "";}
 }
 
 /* Errors */
-function showError(msg) {
+function showError(msg){
   const list = document.getElementById("game-list");
-  if (list) {
-    list.innerHTML = "";
-    const div = document.createElement("div");
-    div.className = "no-games";
-    div.textContent = msg;
+  if (list){
+    list.innerHTML="";
+    const div=document.createElement("div");
+    div.className="no-games";
+    div.textContent=msg;
     list.appendChild(div);
-    requestAnimationFrame(() => list.classList.add("ready"));
   }
-  const strip = document.getElementById("date-strip");
-  if (strip) strip.innerHTML = "";
-}
-
-function detectDuplicateLoad() {
-  if (window.__tipoffschedule_loaded) {
-    console.warn("[TipOffSchedule] index.js loaded twice.");
-  }
-  window.__tipoffschedule_loaded = true;
 }

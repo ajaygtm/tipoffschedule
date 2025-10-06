@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipOffSchedule – Teams</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NBA regular season per-team selector." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/util.css" />
+</head>
+<body class="layout">
+  <header class="app-header">
+    <div class="header-cell header-left">
+      <img src="assets/logos/NBA.svg" alt="NBA Logo" class="nba-logo" onerror="this.style.visibility='hidden'">
+    </div>
+
+    <div class="header-cell header-center">
+      <h1 class="site-title">TipOff Schedule</h1>
+      <nav class="main-tabs" aria-label="Primary Views">
+        <a href="index.html" class="main-tab">Dates</a>
+        <a href="teams.html" class="main-tab is-active" aria-current="page">Teams</a>
+      </nav>
+    </div>
+
+    <div class="header-cell header-right">
+      <div class="tz-wrapper">
+        <button id="tz-trigger" class="tz-pill" type="button" aria-haspopup="menu" aria-expanded="false">
+          TIMEZONES
+        </button>
+        <div id="tz-menu" class="tz-menu" role="menu" aria-label="Select timezone"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main main--narrow">
+    <section aria-labelledby="team-grid-heading" class="team-grid-only">
+      <h2 id="team-grid-heading" class="visually-hidden">Select a Team</h2>
+      <div class="team-grid team-grid--selector" id="team-grid"></div>
+    </section>
+  </main>
+
+  <div id="announce" class="visually-hidden" aria-live="polite"></div>
+
+  <footer class="footer">
+    <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
+  </footer>
+
+  <script type="module" src="src/js/teamColors.js" defer></script>
+  <script type="module" src="src/js/teamSelectorPage.js" defer></script>
+</body>
+</html>
