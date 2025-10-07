@@ -58,5 +58,19 @@
 
   <script type="module" src="src/js/teamColors.js" defer></script>
   <script type="module" src="src/js/index.js" defer></script>
+  <button id="btn-ics-all" class="btn-float" type="button" aria-label="Download full season (all teams) ICS">
+  Full Season Calendar
+</button>
+
+<script type="module">
+  import { initIcsAllTeamsButton } from './src/js/ics.js';
+  initIcsAllTeamsButton({
+    buttonId: 'btn-ics-all',
+    scheduleUrl: './data/schedule/nba_schedule_25_26.json'
+  });
+</script>
+
+
 </body>
 </html>
+

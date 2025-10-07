@@ -11,14 +11,10 @@ import {
   shiftMonth,
   getOpponentAndHomeAway
 } from "./teamView.js";
+import { initIcsTeamButton } from "./ics.js";  // <--- ADDED
 
 /*
 Team Calendar Page – XL Sizing Update
-Changes in this revision:
-- Greatly increased visual scale of: day number, logos, matchup line, time.
-- Added compact season stage tag (REG / PRE) on both desktop mini card & mobile pill.
-- Preserves dynamic week count (only weeks that intersect the month).
-- Timezone regroup still respected.
 */
 
 const TZ_STORAGE_KEY = "tos_tz_pref";
@@ -70,6 +66,15 @@ async function init(){
   ensureMonthWithinSeason();
   initMonthNav();
   initTimezoneMenu();
+
+  // ---- ICS TEAM BUTTON INIT (ADDED) ----
+  initIcsTeamButton({
+    buttonId: "btn-ics-team",
+    scheduleUrl: "../data/schedule/nba_schedule_25_26.json",
+    teamTri: state.selectedTeam
+  });
+  // --------------------------------------
+
   renderAll();
   window.addEventListener("popstate", ()=>{
     parseQueryParams();
@@ -134,7 +139,6 @@ function buildTeamZoneMap(team, zoneId){
   for (const g of games){
     const key = dateKeyInZone(g.date_utc, zoneId);
     if (!map.has(key)) map.set(key, g);
-    // If a rare second game existed same day, we would choose earliest by keeping first.
   }
   state.tzTeamCache[cacheKey] = map;
   return map;
@@ -144,7 +148,6 @@ function buildCalendarMatrixTZ(monthKey, zoneId){
   const [y,m] = monthKey.split("-");
   const year = parseInt(y,10);
   const monthIdx = parseInt(m,10)-1;
-
   const daysInMonth = new Date(Date.UTC(year, monthIdx+1, 0)).getUTCDate();
 
   const weekdayName = dUTC => new Intl.DateTimeFormat("en-US",{weekday:"short", timeZone:zoneId}).format(dUTC);
@@ -158,19 +161,16 @@ function buildCalendarMatrixTZ(monthKey, zoneId){
 
   const cells = [];
 
-  // Leading outside
   for (let i=0;i<firstOffset;i++){
     const dUTC = new Date(Date.UTC(year, monthIdx, 1 - (firstOffset - i), 12));
     const localKey = dateKeyInZone(dUTC.toISOString(), zoneId);
     cells.push({ localKey, inMonth:false, dayNum: parseInt(localKey.slice(-2),10) });
   }
-  // Month
   for (let day=1; day<=daysInMonth; day++){
     const dUTC = new Date(Date.UTC(year, monthIdx, day, 12));
     const localKey = dateKeyInZone(dUTC.toISOString(), zoneId);
     cells.push({ localKey, inMonth:true, dayNum: day });
   }
-  // Trailing outside
   for (let i=0;i<lastOffset;i++){
     const dUTC = new Date(Date.UTC(year, monthIdx, daysInMonth + 1 + i, 12));
     const localKey = dateKeyInZone(dUTC.toISOString(), zoneId);
@@ -220,7 +220,6 @@ function renderCalendar(){
     if (!cell.inMonth) div.classList.add("outside");
     div.tabIndex = 0;
 
-    // Big date number
     const dn = document.createElement("div");
     dn.className = "day-number day-number--xl";
     dn.textContent = cell.dayNum;
@@ -236,7 +235,6 @@ function renderCalendar(){
       const { opponent, isHome } = getOpponentAndHomeAway(game, state.selectedTeam);
       const stage = compactStage(game.season_stage);
 
-      // Desktop XL card
       const mini = document.createElement("div");
       mini.className = "game-mini game-mini--xl";
       mini.innerHTML = `
@@ -250,7 +248,6 @@ function renderCalendar(){
       `;
       div.appendChild(mini);
 
-      // Mobile pill
       const pill = document.createElement("div");
       pill.className = "game-pill-mobile game-pill-mobile--xl";
       pill.textContent = `${stage} ${isHome ? "vs" : "@"} ${opponent}`;
@@ -279,7 +276,7 @@ function compactStage(stage){
   const s = stage.toLowerCase();
   if (s.startsWith("pre")) return "PRE";
   if (s.startsWith("reg")) return "REG";
-  if (s.startsWith("play")) return "PO"; // future-proof
+  if (s.startsWith("play")) return "PO";
   return stage.slice(0,3).toUpperCase();
 }
 
@@ -342,7 +339,6 @@ function initMonthNav(){
   });
 }
 
-/* Timezone menu */
 function restoreTimezonePreference(){
   try{
     const stored = localStorage.getItem(TZ_STORAGE_KEY);
