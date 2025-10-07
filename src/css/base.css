@@ -29,7 +29,7 @@
   font-family: 'TipOffGraff';
   src:
     url('../../assets/fonts/DemonSayHi.woff2') format('woff2'),
-    url('../../assets/fonts/a_another_tag.ttf') format('truetype');
+    url('../../assets/fonts/DemonSayHi.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -122,7 +122,7 @@ body{font-size:15px;line-height:1.42;}
 .site-title{
   margin:0;
   font-family:var(--title-font);
-  font-size:clamp(2.25rem,2.9vw,3rem);
+  font-size:clamp(3.25rem,2.9vw,3rem);         /* Change Site Title Size */
   font-weight:400;
   letter-spacing:1.2px;
   line-height:1.02;
@@ -688,3 +688,68 @@ body{font-size:15px;line-height:1.42;}
 .day-cell,
 .game-mini { height:auto; }
 
+/* For Making 'SUN' in team calendar view Red */
+body.team-cal-page .team-calendar-grid .cal-dow:nth-child(7) { color:#d02424; font-weight:700; } #announce { display:none !important; }
+
+
+/* === Sunday column tint in Team Calendar (trial) === */
+/* Reuses the existing --sunday-tint variable (#ffe9e9 in your root) */
+
+body.team-cal-page .team-calendar-grid > .cal-dow:nth-child(7) {
+  color:#d02424;               /* keep the red label */
+  font-weight:700;
+}
+
+body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) {
+  background:var(--sunday-tint);
+  border-color:#f5c9c9;        /* slightly warmer border to match tint */
+}
+
+/* Dim outside-of-month Sundays a bit more so they’re still visually secondary */
+body.team-cal-page .team-calendar-grid > .day-cell.outside:nth-child(7n) {
+  opacity:.55;
+}
+
+/* Optional: soften the inner game card on Sunday (remove if you don't like it) */
+body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
+  background:#fff;
+  border-color:#f2d4d4;
+}
+
+/* Dark mode safeguard (if/when prefers-color-scheme is active) */
+@media (prefers-color-scheme:dark) {
+  body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) {
+    background:rgba(255,80,80,0.12);
+    border-color:rgba(255,120,120,0.35);
+  }
+  body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
+    background:rgba(255,255,255,0.05);
+    border-color:rgba(255,120,120,0.4);
+  }
+}
+
+/* Remove space after disclaimer and pushing it down */
+/* === Compact footer override (remove bottom whitespace) === */
+.footer {
+  /* Keep some breathing room above, kill the space below */
+  padding:48px 16px 16px !important;  /* was 70px 16px 56px */
+  margin-top:32px;                  /* adjust if you want less space above footer */
+}
+
+html, body {
+  height:100%;
+}
+
+.layout {
+  min-height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+.main {
+  flex:1 0 auto;
+}
+
+.footer {
+  flex-shrink:0;
+}
