@@ -711,7 +711,7 @@ body.team-cal-page .team-calendar-grid > .day-cell.outside:nth-child(7n) {
 }
 
 /* Optional: soften the inner game card on Sunday (remove if you don't like it) */
-body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
+/*body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
   background:#fff;
   border-color:#f2d4d4;
 }
@@ -723,7 +723,6 @@ body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
     border-color:rgba(255,120,120,0.35);
   }
   body.team-cal-page .team-calendar-grid > .day-cell:nth-child(7n) .game-mini {
-    background:rgba(255,255,255,0.05);
     border-color:rgba(255,120,120,0.4);
   }
 }
