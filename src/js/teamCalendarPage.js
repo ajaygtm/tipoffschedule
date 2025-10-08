@@ -12,10 +12,11 @@ import { initIcsTeamButton } from "./ics.js";
 import { getPrettyZoneLabel } from "./timezoneLabels.js";
 
 /*
-Team Calendar Page – XL Sizing Update
-Added:
- - Auto US timezone mapping (first visit) to ET / CT / PT (keeps "local" otherwise)
- - Global friendly timezone abbreviations (IST, CET/CEST, etc.) via getPrettyZoneLabel
+Team Calendar Page
+Adjustments:
+ - English-only date labels
+ - Prefer pretty zone label (getPrettyZoneLabel) over raw Intl abbreviation
+ - Auto-map first visit US zones ET/CT/PT
 */
 
 const TZ_STORAGE_KEY = "tos_tz_pref";
@@ -26,7 +27,7 @@ const TIMEZONE_OPTIONS = [
   { key:"PT",    label:"PT", zone:"America/Los_Angeles", menuHint:"(Pacific)" }
 ];
 
-// US zone variants we auto-map (only to ET / CT / PT per requirement)
+// US zone variants
 const EASTERN_ZONES = new Set([
   "America/New_York","America/Detroit","America/Toronto","America/Indiana/Indianapolis",
   "America/Indiana/Fort_Wayne","America/Indiana/Marengo","America/Indiana/Petersburg",
@@ -39,7 +40,6 @@ const CENTRAL_ZONES = new Set([
   "America/Mexico_City"
 ]);
 const PACIFIC_ZONES = new Set(["America/Los_Angeles","America/Vancouver"]);
-
 function autoSelectUsZone(iana){
   if (EASTERN_ZONES.has(iana)) return "ET";
   if (CENTRAL_ZONES.has(iana)) return "CT";
@@ -70,6 +70,7 @@ const state = {
   tzTeamCache:{}
 };
 
+/* -------------------- Init -------------------- */
 init().catch(err=>{
   console.error("[TeamCalendar] init error", err);
   announce("Failed to initialize.");
@@ -111,6 +112,7 @@ function initIndexes(){
   state.seasonEnd = seasonEnd;
 }
 
+/* -------------------- Query / month -------------------- */
 function parseQueryParams(){
   const params = new URLSearchParams(window.location.search);
   const tri = (params.get("team")||"").toUpperCase();
@@ -146,6 +148,7 @@ function pushMonth(newMonth){
   announce(`Showing ${monthLabel(newMonth)} for ${state.selectedTeam}`);
 }
 
+/* -------------------- Calendar build -------------------- */
 function buildTeamZoneMap(team, zoneId){
   const cacheKey = `${team}__${zoneId}`;
   if (state.tzTeamCache[cacheKey]) return state.tzTeamCache[cacheKey];
@@ -193,6 +196,7 @@ function buildCalendarMatrixTZ(monthKey, zoneId){
   return cells;
 }
 
+/* -------------------- Rendering -------------------- */
 function renderAll(){
   renderHeading();
   renderMonthHeader();
@@ -241,9 +245,9 @@ function renderCalendar(){
 
     const game = map.get(cell.localKey);
     if (game){
-      const zoneAbbr = zoneAbbreviation(zoneId);
+      const pretty = zoneAbbreviation(zoneId); // preferred
       const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
-      const finalAbbr = state.selectedZone === "local" ? (abbr || zoneAbbr || "") : (zoneAbbr || abbr || "");
+      const finalAbbr = pretty || abbr || "";
       const timeStr = `${time} ${finalAbbr}`.trim();
       const matchupText = `${game.away_tri} @ ${game.home_tri}`;
       const { opponent, isHome } = getOpponentAndHomeAway(game, state.selectedTeam);
@@ -285,6 +289,7 @@ function renderCalendar(){
   });
 }
 
+/* -------------------- Helpers -------------------- */
 function compactStage(stage){
   if (!stage) return "REG";
   const s = stage.toLowerCase();
@@ -297,7 +302,7 @@ function compactStage(stage){
 function monthLabel(monthKey){
   const [y,m]=monthKey.split("-");
   const d=new Date(Date.UTC(parseInt(y,10), parseInt(m,10)-1,1));
-  return d.toLocaleString(undefined,{month:"long", year:"numeric"});
+  return d.toLocaleString('en-US',{month:"long", year:"numeric"});
 }
 
 function isBeforeSeasonMonth(monthKey){
@@ -312,7 +317,7 @@ function isAfterSeasonMonth(monthKey){
 function fullDateA11y(localKey, zoneId){
   const [y,m,d]=localKey.split("-");
   const dateUTC=new Date(Date.UTC(parseInt(y,10), parseInt(m,10)-1, parseInt(d,10), 12));
-  return new Intl.DateTimeFormat(undefined,{
+  return new Intl.DateTimeFormat('en-US',{
     timeZone:zoneId,
     month:"long",
     day:"numeric",
@@ -334,7 +339,6 @@ function restoreTimezonePreference(){
       state.selectedZone = byZone ? byZone.key : stored;
       return;
     }
-    // first visit auto mapping
     const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const mapped = autoSelectUsZone(sys);
     state.selectedZone = mapped ? mapped : "local";
@@ -365,6 +369,7 @@ function zoneAbbreviation(zoneId){
   }
 }
 
+/* Navigation */
 function initMonthNav(){
   document.getElementById("month-prev")?.addEventListener("click", ()=>{
     const candidate = shiftMonth(state.selectedMonth,-1);
@@ -378,6 +383,7 @@ function initMonthNav(){
   });
 }
 
+/* Timezone menu */
 function initTimezoneMenu(){
   const trigger = document.getElementById("tz-trigger");
   const menu = document.getElementById("tz-menu");
@@ -444,6 +450,7 @@ function deriveLocalAbbrev(){
   }
 }
 
+/* A11y live region */
 function announce(msg){
   const el = document.getElementById("announce");
   if (!el) return;

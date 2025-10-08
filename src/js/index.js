@@ -1,18 +1,15 @@
 import { loadSchedule } from "./scheduleLoader.js";
 import { loadTeams, getTeamByTri } from "./teamsLoader.js";
 import {
-  formatTime24,
-  getLocalToday,
   dateKeyInZone,
   dateFromKeyUTC,
   formatTimeInZone
 } from "./dateUtils.js";
 import { getPrettyZoneLabel } from "./timezoneLabels.js";
 
-/* Date View – added global friendly timezone labels + US auto mapping */
+/* Date View – global friendly timezone labels + US auto mapping + English-only labels */
 
 const WINDOW_SIZE = 7;
-const USE_24H_TIME = true;
 const LOW_DENSITY_MAX = 4;
 const HIGH_DENSITY_MIN = 10;
 const COUNTDOWN_REFRESH_MS = 60_000;
@@ -27,7 +24,7 @@ const TIMEZONE_OPTIONS = [
   { key: "PT", label: "PT", zone: "America/Los_Angeles", menuHint: "(Pacific)" }
 ];
 
-// US auto-map sets
+// US auto-map sets (expand as needed)
 const EASTERN_ZONES = new Set([
   "America/New_York","America/Detroit","America/Toronto","America/Indiana/Indianapolis",
   "America/Indiana/Fort_Wayne","America/Indiana/Marengo","America/Indiana/Petersburg",
@@ -64,6 +61,7 @@ init().catch(e=>{
   showError("Failed to initialize.");
 });
 
+/* -------------------- Init -------------------- */
 async function init() {
   restoreTimezonePreference();
   await loadData();
@@ -92,7 +90,7 @@ function validateDates(){
   }
 }
 
-/* Timezone logic */
+/* -------------------- Timezone logic -------------------- */
 function restoreTimezonePreference(){
   try {
     const stored = localStorage.getItem(TZ_STORAGE_KEY);
@@ -101,7 +99,6 @@ function restoreTimezonePreference(){
       state.selectedZone = byZone ? byZone.key : stored;
       return;
     }
-    // first visit: auto map if US zone
     const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
     const mapped = autoSelectUsZone(sys);
     state.selectedZone = mapped ? mapped : "local";
@@ -150,7 +147,7 @@ function pickInitialDateKey(){
     : state.currentDateKeys[0] || null;
 }
 
-/* Date strip */
+/* -------------------- Date strip -------------------- */
 function renderDateStrip(){
   const strip = document.getElementById("date-strip");
   strip.innerHTML = "";
@@ -161,9 +158,9 @@ function renderDateStrip(){
     btn.className = "date-pill";
     const zone = currentZoneId();
     const dateObj = dateFromKeyUTC(key);
-    const monthStr = new Intl.DateTimeFormat(undefined,{month:"short", timeZone:zone}).format(dateObj);
-    const dayNum   = new Intl.DateTimeFormat(undefined,{day:"numeric", timeZone:zone}).format(dateObj);
-    const weekday  = new Intl.DateTimeFormat(undefined,{weekday:"long", timeZone:zone}).format(dateObj);
+    const monthStr = new Intl.DateTimeFormat("en-US",{month:"short", timeZone:zone}).format(dateObj);
+    const dayNum   = new Intl.DateTimeFormat("en-US",{day:"numeric", timeZone:zone}).format(dateObj);
+    const weekday  = new Intl.DateTimeFormat("en-US",{weekday:"long", timeZone:zone}).format(dateObj);
     const weekdayShort = new Intl.DateTimeFormat("en-US",{weekday:"short", timeZone:zone}).format(dateObj);
     if (weekdayShort==="Sun") btn.classList.add("sunday");
     const localTodayKey = dateKeyInZone(new Date().toISOString(), null);
@@ -197,7 +194,7 @@ function computeWindowKeys(centerKey){
   return keys.slice(start,end+1);
 }
 
-/* Games list */
+/* -------------------- Games list -------------------- */
 function renderGamesForSelectedDate(){
   const list = document.getElementById("game-list");
   list.classList.remove("ready");
@@ -265,12 +262,9 @@ function renderGameCard(game){
   timeLine.className = "meta-line time-line";
   const zoneId = currentZoneId();
   const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
-  // For local: prefer Intl abbreviation (abbr) or computed pretty label
-  // For preset (ET/CT/PT): just use pretty label for the target zoneId
+  // Prefer our pretty label first (fixes Chrome Sensors returning generic GMT+ offsets)
   const zonePretty = getPrettyZoneLabel(zoneId);
-  const displayAbbr = state.selectedZone === "local"
-    ? (abbr || zonePretty || "")
-    : zonePretty;
+  const displayAbbr = zonePretty || abbr || "";
   timeLine.textContent = `${time} ${displayAbbr}`.trim();
 
   metaBlock.appendChild(seasonLine);
@@ -306,7 +300,7 @@ function createLogo(tri){
   return img;
 }
 
-/* Countdown */
+/* -------------------- Countdown -------------------- */
 function startCountdownLoop(){
   if (state.countdownTimer) clearInterval(state.countdownTimer);
   state.countdownTimer = setInterval(updateCountdowns, COUNTDOWN_REFRESH_MS);
@@ -340,7 +334,7 @@ function updateCountdowns(){
   });
 }
 
-/* Navigation */
+/* -------------------- Navigation -------------------- */
 function attachWindowNav(){
   document.getElementById("date-prev")?.addEventListener("click",()=>shiftWindow(-1));
   document.getElementById("date-next")?.addEventListener("click",()=>shiftWindow(1));
@@ -362,7 +356,7 @@ function shiftWindow(direction){
   updateCountdowns();
 }
 
-/* Timezone menu */
+/* -------------------- Timezone menu -------------------- */
 function initTimezoneMenu(){
   const trigger = document.getElementById("tz-trigger");
   const menu = document.getElementById("tz-menu");
@@ -435,7 +429,7 @@ function deriveLocalAbbrev(){
   }
 }
 
-/* Errors */
+/* -------------------- Errors -------------------- */
 function showError(msg){
   const list = document.getElementById("game-list");
   if (list){
