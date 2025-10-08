@@ -1,9 +1,6 @@
 import { loadSchedule } from "./scheduleLoader.js";
 import { loadTeams, getTeamByTri } from "./teamsLoader.js";
-import {
-  dateKeyInZone,
-  formatTimeInZone
-} from "./dateUtils.js";
+import { dateKeyInZone, formatTimeInZone } from "./dateUtils.js";
 import {
   buildTeamIndexes,
   resolveInitialMonth,
@@ -11,24 +8,44 @@ import {
   shiftMonth,
   getOpponentAndHomeAway
 } from "./teamView.js";
-import { initIcsTeamButton } from "./ics.js";  // <--- ADDED
+import { initIcsTeamButton } from "./ics.js";
+import { getPrettyZoneLabel } from "./timezoneLabels.js";
 
 /*
 Team Calendar Page – XL Sizing Update
+Added:
+ - Auto US timezone mapping (first visit) to ET / CT / PT (keeps "local" otherwise)
+ - Global friendly timezone abbreviations (IST, CET/CEST, etc.) via getPrettyZoneLabel
 */
 
 const TZ_STORAGE_KEY = "tos_tz_pref";
 const TIMEZONE_OPTIONS = [
   { key:"local", label:"MY TIMEZONE", zone:null, menuHint:"" },
   { key:"ET",    label:"ET", zone:"America/New_York",    menuHint:"(Eastern)" },
-  { key:"PT",    label:"PT", zone:"America/Los_Angeles", menuHint:"(Pacific)" },
-  { key:"CT",    label:"CT", zone:"America/Chicago",     menuHint:"(Central)" }
+  { key:"CT",    label:"CT", zone:"America/Chicago",     menuHint:"(Central)" },
+  { key:"PT",    label:"PT", zone:"America/Los_Angeles", menuHint:"(Pacific)" }
 ];
-const FIXED_ZONE_ABBR = {
-  "America/New_York":"ET",
-  "America/Los_Angeles":"PT",
-  "America/Chicago":"CT"
-};
+
+// US zone variants we auto-map (only to ET / CT / PT per requirement)
+const EASTERN_ZONES = new Set([
+  "America/New_York","America/Detroit","America/Toronto","America/Indiana/Indianapolis",
+  "America/Indiana/Fort_Wayne","America/Indiana/Marengo","America/Indiana/Petersburg",
+  "America/Indiana/Vevay","America/Indiana/Vincennes","America/Indiana/Winamac",
+  "America/Kentucky/Louisville","America/Kentucky/Monticello"
+]);
+const CENTRAL_ZONES = new Set([
+  "America/Chicago","America/Indiana/Knox","America/Indiana/Tell_City","America/Menominee",
+  "America/North_Dakota/Beulah","America/North_Dakota/Center","America/North_Dakota/New_Salem",
+  "America/Mexico_City"
+]);
+const PACIFIC_ZONES = new Set(["America/Los_Angeles","America/Vancouver"]);
+
+function autoSelectUsZone(iana){
+  if (EASTERN_ZONES.has(iana)) return "ET";
+  if (CENTRAL_ZONES.has(iana)) return "CT";
+  if (PACIFIC_ZONES.has(iana)) return "PT";
+  return null;
+}
 
 const MASTER_TEAM_NAMES = {
   ATL:"Atlanta Hawks", BOS:"Boston Celtics", BKN:"Brooklyn Nets", CHA:"Charlotte Hornets",
@@ -67,13 +84,11 @@ async function init(){
   initMonthNav();
   initTimezoneMenu();
 
-  // ---- ICS TEAM BUTTON INIT (ADDED) ----
   initIcsTeamButton({
     buttonId: "btn-ics-team",
     scheduleUrl: "../data/schedule/nba_schedule_25_26.json",
     teamTri: state.selectedTeam
   });
-  // --------------------------------------
 
   renderAll();
   window.addEventListener("popstate", ()=>{
@@ -160,7 +175,6 @@ function buildCalendarMatrixTZ(monthKey, zoneId){
   const lastOffset  = 6 - toMonStart(wk[weekdayName(lastUTC)] ?? 0);
 
   const cells = [];
-
   for (let i=0;i<firstOffset;i++){
     const dUTC = new Date(Date.UTC(year, monthIdx, 1 - (firstOffset - i), 12));
     const localKey = dateKeyInZone(dUTC.toISOString(), zoneId);
@@ -229,7 +243,7 @@ function renderCalendar(){
     if (game){
       const zoneAbbr = zoneAbbreviation(zoneId);
       const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
-      const finalAbbr = state.selectedZone === "local" ? (abbr || "") : (zoneAbbr || abbr || "");
+      const finalAbbr = state.selectedZone === "local" ? (abbr || zoneAbbr || "") : (zoneAbbr || abbr || "");
       const timeStr = `${time} ${finalAbbr}`.trim();
       const matchupText = `${game.away_tri} @ ${game.home_tri}`;
       const { opponent, isHome } = getOpponentAndHomeAway(game, state.selectedTeam);
@@ -311,19 +325,44 @@ function logoOrFallback(tri){
     onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'tri-f',textContent:'${tri}'}))">`;
 }
 
-function zoneAbbreviation(zoneId){
-  if (!zoneId) return "";
-  if (FIXED_ZONE_ABBR[zoneId]) return FIXED_ZONE_ABBR[zoneId];
+/* Timezone helpers */
+function restoreTimezonePreference(){
   try{
-    const parts = new Intl.DateTimeFormat(undefined,{
-      timeZone: zoneId,
-      hour:"2-digit",
-      minute:"2-digit",
-      timeZoneName:"short"
-    }).formatToParts(new Date());
-    const tz = parts.find(p=>p.type==="timeZoneName");
-    return tz ? tz.value : "";
-  }catch{return "";}
+    const stored = localStorage.getItem(TZ_STORAGE_KEY);
+    if (stored && TIMEZONE_OPTIONS.some(o=>(o.zone||o.key)===stored || o.key===stored)){
+      const byZone = TIMEZONE_OPTIONS.find(o=>o.zone===stored);
+      state.selectedZone = byZone ? byZone.key : stored;
+      return;
+    }
+    // first visit auto mapping
+    const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const mapped = autoSelectUsZone(sys);
+    state.selectedZone = mapped ? mapped : "local";
+  }catch{
+    state.selectedZone = "local";
+  }
+}
+
+function getSelectedTzOption(){
+  return TIMEZONE_OPTIONS.find(o=>o.key===state.selectedZone)||TIMEZONE_OPTIONS[0];
+}
+function currentZoneId(){
+  const opt = getSelectedTzOption();
+  return opt.zone || Intl.DateTimeFormat().resolvedOptions().timeZone;
+}
+function persistTimezonePreference(){
+  try{
+    const opt = getSelectedTzOption();
+    localStorage.setItem(TZ_STORAGE_KEY, opt.zone || opt.key);
+  }catch{}
+}
+
+function zoneAbbreviation(zoneId){
+  try{
+    return getPrettyZoneLabel(zoneId || Intl.DateTimeFormat().resolvedOptions().timeZone);
+  }catch{
+    return "UTC";
+  }
 }
 
 function initMonthNav(){
@@ -337,29 +376,6 @@ function initMonthNav(){
     if (isAfterSeasonMonth(candidate)) return;
     pushMonth(candidate);
   });
-}
-
-function restoreTimezonePreference(){
-  try{
-    const stored = localStorage.getItem(TZ_STORAGE_KEY);
-    if (stored && TIMEZONE_OPTIONS.some(o=>(o.zone||o.key)===stored || o.key===stored)){
-      const byZone = TIMEZONE_OPTIONS.find(o=>o.zone===stored);
-      state.selectedZone = byZone ? byZone.key : stored;
-    }
-  }catch{}
-}
-function getSelectedTzOption(){
-  return TIMEZONE_OPTIONS.find(o=>o.key===state.selectedZone)||TIMEZONE_OPTIONS[0];
-}
-function currentZoneId(){
-  const opt = getSelectedTzOption();
-  return opt.zone || Intl.DateTimeFormat().resolvedOptions().timeZone;
-}
-function persistTimezonePreference(){
-  try{
-    const opt = getSelectedTzOption();
-    localStorage.setItem(TZ_STORAGE_KEY, opt.zone || opt.key);
-  }catch{}
 }
 
 function initTimezoneMenu(){
@@ -421,14 +437,11 @@ function initTimezoneMenu(){
 
 function deriveLocalAbbrev(){
   try{
-    const parts = new Intl.DateTimeFormat(undefined,{
-      timeZoneName:"short",
-      hour:"2-digit",
-      minute:"2-digit"
-    }).formatToParts(new Date());
-    const tz = parts.find(p=>p.type==="timeZoneName");
-    return tz? tz.value : "";
-  }catch{return "";}
+    const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return getPrettyZoneLabel(sys);
+  }catch{
+    return "UTC";
+  }
 }
 
 function announce(msg){

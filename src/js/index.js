@@ -7,8 +7,9 @@ import {
   dateFromKeyUTC,
   formatTimeInZone
 } from "./dateUtils.js";
+import { getPrettyZoneLabel } from "./timezoneLabels.js";
 
-/* Date View only (team view removed from this file). */
+/* Date View – added global friendly timezone labels + US auto mapping */
 
 const WINDOW_SIZE = 7;
 const USE_24H_TIME = true;
@@ -18,17 +19,33 @@ const COUNTDOWN_REFRESH_MS = 60_000;
 const COUNTDOWN_MAX_FUTURE_HOURS = 48;
 
 const TZ_STORAGE_KEY = "tos_tz_pref";
-const FIXED_ZONE_ABBR = {
-  "America/New_York": "ET",
-  "America/Los_Angeles": "PT",
-  "America/Chicago": "CT"
-};
+
 const TIMEZONE_OPTIONS = [
   { key: "local", label: "MY TIMEZONE", zone: null, menuHint: "" },
   { key: "ET", label: "ET", zone: "America/New_York", menuHint: "(Eastern)" },
-  { key: "PT", label: "PT", zone: "America/Los_Angeles", menuHint: "(Pacific)" },
-  { key: "CT", label: "CT", zone: "America/Chicago", menuHint: "(Central)" }
+  { key: "CT", label: "CT", zone: "America/Chicago", menuHint: "(Central)" },
+  { key: "PT", label: "PT", zone: "America/Los_Angeles", menuHint: "(Pacific)" }
 ];
+
+// US auto-map sets
+const EASTERN_ZONES = new Set([
+  "America/New_York","America/Detroit","America/Toronto","America/Indiana/Indianapolis",
+  "America/Indiana/Fort_Wayne","America/Indiana/Marengo","America/Indiana/Petersburg",
+  "America/Indiana/Vevay","America/Indiana/Vincennes","America/Indiana/Winamac",
+  "America/Kentucky/Louisville","America/Kentucky/Monticello"
+]);
+const CENTRAL_ZONES = new Set([
+  "America/Chicago","America/Indiana/Knox","America/Indiana/Tell_City","America/Menominee",
+  "America/North_Dakota/Beulah","America/North_Dakota/Center","America/North_Dakota/New_Salem",
+  "America/Mexico_City"
+]);
+const PACIFIC_ZONES = new Set(["America/Los_Angeles","America/Vancouver"]);
+function autoSelectUsZone(iana){
+  if (EASTERN_ZONES.has(iana)) return "ET";
+  if (CENTRAL_ZONES.has(iana)) return "CT";
+  if (PACIFIC_ZONES.has(iana)) return "PT";
+  return null;
+}
 
 const LIGHT_LOGO_TRIS = new Set(['BKN']);
 
@@ -82,8 +99,15 @@ function restoreTimezonePreference(){
     if (stored && TIMEZONE_OPTIONS.some(o => (o.zone||o.key)===stored || o.key===stored)){
       const byZone = TIMEZONE_OPTIONS.find(o => o.zone===stored);
       state.selectedZone = byZone ? byZone.key : stored;
+      return;
     }
-  } catch {}
+    // first visit: auto map if US zone
+    const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    const mapped = autoSelectUsZone(sys);
+    state.selectedZone = mapped ? mapped : "local";
+  } catch {
+    state.selectedZone = "local";
+  }
 }
 function persistTimezonePreference(){
   try {
@@ -241,7 +265,12 @@ function renderGameCard(game){
   timeLine.className = "meta-line time-line";
   const zoneId = currentZoneId();
   const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
-  const displayAbbr = state.selectedZone==="local" ? (abbr||"") : (FIXED_ZONE_ABBR[zoneId]||abbr||"");
+  // For local: prefer Intl abbreviation (abbr) or computed pretty label
+  // For preset (ET/CT/PT): just use pretty label for the target zoneId
+  const zonePretty = getPrettyZoneLabel(zoneId);
+  const displayAbbr = state.selectedZone === "local"
+    ? (abbr || zonePretty || "")
+    : zonePretty;
   timeLine.textContent = `${time} ${displayAbbr}`.trim();
 
   metaBlock.appendChild(seasonLine);
@@ -396,16 +425,14 @@ function buildTimezoneMenu(menu){
     menu.appendChild(btn);
   });
 }
+
 function deriveLocalAbbrev(){
   try{
-    const parts = new Intl.DateTimeFormat(undefined,{
-      timeZoneName:"short",
-      hour:"2-digit",
-      minute:"2-digit"
-    }).formatToParts(new Date());
-    const tz = parts.find(p=>p.type==="timeZoneName");
-    return tz? tz.value : "";
-  }catch{return "";}
+    const sys = Intl.DateTimeFormat().resolvedOptions().timeZone;
+    return getPrettyZoneLabel(sys);
+  }catch{
+    return "UTC";
+  }
 }
 
 /* Errors */
