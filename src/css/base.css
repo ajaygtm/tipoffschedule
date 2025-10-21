@@ -963,7 +963,7 @@ html, body {
     width: 100%;
     overflow: visible;
     border-radius: 9px;
-    padding: 4px 2px 2px 2px !important; /* LESS padding */
+    padding: 4px 2px 0px 2px !important; /* LESS padding */
     box-shadow: none !important;
     border: 1px solid var(--border-soft) !important;
     margin: 0 auto;
@@ -982,6 +982,7 @@ html, body {
   .game-mini-logos--xl img {
     width: 15px !important;  /* Make logos smaller for mobile */
     height: 15px !important;
+    margin-top: 2px !important;
   }
   .game-mini-matchup,
   .game-mini-matchup--xl {
@@ -991,11 +992,13 @@ html, body {
     text-overflow: ellipsis;
     white-space: nowrap;
     margin: 0 0 2px 0;
+    margin-top: 2px !important;
+    margin-bottom: 0px !important;
   }
   .game-mini-time,
   .game-mini-time--xl {
     font-size: .30rem !important;
-    margin: 0 0 2px 0;
+    margin: 0 0 4px 0;
   }
 .team-line {
     display: flex;
