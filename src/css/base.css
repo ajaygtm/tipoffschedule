@@ -932,7 +932,8 @@ html, body {
 /* New Mobile adjustments - TEAM Calendar View */
 @media (max-width:480px) {
   .team-calendar-grid { 
-    gap: 2px !important; 
+    gap: 2px !important;
+    --tc-gap: 2px !important; /* override the variable itself */
   }
   .day-cell {
     aspect-ratio: unset !important;
