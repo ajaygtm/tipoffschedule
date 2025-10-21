@@ -1,13 +1,9 @@
 import { loadSchedule } from "./scheduleLoader.js";
 import { loadTeams, getTeamByTri } from "./teamsLoader.js";
-import {
-  dateKeyInZone,
-  dateFromKeyUTC,
-  formatTimeInZone
-} from "./dateUtils.js";
+import { dateKeyInZone, formatTimeInZone } from "./dateUtils.js";
 import { getPrettyZoneLabel } from "./timezoneLabels.js";
 
-/* Date View – global friendly timezone labels + US auto mapping + English-only labels */
+/* Date View – land on "today" (zone-aware) + show teal dot for today; English-only labels */
 
 const WINDOW_SIZE = 7;
 const LOW_DENSITY_MAX = 4;
@@ -24,7 +20,7 @@ const TIMEZONE_OPTIONS = [
   { key: "PT", label: "PT", zone: "America/Los_Angeles", menuHint: "(Pacific)" }
 ];
 
-// US auto-map sets (expand as needed)
+// US auto-map sets
 const EASTERN_ZONES = new Set([
   "America/New_York","America/Detroit","America/Toronto","America/Indiana/Indianapolis",
   "America/Indiana/Fort_Wayne","America/Indiana/Marengo","America/Indiana/Petersburg",
@@ -119,6 +115,8 @@ function currentZoneId(){
   const opt = getSelectedTzOption();
   return opt.zone || Intl.DateTimeFormat().resolvedOptions().timeZone;
 }
+
+/* Build cache of dates-with-games for the selected zone, but always include "today" for that zone */
 function buildTimezoneIndexIfNeeded(zoneKey){
   if (state.zoneGameCache[zoneKey]){
     state.currentDateKeys = state.zoneGameCache[zoneKey].dateKeys;
@@ -126,25 +124,30 @@ function buildTimezoneIndexIfNeeded(zoneKey){
   }
   const opt = TIMEZONE_OPTIONS.find(o=>o.key===zoneKey);
   const zone = opt? opt.zone : null;
+
   const map = new Map();
   for (const g of state.schedule.games){
     const key = dateKeyInZone(g.date_utc, zone);
     if (!map.has(key)) map.set(key, []);
     map.get(key).push(g);
   }
-  for (const arr of map.values()){
-    arr.sort((a,b)=>a.date_utc.localeCompare(b.date_utc));
-  }
+
+  // Always add today's key for the current zone (so we can land on it + show teal dot), even if no games
+  const todayKeyForZone = dateKeyInZone(new Date().toISOString(), zone);
+  if (!map.has(todayKeyForZone)) map.set(todayKeyForZone, []);
+
+  // Sort keys
   const dateKeys = Array.from(map.keys()).sort();
+
   state.zoneGameCache[zoneKey] = { map, dateKeys };
   state.currentDateKeys = dateKeys;
 }
+
 function pickInitialDateKey(){
   const zone = currentZoneId();
   const todayKey = dateKeyInZone(new Date().toISOString(), zone);
-  state.selectedDateKey = state.currentDateKeys.includes(todayKey)
-    ? todayKey
-    : state.currentDateKeys[0] || null;
+  // "today" is guaranteed to exist in currentDateKeys after buildTimezoneIndexIfNeeded
+  state.selectedDateKey = todayKey;
 }
 
 /* -------------------- Date strip -------------------- */
@@ -152,19 +155,25 @@ function renderDateStrip(){
   const strip = document.getElementById("date-strip");
   strip.innerHTML = "";
   if (!state.selectedDateKey) return;
+
   const windowKeys = computeWindowKeys(state.selectedDateKey);
   windowKeys.forEach(key=>{
     const btn = document.createElement("button");
     btn.className = "date-pill";
     const zone = currentZoneId();
-    const dateObj = dateFromKeyUTC(key);
+
+    // Use midday UTC to avoid day-shift when formatting in west-hemisphere timezones
+    const dateObj = new Date(`${key}T12:00:00Z`);
+
     const monthStr = new Intl.DateTimeFormat("en-US",{month:"short", timeZone:zone}).format(dateObj);
     const dayNum   = new Intl.DateTimeFormat("en-US",{day:"numeric", timeZone:zone}).format(dateObj);
     const weekday  = new Intl.DateTimeFormat("en-US",{weekday:"long", timeZone:zone}).format(dateObj);
     const weekdayShort = new Intl.DateTimeFormat("en-US",{weekday:"short", timeZone:zone}).format(dateObj);
     if (weekdayShort==="Sun") btn.classList.add("sunday");
-    const localTodayKey = dateKeyInZone(new Date().toISOString(), null);
-    if (key===localTodayKey) btn.classList.add("today");
+
+    // Teal dot marker: compare against "today" in the SAME zone as the strip
+    const todayKeyForZone = dateKeyInZone(new Date().toISOString(), zone);
+    if (key===todayKeyForZone) btn.classList.add("today");
 
     btn.innerHTML = `<span class="dom">${monthStr} ${dayNum}</span><span class="dow">${weekday}</span>`;
     btn.setAttribute("role","tab");
@@ -177,7 +186,14 @@ function renderDateStrip(){
     });
     strip.appendChild(btn);
   });
+
+  // --------- NEW BLOCK: Center selected pill after rendering ---------
+  const selectedBtn = strip.querySelector('.date-pill[aria-selected="true"]');
+  if (selectedBtn && strip.scrollWidth > strip.clientWidth) {
+    selectedBtn.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+  }
 }
+
 function computeWindowKeys(centerKey){
   const keys = state.currentDateKeys;
   const idx = keys.indexOf(centerKey);
@@ -262,8 +278,7 @@ function renderGameCard(game){
   timeLine.className = "meta-line time-line";
   const zoneId = currentZoneId();
   const { time, abbr } = formatTimeInZone(game.date_utc, zoneId);
-  // Prefer our pretty label first (fixes Chrome Sensors returning generic GMT+ offsets)
-  const zonePretty = getPrettyZoneLabel(zoneId);
+  const zonePretty = getPrettyZoneLabel(zoneId); // prefer pretty label over raw Intl offset
   const displayAbbr = zonePretty || abbr || "";
   timeLine.textContent = `${time} ${displayAbbr}`.trim();
 
