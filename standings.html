@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipOffSchedule – Standings</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NBA regular season standings – Eastern and Western conference." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/util.css" />
+  <style>
+    /* ===== STANDINGS PAGE ===== */
+
+    .main--standings {
+      padding-top: 24px;
+    }
+
+    /* Conference switcher */
+    .conf-switcher {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 24px;
+    }
+
+    .conf-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      padding: 7px 20px;
+      font-size: .62rem;
+      font-weight: 600;
+      letter-spacing: .8px;
+      text-transform: uppercase;
+      border-radius: var(--radius-pill);
+      color: var(--text-faint);
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .conf-btn:hover:not(.is-active) {
+      background: var(--surface-faint);
+      color: var(--text-dim);
+    }
+
+    .conf-btn.is-active {
+      background: var(--surface-tint);
+      color: var(--accent-dark);
+      box-shadow: 0 0 0 1px var(--accent);
+      border-color: transparent;
+    }
+
+    .conf-btn:focus-visible {
+      outline: none;
+      box-shadow: var(--focus-ring);
+    }
+
+    /* Table wrapper – horizontal scroll on small screens */
+    .standings-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    /* Standings table */
+    .standings-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .82rem;
+    }
+
+    .standings-table thead tr {
+      border-bottom: 2px solid var(--border);
+    }
+
+    .standings-table th {
+      padding: 8px 10px;
+      font-size: .58rem;
+      font-weight: 700;
+      letter-spacing: .9px;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      white-space: nowrap;
+    }
+
+    .standings-table th.col-team {
+      text-align: left;
+    }
+
+    .standings-table th:not(.col-team) {
+      text-align: center;
+    }
+
+    .standings-table td {
+      padding: 9px 10px;
+      border-bottom: 1px solid var(--border-soft);
+      white-space: nowrap;
+    }
+
+    .standings-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .standings-table tbody tr:hover td {
+      background: var(--surface-faint);
+    }
+
+    /* Rank column */
+    .col-rank {
+      width: 36px;
+      text-align: center;
+      color: var(--text-faint);
+      font-size: .75rem;
+    }
+
+    /* Team column */
+    .col-team {
+      min-width: 160px;
+    }
+
+    /* Numeric columns */
+    .col-num {
+      text-align: center;
+      min-width: 44px;
+      color: var(--text-dim);
+    }
+
+    /* Streak column */
+    .col-str {
+      text-align: center;
+      min-width: 50px;
+      font-weight: 600;
+      font-size: .78rem;
+    }
+
+    .streak-win  { color: #1a9e6e; }
+    .streak-loss { color: #c0392b; }
+
+    /* Team cell with logo + name */
+    .team-cell {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .team-logo-wrap {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .team-logo {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .team-names {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .team-tri {
+      font-size: .60rem;
+      font-weight: 700;
+      letter-spacing: .7px;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .team-full {
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.2;
+    }
+
+    /* Rank separator line after 6th seed (playoff cut line) */
+    .standings-table tbody tr:nth-child(6) td {
+      border-bottom: 2px solid var(--border);
+    }
+
+    /* Updated timestamp */
+    .standings-meta {
+      text-align: center;
+      margin-top: 16px;
+      font-size: .62rem;
+      color: var(--text-faint);
+      letter-spacing: .5px;
+    }
+
+    /* Error / empty states */
+    .standings-error,
+    .standings-empty {
+      text-align: center;
+      padding: 48px 24px;
+      color: var(--text-faint);
+      font-size: .85rem;
+    }
+
+    .standings-error code {
+      background: var(--surface-faint);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1px 6px;
+      font-size: .80rem;
+      color: var(--text-dim);
+    }
+
+    /* Header spacer to balance 3-column layout */
+    .header-spacer {
+      width: 122px;
+      height: 32px;
+    }
+  </style>
+</head>
+<body class="layout">
+  <header class="app-header">
+    <div class="header-cell header-left">
+      <a href="index.html" class="site-home-link" aria-label="Go to today's schedule">
+        <img src="assets/logos/NBA.svg" alt="NBA Logo" class="nba-logo" onerror="this.style.visibility='hidden'">
+      </a>
+    </div>
+
+    <div class="header-cell header-center">
+      <h1 class="site-title">TipOff Schedule</h1>
+      <nav class="main-tabs" aria-label="Primary Views">
+        <a href="index.html" class="main-tab">Dates</a>
+        <a href="teams.html" class="main-tab">Teams</a>
+        <a href="standings.html" class="main-tab is-active" aria-current="page">Standings</a>
+      </nav>
+    </div>
+
+    <div class="header-cell header-right">
+      <div class="header-spacer"></div>
+    </div>
+  </header>
+
+  <main class="main main--standings">
+    <section aria-labelledby="standings-heading">
+      <h2 id="standings-heading" class="visually-hidden">NBA Standings</h2>
+
+      <div class="conf-switcher" role="group" aria-label="Select conference">
+        <button id="btn-eastern" class="conf-btn is-active" type="button" aria-pressed="true">Eastern</button>
+        <button id="btn-western" class="conf-btn" type="button" aria-pressed="false">Western</button>
+      </div>
+
+      <div class="standings-wrap" id="standings-wrap">
+        <table class="standings-table" id="standings-table">
+          <thead>
+            <tr>
+              <th class="col-rank">#</th>
+              <th class="col-team">Team</th>
+              <th class="col-num">W</th>
+              <th class="col-num">L</th>
+              <th class="col-num">PCT</th>
+              <th class="col-num">GB</th>
+              <th class="col-str">STRK</th>
+              <th class="col-num">L10</th>
+            </tr>
+          </thead>
+          <tbody id="standings-body">
+            <tr>
+              <td colspan="8" class="standings-empty">Loading standings…</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="standings-meta" id="standings-updated"></p>
+    </section>
+  </main>
+
+  <div id="announce" class="visually-hidden" aria-live="polite"></div>
+
+  <footer class="footer">
+    <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
+  </footer>
+
+  <script type="module" src="src/js/standingsPage.js" defer></script>
+</body>
+</html>

@@ -2,6 +2,7 @@
   "name": "tipoffschedule",
   "private": true,
   "scripts": {
-    "update-scores": "node scripts/updateScores.js"
+    "update-scores": "node scripts/updateScores.js",
+    "update-standings": "node scripts/updateStandings.js"
   }
 }
