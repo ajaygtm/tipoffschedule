@@ -250,14 +250,42 @@ function renderGameCard(game){
   card.className = "game-card";
   card.setAttribute("data-tipoff", game.date_utc);
 
+  const awayScore = parseScoreValue(game.awayScore);
+  const homeScore = parseScoreValue(game.homeScore);
+  const isFinal = game.status === "final" && awayScore !== null && homeScore !== null;
+  const awayWon = isFinal ? awayScore > homeScore : false;
+  const homeWon = isFinal ? homeScore > awayScore : false;
+
   const logos = document.createElement("div");
   logos.className = "logos-row";
-  logos.appendChild(createLogo(game.away_tri));
-  logos.appendChild(createLogo(game.home_tri));
+  logos.appendChild(createLogo(game.away_tri, isFinal ? (awayWon ? "winner" : "loser") : "normal"));
+  logos.appendChild(createLogo(game.home_tri, isFinal ? (homeWon ? "winner" : "loser") : "normal"));
 
   const matchup = document.createElement("div");
   matchup.className = "matchup";
   matchup.textContent = `${game.away_tri} @ ${game.home_tri}`;
+
+  const scoreLine = document.createElement("div");
+  scoreLine.className = "score-line";
+  if (isFinal) {
+    const awayScoreEl = document.createElement("span");
+    awayScoreEl.className = awayWon ? "score-value score-value--winner" : "score-value score-value--loser";
+    awayScoreEl.textContent = String(awayScore);
+
+    const dashEl = document.createElement("span");
+    dashEl.className = "score-dash";
+    dashEl.textContent = "-";
+
+    const homeScoreEl = document.createElement("span");
+    homeScoreEl.className = homeWon ? "score-value score-value--winner" : "score-value score-value--loser";
+    homeScoreEl.textContent = String(homeScore);
+
+    scoreLine.appendChild(awayScoreEl);
+    scoreLine.appendChild(dashEl);
+    scoreLine.appendChild(homeScoreEl);
+  } else {
+    scoreLine.style.display = "none";
+  }
 
   const countdown = document.createElement("div");
   countdown.className = "countdown-line";
@@ -288,20 +316,28 @@ function renderGameCard(game){
 
   const awayName = getTeamByTri(game.away_tri)?.name || game.away_tri;
   const homeName = getTeamByTri(game.home_tri)?.name || game.home_tri;
-  card.setAttribute("aria-label",
-    `${awayName} at ${homeName}${game.venue? " in " + game.venue:""}, ${time} ${displayAbbr}`);
+  if (isFinal) {
+    card.setAttribute("aria-label",
+      `${awayName} ${awayScore}, ${homeName} ${homeScore}`);
+  } else {
+    card.setAttribute("aria-label",
+      `${awayName} at ${homeName}${game.venue? " in " + game.venue:""}, ${time} ${displayAbbr}`);
+  }
 
   card.appendChild(logos);
   card.appendChild(matchup);
+  card.appendChild(scoreLine);
   card.appendChild(countdown);
   card.appendChild(metaBlock);
   return card;
 }
 
-function createLogo(tri){
+function createLogo(tri, resultClass = "normal"){
   const img = document.createElement("img");
   img.className = "logo";
   if (LIGHT_LOGO_TRIS.has(tri)) img.classList.add("logo--contrast");
+  if (resultClass === "winner") img.classList.add("logo--winner");
+  if (resultClass === "loser") img.classList.add("logo--loser");
   img.alt = `${tri} logo`;
   img.src = `assets/logos/${tri}.svg`;
   img.loading = "lazy";
@@ -309,10 +345,17 @@ function createLogo(tri){
   img.onerror = () => {
     const span = document.createElement("div");
     span.className = "tri-fallback";
+    if (resultClass === "winner") span.classList.add("logo--winner");
+    if (resultClass === "loser") span.classList.add("logo--loser");
     span.textContent = tri;
     img.replaceWith(span);
   };
   return img;
+}
+
+function parseScoreValue(value) {
+  const n = Number.parseInt(value, 10);
+  return Number.isFinite(n) ? n : null;
 }
 
 /* -------------------- Countdown -------------------- */

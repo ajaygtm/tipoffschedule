@@ -267,6 +267,13 @@ body{font-size:15px;line-height:1.42;}
 .game-list.density-high .logo,.game-list.density-high .tri-fallback{width:var(--logo-size-high);height:var(--logo-size-high);}
 
 .matchup{margin:6px 0 0;text-align:center;font-size:1.18rem;font-weight:700;letter-spacing:.6px;line-height:1.06;color:var(--text);}
+.score-line{text-align:center;font-size:1rem;letter-spacing:.25px;margin:0 0 -5px;}
+.score-value{display:inline-block;line-height:1;font-weight:700;}
+.score-value--winner{color:var(--accent);font-weight:900;}
+.score-value--loser{color:var(--text-dim);opacity:.82;font-weight:600;}
+.score-dash{display:inline-block;color:var(--text-faint);opacity:.95;font-weight:800;padding:0 6px;line-height:1;}
+.logo--winner{opacity:1;}
+.logo--loser{opacity:.65;}
 .meta-block{display:flex;flex-direction:column;gap:3px;margin-top:4px;padding-top:2px;}
 .meta-line{
   text-align:center;font-size:.56rem;letter-spacing:1.05px;

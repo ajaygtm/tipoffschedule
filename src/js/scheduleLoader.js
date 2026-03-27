@@ -56,6 +56,9 @@ function transformRaw(raw) {
       const awayId = parseInt(awayBlock.teamId ?? awayBlock.teamID, 10);
       const homeTri = homeBlock.teamTricode || homeBlock.triCode;
       const awayTri = awayBlock.teamTricode || awayBlock.triCode;
+      const status = normalizeGameStatus(g);
+      const homeScore = parseScore(g.homeScore ?? homeBlock.score);
+      const awayScore = parseScore(g.awayScore ?? awayBlock.score);
 
       if (!homeId || !awayId || !homeTri || !awayTri) continue;
 
@@ -68,7 +71,10 @@ function transformRaw(raw) {
         away_tri: awayTri,
         venue: g.arenaName || null,
         venue_city: g.arenaCity || null,
-        season_stage: isPreseason ? "Preseason" : "Regular Season"
+        season_stage: isPreseason ? "Preseason" : "Regular Season",
+        status,
+        homeScore,
+        awayScore
       });
     }
   }
@@ -113,6 +119,20 @@ function normalizeToZ(str) {
   if (!str) return null;
   if (/[Zz]$/.test(str) || /[+\-]\d\d:\d\d$/.test(str)) return str;
   return str + "Z";
+}
+
+function normalizeGameStatus(game) {
+  const explicit = String(game?.status || "").toLowerCase();
+  if (explicit === "final") return "final";
+  if (explicit === "scheduled") return "scheduled";
+  const text = String(game?.gameStatusText || "").toLowerCase();
+  if (game?.gameStatus === 3 || text === "final") return "final";
+  return "scheduled";
+}
+
+function parseScore(value) {
+  const n = Number.parseInt(value, 10);
+  return Number.isFinite(n) ? n : null;
 }
 
 export function getGamesByDate(schedule) {

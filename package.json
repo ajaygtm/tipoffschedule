@@ -1,0 +1,7 @@
+{
+  "name": "tipoffschedule",
+  "private": true,
+  "scripts": {
+    "update-scores": "node scripts/updateScores.js"
+  }
+}
