@@ -3,7 +3,7 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-03-26T14:46:41.645Z"
+    "scores_updated_utc": "2026-03-28T07:58:49.224Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -106852,9 +106852,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 103,
+            "homeScore": 114
           },
           {
             "gameId": "0022501064",
@@ -106962,9 +106962,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 108,
+            "homeScore": 129
           },
           {
             "gameId": "0022501065",
@@ -107044,9 +107044,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 117,
+            "homeScore": 121
           }
         ]
       },
@@ -107145,9 +107145,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 114,
+            "homeScore": 113
           },
           {
             "gameId": "0022501067",
@@ -107241,9 +107241,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 102,
+            "homeScore": 109
           },
           {
             "gameId": "0022501068",
@@ -107351,9 +107351,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 128,
+            "homeScore": 149
           },
           {
             "gameId": "0022501069",
@@ -107433,9 +107433,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 119,
+            "homeScore": 109
           },
           {
             "gameId": "0022501070",
@@ -107515,9 +107515,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 113,
+            "homeScore": 131
           },
           {
             "gameId": "0022501071",
@@ -107611,9 +107611,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 106,
+            "homeScore": 119
           },
           {
             "gameId": "0022501072",
@@ -107761,9 +107761,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 126,
+            "homeScore": 131
           },
           {
             "gameId": "0022501074",
@@ -107885,9 +107885,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 100,
+            "homeScore": 93
           },
           {
             "gameId": "0022501075",
@@ -107995,9 +107995,9 @@
               "seed": 0
             },
             "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 99,
+            "homeScore": 116
           }
         ]
       },
