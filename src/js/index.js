@@ -294,9 +294,17 @@ function renderGameCard(game){
   const metaBlock = document.createElement("div");
   metaBlock.className = "meta-block";
 
-  const seasonLine = document.createElement("div");
-  seasonLine.className = "meta-line season-line";
-  seasonLine.textContent = game.season_stage || "Regular Season";
+  const primaryMetaLine = document.createElement("div");
+  primaryMetaLine.className = "meta-line season-line";
+
+  const isRegularSeason = (game.season_stage || "Regular Season") === "Regular Season";
+  const tvText = formatTvMeta(game);
+  if (isRegularSeason) {
+    if (tvText) primaryMetaLine.textContent = tvText;
+    else primaryMetaLine.style.display = "none";
+  } else {
+    primaryMetaLine.textContent = game.season_stage || "Regular Season";
+  }
 
   const venueLine = document.createElement("div");
   venueLine.className = "meta-line venue-line";
@@ -310,7 +318,7 @@ function renderGameCard(game){
   const displayAbbr = zonePretty || abbr || "";
   timeLine.textContent = `${time} ${displayAbbr}`.trim();
 
-  metaBlock.appendChild(seasonLine);
+  metaBlock.appendChild(primaryMetaLine);
   metaBlock.appendChild(venueLine);
   metaBlock.appendChild(timeLine);
 
@@ -356,6 +364,12 @@ function createLogo(tri, resultClass = "normal"){
 function parseScoreValue(value) {
   const n = Number.parseInt(value, 10);
   return Number.isFinite(n) ? n : null;
+}
+
+function formatTvMeta(game) {
+  const channel = String(game?.tv_broadcast || "").trim();
+  if (!channel) return "";
+  return `📺 ${channel}`;
 }
 
 /* -------------------- Countdown -------------------- */

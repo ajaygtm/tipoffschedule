@@ -3,7 +3,11 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
+<<<<<<< HEAD
     "scores_updated_utc": "2026-03-30T08:53:21.167Z"
+=======
+    "scores_updated_utc": "2026-03-30T11:44:18.578Z"
+>>>>>>> bbce4ad (feat(schedule): show primary TV broadcast on game cards and hide regular-season label with concise channel normalizationAdd standings page with ESPN sync)
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",

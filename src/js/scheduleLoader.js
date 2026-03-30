@@ -59,6 +59,7 @@ function transformRaw(raw) {
       const status = normalizeGameStatus(g);
       const homeScore = parseScore(g.homeScore ?? homeBlock.score);
       const awayScore = parseScore(g.awayScore ?? awayBlock.score);
+      const tv = pickPrimaryTvBroadcast(g);
 
       if (!homeId || !awayId || !homeTri || !awayTri) continue;
 
@@ -74,7 +75,9 @@ function transformRaw(raw) {
         season_stage: isPreseason ? "Preseason" : "Regular Season",
         status,
         homeScore,
-        awayScore
+        awayScore,
+        tv_broadcast: tv.display,
+        tv_scope: tv.scope
       });
     }
   }
@@ -133,6 +136,64 @@ function normalizeGameStatus(game) {
 function parseScore(value) {
   const n = Number.parseInt(value, 10);
   return Number.isFinite(n) ? n : null;
+}
+
+function pickPrimaryTvBroadcast(game) {
+  const b = game?.broadcasters || {};
+
+  const national = firstTvDisplay(b.nationalBroadcasters);
+  if (national) return { display: national, scope: "national" };
+
+  const home = firstTvDisplay(b.homeTvBroadcasters);
+  if (home) return { display: home, scope: "home" };
+
+  const away = firstTvDisplay(b.awayTvBroadcasters);
+  if (away) return { display: away, scope: "away" };
+
+  return { display: null, scope: null };
+}
+
+function firstTvDisplay(list) {
+  if (!Array.isArray(list)) return null;
+  for (const item of list) {
+    if (!item) continue;
+    const media = String(item.broadcasterMedia || "").toLowerCase();
+    if (media && media !== "tv") continue;
+
+    const label = String(item.broadcasterDisplay || item.broadcasterAbbreviation || "").trim();
+    if (label) return normalizeBroadcastName(label);
+  }
+  return null;
+}
+
+function normalizeBroadcastName(name) {
+  let out = String(name || "").trim();
+  if (!out) return "";
+
+  // For multi-station strings, show only the lead station to keep cards clean.
+  out = out.split("/")[0].trim();
+
+  // Keep major national channels and short local stations as-is.
+  const keepExact = new Set(["ESPN", "ESPN2", "ABC", "NBC", "NBA TV", "KFAA", "TSN", "SN", "MSG", "YES", "KJZZ"]);
+  if (keepExact.has(out)) return out;
+
+  // Collapse verbose network families to concise labels.
+  if (/^fanduel sports network/i.test(out)) return "FanDuel";
+  if (/^fdsn/i.test(out)) return "FanDuel";
+  if (/^monumental sports network/i.test(out)) return "Monumental";
+  if (/^mnmt2$/i.test(out)) return "Monumental 2";
+  if (/^spectrum sportsnet/i.test(out)) return "Spectrum";
+  if (/^space city home network/i.test(out)) return "Space City";
+  if (/^chicago sports network plus/i.test(out)) return "CHSN+";
+  if (/^chicago sports network/i.test(out)) return "CHSN";
+  if (/^nbc sports boston/i.test(out)) return "NBC Boston";
+  if (/^nbc sports philadelphia/i.test(out)) return "NBC Philly";
+  if (/^nbcsba$/i.test(out)) return "NBC Bay Area";
+  if (/^nbcsca$/i.test(out)) return "NBC California";
+
+  // Generic cleanup for long names that include hyphenated region tails.
+  out = out.replace(/\s+-\s+.*$/, "").trim();
+  return out;
 }
 
 export function getGamesByDate(schedule) {
