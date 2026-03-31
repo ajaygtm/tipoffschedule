@@ -23,7 +23,7 @@ init().catch(err => {
 
 async function init() {
   try {
-    const res = await fetch(DATA_URL);
+    const res = await fetch(DATA_URL, { cache: "no-store" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     state.data = await res.json();
   } catch (err) {

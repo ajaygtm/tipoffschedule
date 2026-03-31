@@ -3,23 +3,14 @@
 const fs = require("fs");
 const http = require("http");
 const https = require("https");
-const path = require("path");
 const util = require("util");
+const { getSchedulePath, isAllowedStageGame, normalizeTri } = require("./config");
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
 const SCOREBOARD_URL = "http://site.api.espn.com/apis/site/v2/sports/basketball/nba/scoreboard";
-const SCHEDULE_PATH = path.resolve(__dirname, "../data/schedule/nba_schedule_25_26.json");
-
-const TRI_ALIASES = {
-  GS: "GSW",
-  NY: "NYK",
-  NO: "NOP",
-  SA: "SAS",
-  PHO: "PHX",
-  WAS: "WSH"
-};
+const SCHEDULE_PATH = getSchedulePath();
 
 async function main() {
   const dryRun = process.argv.includes("--dry-run");
@@ -38,6 +29,7 @@ async function main() {
   for (const day of gameDates) {
     if (!Array.isArray(day.games)) continue;
     for (const game of day.games) {
+      if (!isAllowedStageGame(game)) continue;
       const dateUTC = deriveStartUTC(game);
       if (!dateUTC) continue;
       allGames.push({ game, dateKey: toDateKey(dateUTC) });
@@ -156,12 +148,6 @@ function initializeScoreFields(game) {
 
 function buildMatchKey(dateKey, awayTri, homeTri) {
   return `${dateKey}|${awayTri}|${homeTri}`;
-}
-
-function normalizeTri(value) {
-  if (!value) return null;
-  const clean = String(value).trim().toUpperCase();
-  return TRI_ALIASES[clean] || clean;
 }
 
 function deriveStartUTC(game) {

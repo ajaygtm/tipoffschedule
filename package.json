@@ -2,7 +2,9 @@
   "name": "tipoffschedule",
   "private": true,
   "scripts": {
+    "update-schedule": "node scripts/updateSchedule.js",
     "update-scores": "node scripts/updateScores.js",
-    "update-standings": "node scripts/updateStandings.js"
+    "update-standings": "node scripts/updateStandings.js",
+    "update-data": "node scripts/updateAll.js"
   }
 }

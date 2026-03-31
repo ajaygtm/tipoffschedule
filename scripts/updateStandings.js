@@ -5,20 +5,12 @@ const http = require("http");
 const https = require("https");
 const path = require("path");
 const util = require("util");
+const { normalizeTri } = require("./config");
 
 const writeFile = util.promisify(fs.writeFile);
 
 const STANDINGS_URL = "https://site.api.espn.com/apis/v2/sports/basketball/nba/standings";
 const OUT_PATH = path.resolve(__dirname, "../data/standings.json");
-
-const TRI_ALIASES = {
-  GS: "GSW",
-  NY: "NYK",
-  NO: "NOP",
-  SA: "SAS",
-  UTAH: "UTA",
-  WSH: "WAS"
-};
 
 async function main() {
   const dryRun = process.argv.includes("--dry-run");
@@ -95,11 +87,6 @@ async function main() {
 function getStat(statMap, name) {
   const s = statMap.get(name);
   return s ? s.value : undefined;
-}
-
-function normalizeTri(value) {
-  const clean = String(value || "").trim().toUpperCase();
-  return TRI_ALIASES[clean] || clean;
 }
 
 function getStatDisplay(statMap, name) {
