@@ -1,16 +1,16 @@
 {
-  "updated": "2026-04-04T20:35:56.553Z",
+  "updated": "2026-04-05T06:15:21.420Z",
   "eastern": [
     {
       "rank": 1,
       "tri": "DET",
       "name": "Detroit Pistons",
       "shortName": "Pistons",
-      "wins": 56,
+      "wins": 57,
       "losses": 21,
-      "pct": ".727",
+      "pct": ".731",
       "gb": "-",
-      "streak": "W2",
+      "streak": "W3",
       "l10": "8-2"
     },
     {
@@ -21,7 +21,7 @@
       "wins": 52,
       "losses": 25,
       "pct": ".675",
-      "gb": "4",
+      "gb": "4.5",
       "streak": "W2",
       "l10": "8-2"
     },
@@ -33,7 +33,7 @@
       "wins": 50,
       "losses": 28,
       "pct": ".641",
-      "gb": "6.5",
+      "gb": "7",
       "streak": "W2",
       "l10": "7-3"
     },
@@ -45,7 +45,7 @@
       "wins": 48,
       "losses": 29,
       "pct": ".623",
-      "gb": "8",
+      "gb": "8.5",
       "streak": "W1",
       "l10": "7-3"
     },
@@ -57,33 +57,33 @@
       "wins": 45,
       "losses": 33,
       "pct": ".577",
-      "gb": "11.5",
+      "gb": "12",
       "streak": "W4",
       "l10": "8-2"
     },
     {
       "rank": 6,
-      "tri": "PHI",
-      "name": "Philadelphia 76ers",
-      "shortName": "76ers",
-      "wins": 43,
-      "losses": 34,
-      "pct": ".558",
-      "gb": "13",
-      "streak": "W2",
-      "l10": "7-3"
-    },
-    {
-      "rank": 7,
       "tri": "TOR",
       "name": "Toronto Raptors",
       "shortName": "Raptors",
       "wins": 43,
       "losses": 34,
       "pct": ".558",
-      "gb": "13",
+      "gb": "13.5",
       "streak": "W1",
       "l10": "5-5"
+    },
+    {
+      "rank": 7,
+      "tri": "PHI",
+      "name": "Philadelphia 76ers",
+      "shortName": "76ers",
+      "wins": 43,
+      "losses": 35,
+      "pct": ".551",
+      "gb": "14",
+      "streak": "L1",
+      "l10": "6-4"
     },
     {
       "rank": 8,
@@ -93,7 +93,7 @@
       "wins": 42,
       "losses": 36,
       "pct": ".538",
-      "gb": "14.5",
+      "gb": "15",
       "streak": "W3",
       "l10": "8-2"
     },
@@ -105,7 +105,7 @@
       "wins": 41,
       "losses": 36,
       "pct": ".532",
-      "gb": "15",
+      "gb": "15.5",
       "streak": "W1",
       "l10": "3-7"
     },
@@ -114,12 +114,12 @@
       "tri": "MIA",
       "name": "Miami Heat",
       "shortName": "Heat",
-      "wins": 40,
+      "wins": 41,
       "losses": 37,
-      "pct": ".519",
+      "pct": ".526",
       "gb": "16",
-      "streak": "L1",
-      "l10": "2-8"
+      "streak": "W1",
+      "l10": "3-7"
     },
     {
       "rank": 11,
@@ -129,7 +129,7 @@
       "wins": 30,
       "losses": 47,
       "pct": ".390",
-      "gb": "26",
+      "gb": "26.5",
       "streak": "L2",
       "l10": "2-8"
     },
@@ -141,7 +141,7 @@
       "wins": 29,
       "losses": 48,
       "pct": ".377",
-      "gb": "27",
+      "gb": "27.5",
       "streak": "L6",
       "l10": "2-8"
     },
@@ -153,7 +153,7 @@
       "wins": 18,
       "losses": 59,
       "pct": ".234",
-      "gb": "38",
+      "gb": "38.5",
       "streak": "L1",
       "l10": "3-7"
     },
@@ -165,7 +165,7 @@
       "wins": 18,
       "losses": 59,
       "pct": ".234",
-      "gb": "38",
+      "gb": "38.5",
       "streak": "L2",
       "l10": "1-9"
     },
@@ -175,10 +175,10 @@
       "name": "Washington Wizards",
       "shortName": "Wizards",
       "wins": 17,
-      "losses": 59,
-      "pct": ".224",
-      "gb": "38.5",
-      "streak": "L4",
+      "losses": 60,
+      "pct": ".221",
+      "gb": "39.5",
+      "streak": "L5",
       "l10": "1-9"
     }
   ],
@@ -201,11 +201,11 @@
       "name": "San Antonio Spurs",
       "shortName": "Spurs",
       "wins": 59,
-      "losses": 18,
-      "pct": ".766",
-      "gb": "2",
-      "streak": "W11",
-      "l10": "10-0"
+      "losses": 19,
+      "pct": ".756",
+      "gb": "2.5",
+      "streak": "L1",
+      "l10": "9-1"
     },
     {
       "rank": 3,
@@ -224,12 +224,12 @@
       "tri": "DEN",
       "name": "Denver Nuggets",
       "shortName": "Nuggets",
-      "wins": 49,
+      "wins": 50,
       "losses": 28,
-      "pct": ".636",
-      "gb": "12",
-      "streak": "W7",
-      "l10": "8-2"
+      "pct": ".641",
+      "gb": "11.5",
+      "streak": "W8",
+      "l10": "9-1"
     },
     {
       "rank": 5,
