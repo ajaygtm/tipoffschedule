@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-07T20:52:05.143Z",
+  "updated": "2026-04-08T06:22:03.726Z",
   "eastern": [
     {
       "rank": 1,
@@ -18,11 +18,11 @@
       "tri": "BOS",
       "name": "Boston Celtics",
       "shortName": "Celtics",
-      "wins": 53,
+      "wins": 54,
       "losses": 25,
-      "pct": ".679",
-      "gb": "3.5",
-      "streak": "W3",
+      "pct": ".684",
+      "gb": "3",
+      "streak": "W4",
       "l10": "8-2"
     },
     {
@@ -66,12 +66,12 @@
       "tri": "TOR",
       "name": "Toronto Raptors",
       "shortName": "Raptors",
-      "wins": 43,
+      "wins": 44,
       "losses": 35,
-      "pct": ".551",
-      "gb": "13.5",
-      "streak": "L1",
-      "l10": "4-6"
+      "pct": ".557",
+      "gb": "13",
+      "streak": "W1",
+      "l10": "5-5"
     },
     {
       "rank": 7,
@@ -87,18 +87,6 @@
     },
     {
       "rank": 8,
-      "tri": "CHA",
-      "name": "Charlotte Hornets",
-      "shortName": "Hornets",
-      "wins": 43,
-      "losses": 36,
-      "pct": ".544",
-      "gb": "14",
-      "streak": "W4",
-      "l10": "8-2"
-    },
-    {
-      "rank": 9,
       "tri": "ORL",
       "name": "Orlando Magic",
       "shortName": "Magic",
@@ -110,15 +98,27 @@
       "l10": "5-5"
     },
     {
+      "rank": 9,
+      "tri": "CHA",
+      "name": "Charlotte Hornets",
+      "shortName": "Hornets",
+      "wins": 43,
+      "losses": 37,
+      "pct": ".538",
+      "gb": "14.5",
+      "streak": "L1",
+      "l10": "7-3"
+    },
+    {
       "rank": 10,
       "tri": "MIA",
       "name": "Miami Heat",
       "shortName": "Heat",
       "wins": 41,
-      "losses": 37,
-      "pct": ".526",
-      "gb": "15.5",
-      "streak": "W1",
+      "losses": 38,
+      "pct": ".519",
+      "gb": "16",
+      "streak": "L1",
       "l10": "3-7"
     },
     {
@@ -127,10 +127,10 @@
       "name": "Milwaukee Bucks",
       "shortName": "Bucks",
       "wins": 31,
-      "losses": 47,
-      "pct": ".397",
-      "gb": "25.5",
-      "streak": "W1",
+      "losses": 48,
+      "pct": ".392",
+      "gb": "26",
+      "streak": "L1",
       "l10": "3-7"
     },
     {
@@ -138,24 +138,24 @@
       "tri": "CHI",
       "name": "Chicago Bulls",
       "shortName": "Bulls",
-      "wins": 29,
+      "wins": 30,
       "losses": 49,
-      "pct": ".372",
-      "gb": "27.5",
-      "streak": "L7",
-      "l10": "1-9"
+      "pct": ".380",
+      "gb": "27",
+      "streak": "W1",
+      "l10": "2-8"
     },
     {
       "rank": 13,
       "tri": "BKN",
       "name": "Brooklyn Nets",
       "shortName": "Nets",
-      "wins": 19,
+      "wins": 20,
       "losses": 59,
-      "pct": ".244",
-      "gb": "37.5",
-      "streak": "W1",
-      "l10": "2-8"
+      "pct": ".253",
+      "gb": "37",
+      "streak": "W2",
+      "l10": "3-7"
     },
     {
       "rank": 14,
@@ -163,10 +163,10 @@
       "name": "Indiana Pacers",
       "shortName": "Pacers",
       "wins": 18,
-      "losses": 60,
-      "pct": ".231",
-      "gb": "38.5",
-      "streak": "L2",
+      "losses": 61,
+      "pct": ".228",
+      "gb": "39",
+      "streak": "L3",
       "l10": "3-7"
     },
     {
@@ -175,10 +175,10 @@
       "name": "Washington Wizards",
       "shortName": "Wizards",
       "wins": 17,
-      "losses": 61,
-      "pct": ".218",
-      "gb": "39.5",
-      "streak": "L6",
+      "losses": 62,
+      "pct": ".215",
+      "gb": "40",
+      "streak": "L7",
       "l10": "1-9"
     }
   ],
@@ -188,11 +188,11 @@
       "tri": "OKC",
       "name": "Oklahoma City Thunder",
       "shortName": "Thunder",
-      "wins": 62,
+      "wins": 63,
       "losses": 16,
-      "pct": ".795",
+      "pct": ".797",
       "gb": "-",
-      "streak": "W5",
+      "streak": "W6",
       "l10": "9-1"
     },
     {
@@ -203,7 +203,7 @@
       "wins": 60,
       "losses": 19,
       "pct": ".759",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W1",
       "l10": "9-1"
     },
@@ -215,7 +215,7 @@
       "wins": 51,
       "losses": 28,
       "pct": ".646",
-      "gb": "11.5",
+      "gb": "12",
       "streak": "W9",
       "l10": "9-1"
     },
@@ -225,22 +225,22 @@
       "name": "Los Angeles Lakers",
       "shortName": "Lakers",
       "wins": 50,
-      "losses": 28,
-      "pct": ".641",
-      "gb": "12",
-      "streak": "L2",
-      "l10": "7-3"
+      "losses": 29,
+      "pct": ".633",
+      "gb": "13",
+      "streak": "L3",
+      "l10": "6-4"
     },
     {
       "rank": 5,
       "tri": "HOU",
       "name": "Houston Rockets",
       "shortName": "Rockets",
-      "wins": 49,
+      "wins": 50,
       "losses": 29,
-      "pct": ".628",
+      "pct": ".633",
       "gb": "13",
-      "streak": "W6",
+      "streak": "W7",
       "l10": "8-2"
     },
     {
@@ -248,11 +248,11 @@
       "tri": "MIN",
       "name": "Minnesota Timberwolves",
       "shortName": "Timberwolves",
-      "wins": 46,
+      "wins": 47,
       "losses": 32,
-      "pct": ".590",
+      "pct": ".595",
       "gb": "16",
-      "streak": "L3",
+      "streak": "W1",
       "l10": "5-5"
     },
     {
@@ -261,10 +261,10 @@
       "name": "Phoenix Suns",
       "shortName": "Suns",
       "wins": 43,
-      "losses": 35,
-      "pct": ".551",
-      "gb": "19",
-      "streak": "W1",
+      "losses": 36,
+      "pct": ".544",
+      "gb": "20",
+      "streak": "L1",
       "l10": "4-6"
     },
     {
@@ -272,12 +272,12 @@
       "tri": "LAC",
       "name": "LA Clippers",
       "shortName": "Clippers",
-      "wins": 40,
+      "wins": 41,
       "losses": 38,
-      "pct": ".513",
+      "pct": ".519",
       "gb": "22",
-      "streak": "W1",
-      "l10": "6-4"
+      "streak": "W2",
+      "l10": "7-3"
     },
     {
       "rank": 9,
@@ -287,7 +287,7 @@
       "wins": 40,
       "losses": 39,
       "pct": ".506",
-      "gb": "22.5",
+      "gb": "23",
       "streak": "L1",
       "l10": "7-3"
     },
@@ -296,48 +296,48 @@
       "tri": "GSW",
       "name": "Golden State Warriors",
       "shortName": "Warriors",
-      "wins": 36,
+      "wins": 37,
       "losses": 42,
-      "pct": ".462",
+      "pct": ".468",
       "gb": "26",
-      "streak": "L4",
-      "l10": "3-7"
+      "streak": "W1",
+      "l10": "4-6"
     },
     {
       "rank": 11,
-      "tri": "DAL",
-      "name": "Dallas Mavericks",
-      "shortName": "Mavericks",
-      "wins": 25,
-      "losses": 53,
-      "pct": ".321",
-      "gb": "37",
+      "tri": "NOP",
+      "name": "New Orleans Pelicans",
+      "shortName": "Pelicans",
+      "wins": 26,
+      "losses": 54,
+      "pct": ".325",
+      "gb": "37.5",
       "streak": "W1",
       "l10": "2-8"
     },
     {
       "rank": 12,
-      "tri": "NOP",
-      "name": "New Orleans Pelicans",
-      "shortName": "Pelicans",
-      "wins": 25,
-      "losses": 54,
-      "pct": ".316",
-      "gb": "37.5",
-      "streak": "L8",
-      "l10": "2-8"
-    },
-    {
-      "rank": 13,
       "tri": "MEM",
       "name": "Memphis Grizzlies",
       "shortName": "Grizzlies",
       "wins": 25,
       "losses": 54,
       "pct": ".316",
-      "gb": "37.5",
+      "gb": "38",
       "streak": "L5",
       "l10": "1-9"
+    },
+    {
+      "rank": 13,
+      "tri": "DAL",
+      "name": "Dallas Mavericks",
+      "shortName": "Mavericks",
+      "wins": 25,
+      "losses": 54,
+      "pct": ".316",
+      "gb": "38",
+      "streak": "L1",
+      "l10": "2-8"
     },
     {
       "rank": 14,
@@ -345,10 +345,10 @@
       "name": "Sacramento Kings",
       "shortName": "Kings",
       "wins": 21,
-      "losses": 58,
-      "pct": ".266",
-      "gb": "41.5",
-      "streak": "L1",
+      "losses": 59,
+      "pct": ".263",
+      "gb": "42.5",
+      "streak": "L2",
       "l10": "3-7"
     },
     {
@@ -357,11 +357,11 @@
       "name": "Utah Jazz",
       "shortName": "Jazz",
       "wins": 21,
-      "losses": 58,
-      "pct": ".266",
-      "gb": "41.5",
-      "streak": "L9",
-      "l10": "1-9"
+      "losses": 59,
+      "pct": ".263",
+      "gb": "42.5",
+      "streak": "L10",
+      "l10": "0-10"
     }
   ]
 }

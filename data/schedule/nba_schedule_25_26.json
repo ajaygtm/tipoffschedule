@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-07T20:52:04.501Z",
+    "scores_updated_utc": "2026-04-08T06:22:03.232Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-07T20:51:31.540Z"
+    "schedule_synced_utc": "2026-04-08T06:21:29.329Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -23324,16 +23324,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1626162,
-                "firstName": "Kelly",
-                "lastName": "Oubre Jr.",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 29
-              },
-              {
                 "personId": 1630560,
                 "firstName": "Cam",
                 "lastName": "Thomas",
@@ -23341,6 +23331,16 @@
                 "teamCity": "Brooklyn",
                 "teamName": "Nets",
                 "teamTricode": "BKN",
+                "points": 29
+              },
+              {
+                "personId": 1626162,
+                "firstName": "Kelly",
+                "lastName": "Oubre Jr.",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 29
               }
             ],
@@ -23499,16 +23499,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628970,
-                "firstName": "Miles",
-                "lastName": "Bridges",
-                "teamId": 1610612766,
-                "teamCity": "Charlotte",
-                "teamName": "Hornets",
-                "teamTricode": "CHA",
-                "points": 29
-              },
-              {
                 "personId": 1628374,
                 "firstName": "Lauri",
                 "lastName": "Markkanen",
@@ -23516,6 +23506,16 @@
                 "teamCity": "Utah",
                 "teamName": "Jazz",
                 "teamTricode": "UTA",
+                "points": 29
+              },
+              {
+                "personId": 1628970,
+                "firstName": "Miles",
+                "lastName": "Bridges",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
                 "points": 29
               }
             ],
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630162,
-                "firstName": "Anthony",
-                "lastName": "Edwards",
-                "teamId": 1610612750,
-                "teamCity": "Minnesota",
-                "teamName": "Timberwolves",
-                "teamTricode": "MIN",
-                "points": 26
-              },
-              {
                 "personId": 203897,
                 "firstName": "Zach",
                 "lastName": "LaVine",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Sacramento",
                 "teamName": "Kings",
                 "teamTricode": "SAC",
+                "points": 26
+              },
+              {
+                "personId": 1630162,
+                "firstName": "Anthony",
+                "lastName": "Edwards",
+                "teamId": 1610612750,
+                "teamCity": "Minnesota",
+                "teamName": "Timberwolves",
+                "teamTricode": "MIN",
                 "points": 26
               }
             ],
@@ -63214,16 +63214,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629656,
-                "firstName": "Quentin",
-                "lastName": "Grimes",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 22
-              },
-              {
                 "personId": 1626171,
                 "firstName": "Bobby",
                 "lastName": "Portis",
@@ -63231,6 +63221,16 @@
                 "teamCity": "Milwaukee",
                 "teamName": "Bucks",
                 "teamTricode": "MIL",
+                "points": 22
+              },
+              {
+                "personId": 1629656,
+                "firstName": "Quentin",
+                "lastName": "Grimes",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 22
               }
             ],
@@ -79985,16 +79985,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
-                "points": 34
-              },
-              {
                 "personId": 1628973,
                 "firstName": "Jalen",
                 "lastName": "Brunson",
@@ -80002,6 +79992,16 @@
                 "teamCity": "New York",
                 "teamName": "Knicks",
                 "teamTricode": "NYK",
+                "points": 34
+              },
+              {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
                 "points": 34
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1627750,
-                "firstName": "Jamal",
-                "lastName": "Murray",
-                "teamId": 1610612743,
-                "teamCity": "Denver",
-                "teamName": "Nuggets",
-                "teamTricode": "DEN",
-                "points": 27
-              },
-              {
                 "personId": 1629008,
                 "firstName": "Michael",
                 "lastName": "Porter Jr.",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Brooklyn",
                 "teamName": "Nets",
                 "teamTricode": "BKN",
+                "points": 27
+              },
+              {
+                "personId": 1627750,
+                "firstName": "Jamal",
+                "lastName": "Murray",
+                "teamId": 1610612743,
+                "teamCity": "Denver",
+                "teamName": "Nuggets",
+                "teamTricode": "DEN",
                 "points": 27
               }
             ],
@@ -121185,16 +121185,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641706,
-                "firstName": "Brandon",
-                "lastName": "Miller",
-                "teamId": 1610612766,
-                "teamCity": "Charlotte",
-                "teamName": "Hornets",
-                "teamTricode": "CHA",
-                "points": 26
-              },
-              {
                 "personId": 1628991,
                 "firstName": "Jaren",
                 "lastName": "Jackson Jr.",
@@ -121202,6 +121192,16 @@
                 "teamCity": "Memphis",
                 "teamName": "Grizzlies",
                 "teamTricode": "MEM",
+                "points": 26
+              },
+              {
+                "personId": 1641706,
+                "firstName": "Brandon",
+                "lastName": "Miller",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
                 "points": 26
               }
             ],
@@ -129997,16 +129997,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629640,
-                "firstName": "Keldon",
-                "lastName": "Johnson",
-                "teamId": 1610612759,
-                "teamCity": "San Antonio",
-                "teamName": "Spurs",
-                "teamTricode": "SAS",
-                "points": 25
-              },
-              {
                 "personId": 1629026,
                 "firstName": "Kenrich",
                 "lastName": "Williams",
@@ -130014,6 +130004,16 @@
                 "teamCity": "Oklahoma City",
                 "teamName": "Thunder",
                 "teamTricode": "OKC",
+                "points": 25
+              },
+              {
+                "personId": 1629640,
+                "firstName": "Keldon",
+                "lastName": "Johnson",
+                "teamId": 1610612759,
+                "teamCity": "San Antonio",
+                "teamName": "Spurs",
+                "teamTricode": "SAS",
                 "points": 25
               }
             ],
@@ -156618,16 +156618,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1627783,
-                "firstName": "Pascal",
-                "lastName": "Siakam",
-                "teamId": 1610612754,
-                "teamCity": "Indiana",
-                "teamName": "Pacers",
-                "teamTricode": "IND",
-                "points": 29
-              },
-              {
                 "personId": 202695,
                 "firstName": "Kawhi",
                 "lastName": "Leonard",
@@ -156635,6 +156625,16 @@
                 "teamCity": "LA",
                 "teamName": "Clippers",
                 "teamTricode": "LAC",
+                "points": 29
+              },
+              {
+                "personId": 1627783,
+                "firstName": "Pascal",
+                "lastName": "Siakam",
+                "teamId": 1610612754,
+                "teamCity": "Indiana",
+                "teamName": "Pacers",
+                "teamTricode": "IND",
                 "points": 29
               }
             ],
@@ -197023,8 +197023,8 @@
           {
             "gameId": "0022501148",
             "gameCode": "20260407/CHIWAS",
-            "gameStatus": 1,
-            "gameStatusText": "7:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 1,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:00:00Z",
@@ -197138,8 +197138,8 @@
               "teamTricode": "WAS",
               "teamSlug": "wizards",
               "wins": 17,
-              "losses": 61,
-              "score": 0,
+              "losses": 62,
+              "score": 98,
               "seed": 0
             },
             "awayTeam": {
@@ -197148,23 +197148,34 @@
               "teamCity": "Chicago",
               "teamTricode": "CHI",
               "teamSlug": "bulls",
-              "wins": 29,
+              "wins": 30,
               "losses": 49,
-              "score": 0,
+              "score": 129,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1642265,
+                "firstName": "Rob",
+                "lastName": "Dillingham",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
+                "points": 26
+              }
+            ],
+            "status": "final",
+            "awayScore": 129,
+            "homeScore": 98,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501149",
             "gameCode": "20260407/CHABOS",
-            "gameStatus": 1,
-            "gameStatusText": "8:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 5,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T20:00:00Z",
@@ -197290,9 +197301,9 @@
               "teamCity": "Boston",
               "teamTricode": "BOS",
               "teamSlug": "celtics",
-              "wins": 53,
+              "wins": 54,
               "losses": 25,
-              "score": 0,
+              "score": 113,
               "seed": 0
             },
             "awayTeam": {
@@ -197302,22 +197313,33 @@
               "teamTricode": "CHA",
               "teamSlug": "hornets",
               "wins": 43,
-              "losses": 36,
-              "score": 0,
+              "losses": 37,
+              "score": 102,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1630163,
+                "firstName": "LaMelo",
+                "lastName": "Ball",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
+                "points": 36
+              }
+            ],
+            "status": "final",
+            "awayScore": 102,
+            "homeScore": 113,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501150",
             "gameCode": "20260407/MILBKN",
-            "gameStatus": 1,
-            "gameStatusText": "7:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 3,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:30:00Z",
@@ -197430,9 +197452,9 @@
               "teamCity": "Brooklyn",
               "teamTricode": "BKN",
               "teamSlug": "nets",
-              "wins": 19,
+              "wins": 20,
               "losses": 59,
-              "score": 0,
+              "score": 96,
               "seed": 0
             },
             "awayTeam": {
@@ -197442,22 +197464,33 @@
               "teamTricode": "MIL",
               "teamSlug": "bucks",
               "wins": 31,
-              "losses": 47,
-              "score": 0,
+              "losses": 48,
+              "score": 90,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1630604,
+                "firstName": "E.J.",
+                "lastName": "Liddell",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
+                "points": 21
+              }
+            ],
+            "status": "final",
+            "awayScore": 90,
+            "homeScore": 96,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501151",
             "gameCode": "20260407/MIATOR",
-            "gameStatus": 1,
-            "gameStatusText": "7:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 4,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:30:00Z",
@@ -197570,9 +197603,9 @@
               "teamCity": "Toronto",
               "teamTricode": "TOR",
               "teamSlug": "raptors",
-              "wins": 43,
+              "wins": 44,
               "losses": 35,
-              "score": 0,
+              "score": 121,
               "seed": 0
             },
             "awayTeam": {
@@ -197582,22 +197615,33 @@
               "teamTricode": "MIA",
               "teamSlug": "heat",
               "wins": 41,
-              "losses": 37,
-              "score": 0,
+              "losses": 38,
+              "score": 95,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1630567,
+                "firstName": "Scottie",
+                "lastName": "Barnes",
+                "teamId": 1610612761,
+                "teamCity": "Toronto",
+                "teamName": "Raptors",
+                "teamTricode": "TOR",
+                "points": 25
+              }
+            ],
+            "status": "final",
+            "awayScore": 95,
+            "homeScore": 121,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501152",
             "gameCode": "20260407/MININD",
-            "gameStatus": 1,
-            "gameStatusText": "7:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 2,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:00:00Z",
@@ -197711,8 +197755,8 @@
               "teamTricode": "IND",
               "teamSlug": "pacers",
               "wins": 18,
-              "losses": 60,
-              "score": 0,
+              "losses": 61,
+              "score": 104,
               "seed": 0
             },
             "awayTeam": {
@@ -197721,23 +197765,34 @@
               "teamCity": "Minnesota",
               "teamTricode": "MIN",
               "teamSlug": "timberwolves",
-              "wins": 46,
+              "wins": 47,
               "losses": 32,
-              "score": 0,
+              "score": 124,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1630245,
+                "firstName": "Ayo",
+                "lastName": "Dosunmu",
+                "teamId": 1610612750,
+                "teamCity": "Minnesota",
+                "teamName": "Timberwolves",
+                "teamTricode": "MIN",
+                "points": 24
+              }
+            ],
+            "status": "final",
+            "awayScore": 124,
+            "homeScore": 104,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501153",
             "gameCode": "20260407/UTANOP",
-            "gameStatus": 1,
-            "gameStatusText": "8:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 6,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T20:00:00Z",
@@ -197878,9 +197933,9 @@
               "teamCity": "New Orleans",
               "teamTricode": "NOP",
               "teamSlug": "pelicans",
-              "wins": 25,
+              "wins": 26,
               "losses": 54,
-              "score": 0,
+              "score": 156,
               "seed": 0
             },
             "awayTeam": {
@@ -197890,22 +197945,33 @@
               "teamTricode": "UTA",
               "teamSlug": "jazz",
               "wins": 21,
-              "losses": 58,
-              "score": 0,
+              "losses": 59,
+              "score": 137,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1642847,
+                "firstName": "Jeremiah",
+                "lastName": "Fears",
+                "teamId": 1610612740,
+                "teamCity": "New Orleans",
+                "teamName": "Pelicans",
+                "teamTricode": "NOP",
+                "points": 40
+              }
+            ],
+            "status": "final",
+            "awayScore": 137,
+            "homeScore": 156,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501154",
             "gameCode": "20260407/SACGSW",
-            "gameStatus": 1,
-            "gameStatusText": "10:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 7,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T22:00:00Z",
@@ -198018,9 +198084,9 @@
               "teamCity": "Golden State",
               "teamTricode": "GSW",
               "teamSlug": "warriors",
-              "wins": 36,
+              "wins": 37,
               "losses": 42,
-              "score": 0,
+              "score": 110,
               "seed": 0
             },
             "awayTeam": {
@@ -198030,22 +198096,33 @@
               "teamTricode": "SAC",
               "teamSlug": "kings",
               "wins": 21,
-              "losses": 58,
-              "score": 0,
+              "losses": 59,
+              "score": 105,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1629001,
+                "firstName": "De'Anthony",
+                "lastName": "Melton",
+                "teamId": 1610612744,
+                "teamCity": "Golden State",
+                "teamName": "Warriors",
+                "teamTricode": "GSW",
+                "points": 21
+              }
+            ],
+            "status": "final",
+            "awayScore": 105,
+            "homeScore": 110,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501155",
             "gameCode": "20260407/OKCLAL",
-            "gameStatus": 1,
-            "gameStatusText": "10:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 8,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T22:30:00Z",
@@ -198173,8 +198250,8 @@
               "teamTricode": "LAL",
               "teamSlug": "lakers",
               "wins": 50,
-              "losses": 28,
-              "score": 0,
+              "losses": 29,
+              "score": 87,
               "seed": 0
             },
             "awayTeam": {
@@ -198183,23 +198260,34 @@
               "teamCity": "Oklahoma City",
               "teamTricode": "OKC",
               "teamSlug": "thunder",
-              "wins": 62,
+              "wins": 63,
               "losses": 16,
-              "score": 0,
+              "score": 123,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1628983,
+                "firstName": "Shai",
+                "lastName": "Gilgeous-Alexander",
+                "teamId": 1610612760,
+                "teamCity": "Oklahoma City",
+                "teamName": "Thunder",
+                "teamTricode": "OKC",
+                "points": 25
+              }
+            ],
+            "status": "final",
+            "awayScore": 123,
+            "homeScore": 87,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501156",
             "gameCode": "20260407/DALLAC",
-            "gameStatus": 1,
-            "gameStatusText": "10:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 9,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T22:30:00Z",
@@ -198326,9 +198414,9 @@
               "teamCity": "LA",
               "teamTricode": "LAC",
               "teamSlug": "clippers",
-              "wins": 40,
+              "wins": 41,
               "losses": 38,
-              "score": 0,
+              "score": 116,
               "seed": 0
             },
             "awayTeam": {
@@ -198338,22 +198426,33 @@
               "teamTricode": "DAL",
               "teamSlug": "mavericks",
               "wins": 25,
-              "losses": 53,
-              "score": 0,
+              "losses": 54,
+              "score": 103,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 202695,
+                "firstName": "Kawhi",
+                "lastName": "Leonard",
+                "teamId": 1610612746,
+                "teamCity": "LA",
+                "teamName": "Clippers",
+                "teamTricode": "LAC",
+                "points": 34
+              }
+            ],
+            "status": "final",
+            "awayScore": 103,
+            "homeScore": 116,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           },
           {
             "gameId": "0022501157",
             "gameCode": "20260407/HOUPHX",
-            "gameStatus": 1,
-            "gameStatusText": "11:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 10,
             "gameDateEst": "2026-04-07T00:00:00Z",
             "gameTimeEst": "1900-01-01T23:00:00Z",
@@ -198480,8 +198579,8 @@
               "teamTricode": "PHX",
               "teamSlug": "suns",
               "wins": 43,
-              "losses": 35,
-              "score": 0,
+              "losses": 36,
+              "score": 105,
               "seed": 0
             },
             "awayTeam": {
@@ -198490,15 +198589,26 @@
               "teamCity": "Houston",
               "teamTricode": "HOU",
               "teamSlug": "rockets",
-              "wins": 49,
+              "wins": 50,
               "losses": 29,
-              "score": 0,
+              "score": 119,
               "seed": 0
             },
-            "pointsLeaders": [],
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null,
+            "pointsLeaders": [
+              {
+                "personId": 1626164,
+                "firstName": "Devin",
+                "lastName": "Booker",
+                "teamId": 1610612756,
+                "teamCity": "Phoenix",
+                "teamName": "Suns",
+                "teamTricode": "PHX",
+                "points": 31
+              }
+            ],
+            "status": "final",
+            "awayScore": 119,
+            "homeScore": 105,
             "seasonStageId": 2,
             "seasonStageLabel": "Regular Season"
           }
@@ -198789,7 +198899,7 @@
               "teamCity": "Minnesota",
               "teamTricode": "MIN",
               "teamSlug": "timberwolves",
-              "wins": 46,
+              "wins": 47,
               "losses": 32,
               "score": 0,
               "seed": 0
@@ -198930,7 +199040,7 @@
               "teamTricode": "MIL",
               "teamSlug": "bucks",
               "wins": 31,
-              "losses": 47,
+              "losses": 48,
               "score": 0,
               "seed": 0
             },
@@ -198981,7 +199091,7 @@
                   "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://espn.smart.link/b4uxwf8ow?ex_cid=NBA&gameId=401811016&referringapp=nba",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 2,
                   "localizationRegion": ""
@@ -199366,7 +199476,7 @@
               "teamCity": "LA",
               "teamTricode": "LAC",
               "teamSlug": "clippers",
-              "wins": 40,
+              "wins": 41,
               "losses": 38,
               "score": 0,
               "seed": 0
@@ -199377,7 +199487,7 @@
               "teamCity": "Oklahoma City",
               "teamTricode": "OKC",
               "teamSlug": "thunder",
-              "wins": 62,
+              "wins": 63,
               "losses": 16,
               "score": 0,
               "seed": 0
@@ -199535,7 +199645,7 @@
               "teamTricode": "PHX",
               "teamSlug": "suns",
               "wins": 43,
-              "losses": 35,
+              "losses": 36,
               "score": 0,
               "seed": 0
             },
@@ -199546,7 +199656,7 @@
               "teamTricode": "DAL",
               "teamSlug": "mavericks",
               "wins": 25,
-              "losses": 53,
+              "losses": 54,
               "score": 0,
               "seed": 0
             },
@@ -199679,7 +199789,7 @@
               "teamCity": "Toronto",
               "teamTricode": "TOR",
               "teamSlug": "raptors",
-              "wins": 43,
+              "wins": 44,
               "losses": 35,
               "score": 0,
               "seed": 0
@@ -199691,7 +199801,7 @@
               "teamTricode": "MIA",
               "teamSlug": "heat",
               "wins": 41,
-              "losses": 37,
+              "losses": 38,
               "score": 0,
               "seed": 0
             },
@@ -199820,7 +199930,7 @@
               "teamTricode": "WAS",
               "teamSlug": "wizards",
               "wins": 17,
-              "losses": 61,
+              "losses": 62,
               "score": 0,
               "seed": 0
             },
@@ -199830,7 +199940,7 @@
               "teamCity": "Chicago",
               "teamTricode": "CHI",
               "teamSlug": "bulls",
-              "wins": 29,
+              "wins": 30,
               "losses": 49,
               "score": 0,
               "seed": 0
@@ -199959,7 +200069,7 @@
               "teamCity": "Brooklyn",
               "teamTricode": "BKN",
               "teamSlug": "nets",
-              "wins": 19,
+              "wins": 20,
               "losses": 59,
               "score": 0,
               "seed": 0
@@ -199971,7 +200081,7 @@
               "teamTricode": "IND",
               "teamSlug": "pacers",
               "wins": 18,
-              "losses": 60,
+              "losses": 61,
               "score": 0,
               "seed": 0
             },
@@ -200110,7 +200220,7 @@
               "teamCity": "Boston",
               "teamTricode": "BOS",
               "teamSlug": "celtics",
-              "wins": 53,
+              "wins": 54,
               "losses": 25,
               "score": 0,
               "seed": 0
@@ -200239,7 +200349,7 @@
               "teamCity": "Houston",
               "teamTricode": "HOU",
               "teamSlug": "rockets",
-              "wins": 49,
+              "wins": 50,
               "losses": 29,
               "score": 0,
               "seed": 0
@@ -200378,7 +200488,7 @@
               "teamCity": "Golden State",
               "teamTricode": "GSW",
               "teamSlug": "warriors",
-              "wins": 36,
+              "wins": 37,
               "losses": 42,
               "score": 0,
               "seed": 0
@@ -200390,7 +200500,7 @@
               "teamTricode": "LAL",
               "teamSlug": "lakers",
               "wins": 50,
-              "losses": 28,
+              "losses": 29,
               "score": 0,
               "seed": 0
             },
@@ -200524,7 +200634,7 @@
               "teamTricode": "CHA",
               "teamSlug": "hornets",
               "wins": 43,
-              "losses": 36,
+              "losses": 37,
               "score": 0,
               "seed": 0
             },
@@ -200664,7 +200774,7 @@
               "teamTricode": "WAS",
               "teamSlug": "wizards",
               "wins": 17,
-              "losses": 61,
+              "losses": 62,
               "score": 0,
               "seed": 0
             },
@@ -200675,7 +200785,7 @@
               "teamTricode": "MIA",
               "teamSlug": "heat",
               "wins": 41,
-              "losses": 37,
+              "losses": 38,
               "score": 0,
               "seed": 0
             },
@@ -200943,7 +201053,7 @@
               "teamCity": "Boston",
               "teamTricode": "BOS",
               "teamSlug": "celtics",
-              "wins": 53,
+              "wins": 54,
               "losses": 25,
               "score": 0,
               "seed": 0
@@ -200954,7 +201064,7 @@
               "teamCity": "New Orleans",
               "teamTricode": "NOP",
               "teamSlug": "pelicans",
-              "wins": 25,
+              "wins": 26,
               "losses": 54,
               "score": 0,
               "seed": 0
@@ -201084,7 +201194,7 @@
               "teamTricode": "IND",
               "teamSlug": "pacers",
               "wins": 18,
-              "losses": 60,
+              "losses": 61,
               "score": 0,
               "seed": 0
             },
@@ -201194,7 +201304,7 @@
                   "broadcasterAbbreviation": "TSN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "https://www.tsn.ca/live/",
+                  "broadcasterVideoLink": "https://www.tsn.ca/nba/event/toronto-raptors-new-york-knicks-20260410/2915322",
                   "broadcasterTeamId": 1610612761,
                   "broadcasterRanking": null,
                   "localizationRegion": ""
@@ -201234,7 +201344,7 @@
               "teamCity": "Toronto",
               "teamTricode": "TOR",
               "teamSlug": "raptors",
-              "wins": 43,
+              "wins": 44,
               "losses": 35,
               "score": 0,
               "seed": 0
@@ -201363,7 +201473,7 @@
               "teamCity": "Chicago",
               "teamTricode": "CHI",
               "teamSlug": "bulls",
-              "wins": 29,
+              "wins": 30,
               "losses": 49,
               "score": 0,
               "seed": 0
@@ -201517,7 +201627,7 @@
               "teamCity": "Houston",
               "teamTricode": "HOU",
               "teamSlug": "rockets",
-              "wins": 49,
+              "wins": 50,
               "losses": 29,
               "score": 0,
               "seed": 0
@@ -201528,7 +201638,7 @@
               "teamCity": "Minnesota",
               "teamTricode": "MIN",
               "teamSlug": "timberwolves",
-              "wins": 46,
+              "wins": 47,
               "losses": 32,
               "score": 0,
               "seed": 0
@@ -201658,7 +201768,7 @@
               "teamTricode": "MIL",
               "teamSlug": "bucks",
               "wins": 31,
-              "losses": 47,
+              "losses": 48,
               "score": 0,
               "seed": 0
             },
@@ -201668,7 +201778,7 @@
               "teamCity": "Brooklyn",
               "teamTricode": "BKN",
               "teamSlug": "nets",
-              "wins": 19,
+              "wins": 20,
               "losses": 59,
               "score": 0,
               "seed": 0
@@ -201823,7 +201933,7 @@
               "teamTricode": "DAL",
               "teamSlug": "mavericks",
               "wins": 25,
-              "losses": 53,
+              "losses": 54,
               "score": 0,
               "seed": 0
             },
@@ -201966,7 +202076,7 @@
               "teamTricode": "UTA",
               "teamSlug": "jazz",
               "wins": 21,
-              "losses": 58,
+              "losses": 59,
               "score": 0,
               "seed": 0
             },
@@ -202116,7 +202226,7 @@
               "teamCity": "Oklahoma City",
               "teamTricode": "OKC",
               "teamSlug": "thunder",
-              "wins": 62,
+              "wins": 63,
               "losses": 16,
               "score": 0,
               "seed": 0
@@ -202270,7 +202380,7 @@
               "teamCity": "LA",
               "teamTricode": "LAC",
               "teamSlug": "clippers",
-              "wins": 40,
+              "wins": 41,
               "losses": 38,
               "score": 0,
               "seed": 0
@@ -202400,7 +202510,7 @@
               "teamTricode": "SAC",
               "teamSlug": "kings",
               "wins": 21,
-              "losses": 58,
+              "losses": 59,
               "score": 0,
               "seed": 0
             },
@@ -202410,7 +202520,7 @@
               "teamCity": "Golden State",
               "teamTricode": "GSW",
               "teamSlug": "warriors",
-              "wins": 36,
+              "wins": 37,
               "losses": 42,
               "score": 0,
               "seed": 0
@@ -202568,7 +202678,7 @@
               "teamTricode": "LAL",
               "teamSlug": "lakers",
               "wins": 50,
-              "losses": 28,
+              "losses": 29,
               "score": 0,
               "seed": 0
             },
@@ -202579,7 +202689,7 @@
               "teamTricode": "PHX",
               "teamSlug": "suns",
               "wins": 43,
-              "losses": 35,
+              "losses": 36,
               "score": 0,
               "seed": 0
             },
@@ -202712,7 +202822,7 @@
               "teamCity": "Boston",
               "teamTricode": "BOS",
               "teamSlug": "celtics",
-              "wins": 53,
+              "wins": 54,
               "losses": 25,
               "score": 0,
               "seed": 0
@@ -202864,7 +202974,7 @@
               "teamTricode": "WAS",
               "teamSlug": "wizards",
               "wins": 17,
-              "losses": 61,
+              "losses": 62,
               "score": 0,
               "seed": 0
             },
@@ -202993,7 +203103,7 @@
               "teamTricode": "IND",
               "teamSlug": "pacers",
               "wins": 18,
-              "losses": 60,
+              "losses": 61,
               "score": 0,
               "seed": 0
             },
@@ -203133,7 +203243,7 @@
               "teamTricode": "MIA",
               "teamSlug": "heat",
               "wins": 41,
-              "losses": 37,
+              "losses": 38,
               "score": 0,
               "seed": 0
             },
@@ -203284,7 +203394,7 @@
               "teamTricode": "CHA",
               "teamSlug": "hornets",
               "wins": 43,
-              "losses": 36,
+              "losses": 37,
               "score": 0,
               "seed": 0
             },
@@ -203424,7 +203534,7 @@
               "teamTricode": "MIL",
               "teamSlug": "bucks",
               "wins": 31,
-              "losses": 47,
+              "losses": 48,
               "score": 0,
               "seed": 0
             },
@@ -203552,7 +203662,7 @@
               "teamCity": "Toronto",
               "teamTricode": "TOR",
               "teamSlug": "raptors",
-              "wins": 43,
+              "wins": 44,
               "losses": 35,
               "score": 0,
               "seed": 0
@@ -203563,7 +203673,7 @@
               "teamCity": "Brooklyn",
               "teamTricode": "BKN",
               "teamSlug": "nets",
-              "wins": 19,
+              "wins": 20,
               "losses": 59,
               "score": 0,
               "seed": 0
@@ -203707,7 +203817,7 @@
               "teamTricode": "DAL",
               "teamSlug": "mavericks",
               "wins": 25,
-              "losses": 53,
+              "losses": 54,
               "score": 0,
               "seed": 0
             },
@@ -203717,7 +203827,7 @@
               "teamCity": "Chicago",
               "teamTricode": "CHI",
               "teamSlug": "bulls",
-              "wins": 29,
+              "wins": 30,
               "losses": 49,
               "score": 0,
               "seed": 0
@@ -203846,7 +203956,7 @@
               "teamCity": "Houston",
               "teamTricode": "HOU",
               "teamSlug": "rockets",
-              "wins": 49,
+              "wins": 50,
               "losses": 29,
               "score": 0,
               "seed": 0
@@ -204000,7 +204110,7 @@
               "teamCity": "Minnesota",
               "teamTricode": "MIN",
               "teamSlug": "timberwolves",
-              "wins": 46,
+              "wins": 47,
               "losses": 32,
               "score": 0,
               "seed": 0
@@ -204011,7 +204121,7 @@
               "teamCity": "New Orleans",
               "teamTricode": "NOP",
               "teamSlug": "pelicans",
-              "wins": 25,
+              "wins": 26,
               "losses": 54,
               "score": 0,
               "seed": 0
@@ -204154,7 +204264,7 @@
               "teamCity": "Oklahoma City",
               "teamTricode": "OKC",
               "teamSlug": "thunder",
-              "wins": 62,
+              "wins": 63,
               "losses": 16,
               "score": 0,
               "seed": 0
@@ -204166,7 +204276,7 @@
               "teamTricode": "PHX",
               "teamSlug": "suns",
               "wins": 43,
-              "losses": 35,
+              "losses": 36,
               "score": 0,
               "seed": 0
             },
@@ -204463,7 +204573,7 @@
               "teamTricode": "LAL",
               "teamSlug": "lakers",
               "wins": 50,
-              "losses": 28,
+              "losses": 29,
               "score": 0,
               "seed": 0
             },
@@ -204474,7 +204584,7 @@
               "teamTricode": "UTA",
               "teamSlug": "jazz",
               "wins": 21,
-              "losses": 58,
+              "losses": 59,
               "score": 0,
               "seed": 0
             },
@@ -204602,7 +204712,7 @@
               "teamCity": "LA",
               "teamTricode": "LAC",
               "teamSlug": "clippers",
-              "wins": 40,
+              "wins": 41,
               "losses": 38,
               "score": 0,
               "seed": 0
@@ -204613,7 +204723,7 @@
               "teamCity": "Golden State",
               "teamTricode": "GSW",
               "teamSlug": "warriors",
-              "wins": 36,
+              "wins": 37,
               "losses": 42,
               "score": 0,
               "seed": 0
@@ -204768,7 +204878,7 @@
               "teamTricode": "SAC",
               "teamSlug": "kings",
               "wins": 21,
-              "losses": 58,
+              "losses": 59,
               "score": 0,
               "seed": 0
             },
