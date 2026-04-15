@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-15T06:55:26.335Z",
+    "scores_updated_utc": "2026-04-15T13:43:30.570Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-15T06:55:04.070Z"
+    "schedule_synced_utc": "2026-04-15T13:42:57.216Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -23499,16 +23499,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628970,
-                "firstName": "Miles",
-                "lastName": "Bridges",
-                "teamId": 1610612766,
-                "teamCity": "Charlotte",
-                "teamName": "Hornets",
-                "teamTricode": "CHA",
-                "points": 29
-              },
-              {
                 "personId": 1628374,
                 "firstName": "Lauri",
                 "lastName": "Markkanen",
@@ -23516,6 +23506,16 @@
                 "teamCity": "Utah",
                 "teamName": "Jazz",
                 "teamTricode": "UTA",
+                "points": 29
+              },
+              {
+                "personId": 1628970,
+                "firstName": "Miles",
+                "lastName": "Bridges",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
                 "points": 29
               }
             ],
@@ -31642,16 +31642,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1626164,
-                "firstName": "Devin",
-                "lastName": "Booker",
-                "teamId": 1610612756,
-                "teamCity": "Phoenix",
-                "teamName": "Suns",
-                "teamTricode": "PHX",
-                "points": 21
-              },
-              {
                 "personId": 1627826,
                 "firstName": "Ivica",
                 "lastName": "Zubac",
@@ -31659,6 +31649,16 @@
                 "teamCity": "LA",
                 "teamName": "Clippers",
                 "teamTricode": "LAC",
+                "points": 21
+              },
+              {
+                "personId": 1626164,
+                "firstName": "Devin",
+                "lastName": "Booker",
+                "teamId": 1610612756,
+                "teamCity": "Phoenix",
+                "teamName": "Suns",
+                "teamTricode": "PHX",
                 "points": 21
               }
             ],
@@ -69867,16 +69867,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
-                "points": 20
-              },
-              {
                 "personId": 1630530,
                 "firstName": "Trey",
                 "lastName": "Murphy III",
@@ -69894,6 +69884,16 @@
                 "teamCity": "New Orleans",
                 "teamName": "Pelicans",
                 "teamTricode": "NOP",
+                "points": 20
+              },
+              {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
                 "points": 20
               }
             ],
@@ -78012,16 +78012,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
-                "points": 24
-              },
-              {
                 "personId": 1630552,
                 "firstName": "Jalen",
                 "lastName": "Johnson",
@@ -78029,6 +78019,16 @@
                 "teamCity": "Atlanta",
                 "teamName": "Hawks",
                 "teamTricode": "ATL",
+                "points": 24
+              },
+              {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
                 "points": 24
               }
             ],
@@ -79985,16 +79985,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
-                "points": 34
-              },
-              {
                 "personId": 1628973,
                 "firstName": "Jalen",
                 "lastName": "Brunson",
@@ -80002,6 +79992,16 @@
                 "teamCity": "New York",
                 "teamName": "Knicks",
                 "teamTricode": "NYK",
+                "points": 34
+              },
+              {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
                 "points": 34
               }
             ],
@@ -84859,16 +84859,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 201939,
                 "firstName": "Stephen",
                 "lastName": "Curry",
@@ -84876,6 +84866,16 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -108978,16 +108978,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1631101,
-                "firstName": "Shaedon",
-                "lastName": "Sharpe",
-                "teamId": 1610612757,
-                "teamCity": "Portland",
-                "teamName": "Trail Blazers",
-                "teamTricode": "POR",
-                "points": 25
-              },
-              {
                 "personId": 203935,
                 "firstName": "Marcus",
                 "lastName": "Smart",
@@ -108995,6 +108985,16 @@
                 "teamCity": "Los Angeles",
                 "teamName": "Lakers",
                 "teamTricode": "LAL",
+                "points": 25
+              },
+              {
+                "personId": 1631101,
+                "firstName": "Shaedon",
+                "lastName": "Sharpe",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
                 "points": 25
               }
             ],
@@ -121185,16 +121185,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641706,
-                "firstName": "Brandon",
-                "lastName": "Miller",
-                "teamId": 1610612766,
-                "teamCity": "Charlotte",
-                "teamName": "Hornets",
-                "teamTricode": "CHA",
-                "points": 26
-              },
-              {
                 "personId": 1628991,
                 "firstName": "Jaren",
                 "lastName": "Jackson Jr.",
@@ -121202,6 +121192,16 @@
                 "teamCity": "Memphis",
                 "teamName": "Grizzlies",
                 "teamTricode": "MEM",
+                "points": 26
+              },
+              {
+                "personId": 1641706,
+                "firstName": "Brandon",
+                "lastName": "Miller",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
                 "points": 26
               }
             ],
@@ -129997,16 +129997,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629640,
-                "firstName": "Keldon",
-                "lastName": "Johnson",
-                "teamId": 1610612759,
-                "teamCity": "San Antonio",
-                "teamName": "Spurs",
-                "teamTricode": "SAS",
-                "points": 25
-              },
-              {
                 "personId": 1629026,
                 "firstName": "Kenrich",
                 "lastName": "Williams",
@@ -130014,6 +130004,16 @@
                 "teamCity": "Oklahoma City",
                 "teamName": "Thunder",
                 "teamTricode": "OKC",
+                "points": 25
+              },
+              {
+                "personId": 1629640,
+                "firstName": "Keldon",
+                "lastName": "Johnson",
+                "teamId": 1610612759,
+                "teamCity": "San Antonio",
+                "teamName": "Spurs",
+                "teamTricode": "SAS",
                 "points": 25
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641739,
-                "firstName": "Toumani",
-                "lastName": "Camara",
-                "teamId": 1610612757,
-                "teamCity": "Portland",
-                "teamName": "Trail Blazers",
-                "teamTricode": "POR",
-                "points": 30
-              },
-              {
                 "personId": 1630178,
                 "firstName": "Tyrese",
                 "lastName": "Maxey",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Philadelphia",
                 "teamName": "76ers",
                 "teamTricode": "PHI",
+                "points": 30
+              },
+              {
+                "personId": 1641739,
+                "firstName": "Toumani",
+                "lastName": "Camara",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
                 "points": 30
               }
             ],
@@ -174141,16 +174141,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629655,
-                "firstName": "Daniel",
-                "lastName": "Gafford",
-                "teamId": 1610612742,
-                "teamCity": "Dallas",
-                "teamName": "Mavericks",
-                "teamTricode": "DAL",
-                "points": 24
-              },
-              {
                 "personId": 203468,
                 "firstName": "CJ",
                 "lastName": "McCollum",
@@ -174158,6 +174148,16 @@
                 "teamCity": "Atlanta",
                 "teamName": "Hawks",
                 "teamTricode": "ATL",
+                "points": 24
+              },
+              {
+                "personId": 1629655,
+                "firstName": "Daniel",
+                "lastName": "Gafford",
+                "teamId": 1610612742,
+                "teamCity": "Dallas",
+                "teamName": "Mavericks",
+                "teamTricode": "DAL",
                 "points": 24
               }
             ],
@@ -177985,16 +177985,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629656,
-                "firstName": "Quentin",
-                "lastName": "Grimes",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 25
-              },
-              {
                 "personId": 1642846,
                 "firstName": "Ace",
                 "lastName": "Bailey",
@@ -178002,6 +177992,16 @@
                 "teamCity": "Utah",
                 "teamName": "Jazz",
                 "teamTricode": "UTA",
+                "points": 25
+              },
+              {
+                "personId": 1629656,
+                "firstName": "Quentin",
+                "lastName": "Grimes",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 25
               }
             ],
@@ -192204,16 +192204,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
-                "points": 25
-              },
-              {
                 "personId": 1630611,
                 "firstName": "Gui",
                 "lastName": "Santos",
@@ -192231,6 +192221,16 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
+                "points": 25
+              },
+              {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
                 "points": 25
               }
             ],
@@ -202507,16 +202507,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 202685,
-                "firstName": "Jonas",
-                "lastName": "Valanciunas",
-                "teamId": 1610612743,
-                "teamCity": "Denver",
-                "teamName": "Nuggets",
-                "teamTricode": "DEN",
-                "points": 23
-              },
-              {
                 "personId": 1642382,
                 "firstName": "Branden",
                 "lastName": "Carlson",
@@ -202524,6 +202514,16 @@
                 "teamCity": "Oklahoma City",
                 "teamName": "Thunder",
                 "teamTricode": "OKC",
+                "points": 23
+              },
+              {
+                "personId": 202685,
+                "firstName": "Jonas",
+                "lastName": "Valanciunas",
+                "teamId": 1610612743,
+                "teamCity": "Denver",
+                "teamName": "Nuggets",
+                "teamTricode": "DEN",
                 "points": 23
               }
             ],
@@ -205929,7 +205929,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1188,
+                  "broadcasterDisplay": "97.1 FM The Ticket",
+                  "broadcasterAbbreviation": "WXYT",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
@@ -207138,7 +207152,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1187,
+                  "broadcasterDisplay": "950 AM",
+                  "broadcasterAbbreviation": "WWJ",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
@@ -208009,7 +208037,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1188,
+                  "broadcasterDisplay": "97.1 FM The Ticket",
+                  "broadcasterAbbreviation": "WXYT",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -208545,7 +208587,7 @@
                   "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://espn.smart.link/b4uxwf8ow?ex_cid=NBA&gameId=401869377&referringapp=nba",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 2,
                   "localizationRegion": ""
@@ -208643,7 +208685,7 @@
                   "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://espn.smart.link/b4uxwf8ow?ex_cid=NBA&gameId=401869385&referringapp=nba",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 2,
                   "localizationRegion": ""
@@ -208876,7 +208918,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -208897,7 +208953,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1188,
+                  "broadcasterDisplay": "97.1 FM The Ticket",
+                  "broadcasterAbbreviation": "WXYT",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -208960,7 +209030,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209058,7 +209142,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209147,7 +209245,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209231,7 +209343,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209329,7 +209455,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209446,7 +209586,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209464,7 +209618,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1187,
+                  "broadcasterDisplay": "950 AM",
+                  "broadcasterAbbreviation": "WWJ",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
@@ -209530,7 +209698,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209614,7 +209796,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209712,7 +209908,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209801,7 +210011,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209885,7 +210109,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -209983,7 +210221,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210095,7 +210347,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210184,7 +210450,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210205,7 +210485,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1187,
+                  "broadcasterDisplay": "950 AM",
+                  "broadcasterAbbreviation": "WWJ",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612765,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -210268,7 +210562,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210352,7 +210660,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210450,7 +210772,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210539,7 +210875,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210623,7 +210973,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210721,7 +211085,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210833,7 +211211,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -210922,7 +211314,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -211006,7 +211412,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -211090,7 +211510,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -211188,7 +211622,21 @@
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
