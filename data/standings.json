@@ -1,5 +1,5 @@
 {
-  "updated": "2026-04-14T20:58:19.196Z",
+  "updated": "2026-04-15T06:55:26.904Z",
   "eastern": [
     {
       "rank": 1,
@@ -257,18 +257,6 @@
     },
     {
       "rank": 7,
-      "tri": "PHX",
-      "name": "Phoenix Suns",
-      "shortName": "Suns",
-      "wins": 45,
-      "losses": 37,
-      "pct": ".549",
-      "gb": "19",
-      "streak": "W1",
-      "l10": "5-5"
-    },
-    {
-      "rank": 8,
       "tri": "POR",
       "name": "Portland Trail Blazers",
       "shortName": "Trail Blazers",
@@ -278,6 +266,18 @@
       "gb": "22",
       "streak": "W2",
       "l10": "7-3"
+    },
+    {
+      "rank": 8,
+      "tri": "PHX",
+      "name": "Phoenix Suns",
+      "shortName": "Suns",
+      "wins": 45,
+      "losses": 37,
+      "pct": ".549",
+      "gb": "19",
+      "streak": "W1",
+      "l10": "5-5"
     },
     {
       "rank": 9,
