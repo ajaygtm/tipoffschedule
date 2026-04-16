@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-15T20:54:38.737Z",
+    "scores_updated_utc": "2026-04-16T06:58:10.715Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-15T20:54:04.182Z"
+    "schedule_synced_utc": "2026-04-16T06:57:42.933Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630162,
-                "firstName": "Anthony",
-                "lastName": "Edwards",
-                "teamId": 1610612750,
-                "teamCity": "Minnesota",
-                "teamName": "Timberwolves",
-                "teamTricode": "MIN",
-                "points": 26
-              },
-              {
                 "personId": 203897,
                 "firstName": "Zach",
                 "lastName": "LaVine",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Sacramento",
                 "teamName": "Kings",
                 "teamTricode": "SAC",
+                "points": 26
+              },
+              {
+                "personId": 1630162,
+                "firstName": "Anthony",
+                "lastName": "Edwards",
+                "teamId": 1610612750,
+                "teamCity": "Minnesota",
+                "teamName": "Timberwolves",
+                "teamTricode": "MIN",
                 "points": 26
               }
             ],
@@ -174141,16 +174141,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629655,
-                "firstName": "Daniel",
-                "lastName": "Gafford",
-                "teamId": 1610612742,
-                "teamCity": "Dallas",
-                "teamName": "Mavericks",
-                "teamTricode": "DAL",
-                "points": 24
-              },
-              {
                 "personId": 203468,
                 "firstName": "CJ",
                 "lastName": "McCollum",
@@ -174158,6 +174148,16 @@
                 "teamCity": "Atlanta",
                 "teamName": "Hawks",
                 "teamTricode": "ATL",
+                "points": 24
+              },
+              {
+                "personId": 1629655,
+                "firstName": "Daniel",
+                "lastName": "Gafford",
+                "teamId": 1610612742,
+                "teamCity": "Dallas",
+                "teamName": "Mavericks",
+                "teamTricode": "DAL",
                 "points": 24
               }
             ],
@@ -192204,6 +192204,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
+                "points": 25
+              },
+              {
                 "personId": 1630611,
                 "firstName": "Gui",
                 "lastName": "Santos",
@@ -192221,16 +192231,6 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
-                "points": 25
-              },
-              {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
                 "points": 25
               }
             ],
@@ -205455,7 +205455,7 @@
                   "broadcasterAbbreviation": "Amazon",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.amazon.com/gp/video/detail/amzn1.dv.gti.7a55c971-f152-4419-8630-46e3afc76c1c?&ref_=dvm_liv_nba_fd",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 4,
                   "localizationRegion": ""
@@ -205567,7 +205567,7 @@
                   "broadcasterAbbreviation": "Amazon",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.amazon.com/gp/video/detail/amzn1.dv.gti.3886d74a-9043-4961-9fec-4ff03c5ec984?&ref_=dvm_liv_nba_fd",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 4,
                   "localizationRegion": ""
@@ -205601,7 +205601,7 @@
                   "broadcasterAbbreviation": "SN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://watch.sportsnet.ca/content-id/d7frifusmite9b8agbk0",
                   "broadcasterTeamId": 1610612761,
                   "broadcasterRanking": null,
                   "localizationRegion": ""
@@ -205679,7 +205679,7 @@
                   "broadcasterAbbreviation": "Amazon",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.amazon.com/gp/video/detail/amzn1.dv.gti.5888a6a4-2bcd-478b-b314-889a1a5317b9?&ref_=dvm_liv_nba_fd",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 4,
                   "localizationRegion": ""
@@ -205830,7 +205830,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1001508,
+                  "broadcasterDisplay": "790 AM / S: KLTN TUDN",
+                  "broadcasterAbbreviation": "KBME/KLTN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612745,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -205994,7 +206008,7 @@
           },
           {
             "gameId": "0042500111",
-            "gameCode": "",
+            "gameCode": "20260419/PHIBOS",
             "gameStatus": 1,
             "gameStatusText": "1:00 pm ET",
             "gameSequence": 1,
@@ -206004,7 +206018,7 @@
             "gameDateUTC": "2026-04-19T04:00:00Z",
             "gameTimeUTC": "1900-01-01T17:00:00Z",
             "gameDateTimeUTC": "2026-04-19T17:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-19T13:00:00Z",
             "homeTeamTime": "2026-04-19T13:00:00Z",
             "day": "Sun",
             "monthNum": 4,
@@ -206071,7 +206085,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -206086,15 +206114,15 @@
               "seed": 2
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -206220,7 +206248,7 @@
             "gameCode": "20260419/PORSAS",
             "gameStatus": 1,
             "gameStatusText": "9:00 pm ET",
-            "gameSequence": 4,
+            "gameSequence": 2,
             "gameDateEst": "2026-04-19T00:00:00Z",
             "gameTimeEst": "1900-01-01T21:00:00Z",
             "gameDateTimeEst": "2026-04-19T21:00:00Z",
@@ -206740,7 +206768,7 @@
         "games": [
           {
             "gameId": "0042500112",
-            "gameCode": "",
+            "gameCode": "20260421/PHIBOS",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
@@ -206750,7 +206778,7 @@
             "gameDateUTC": "2026-04-21T04:00:00Z",
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-04-21T23:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-21T19:00:00Z",
             "homeTeamTime": "2026-04-21T19:00:00Z",
             "day": "Tue",
             "monthNum": 4,
@@ -206817,7 +206845,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -206832,15 +206874,15 @@
               "seed": 2
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -207689,7 +207731,7 @@
         "games": [
           {
             "gameId": "0042500113",
-            "gameCode": "",
+            "gameCode": "20260424/BOSPHI",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
@@ -207700,7 +207742,7 @@
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-04-24T23:00:00Z",
             "awayTeamTime": "2026-04-24T19:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "homeTeamTime": "2026-04-24T19:00:00Z",
             "day": "Fri",
             "monthNum": 4,
             "weekNumber": 27,
@@ -207710,9 +207752,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 3",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -207750,22 +207792,36 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
               "teamId": 1610612738,
@@ -208453,6 +208509,19 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
                   "broadcasterId": 1001098,
                   "broadcasterDisplay": "SiriusXM",
                   "broadcasterAbbreviation": "SiriusXM",
@@ -208508,7 +208577,7 @@
         "games": [
           {
             "gameId": "0042500114",
-            "gameCode": "",
+            "gameCode": "20260426/BOSPHI",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 3,
@@ -208519,7 +208588,7 @@
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-04-26T23:00:00Z",
             "awayTeamTime": "2026-04-26T19:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "homeTeamTime": "2026-04-26T19:00:00Z",
             "day": "Sun",
             "monthNum": 4,
             "weekNumber": 27,
@@ -208529,9 +208598,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 4",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -208582,22 +208651,36 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
               "teamId": 1610612738,
@@ -208776,6 +208859,19 @@
                 }
               ],
               "nationalRadioBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
@@ -209314,7 +209410,7 @@
         "games": [
           {
             "gameId": "0042500115",
-            "gameCode": "",
+            "gameCode": "20260428/PHIBOS",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -209324,8 +209420,8 @@
             "gameDateUTC": "2026-04-28T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-28T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-28T00:00:00Z",
+            "homeTeamTime": "2026-04-28T00:00:00Z",
             "day": "Tue",
             "monthNum": 4,
             "weekNumber": 28,
@@ -209378,7 +209474,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -209393,15 +209503,15 @@
               "seed": 2
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -210108,7 +210218,7 @@
         "games": [
           {
             "gameId": "0042500116",
-            "gameCode": "",
+            "gameCode": "20260430/BOSPHI",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -210118,8 +210228,8 @@
             "gameDateUTC": "2026-04-30T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-30T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-30T00:00:00Z",
+            "homeTeamTime": "2026-04-30T00:00:00Z",
             "day": "Thu",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210129,9 +210239,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 6",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -210169,22 +210279,36 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
               "teamId": 1610612738,
@@ -211000,7 +211124,7 @@
         "games": [
           {
             "gameId": "0042500117",
-            "gameCode": "",
+            "gameCode": "20260502/PHIBOS",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -211010,8 +211134,8 @@
             "gameDateUTC": "2026-05-02T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-02T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-02T00:00:00Z",
+            "homeTeamTime": "2026-05-02T00:00:00Z",
             "day": "Sat",
             "monthNum": 5,
             "weekNumber": 28,
@@ -211064,7 +211188,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1434,
+                  "broadcasterDisplay": "97.5 The Fanatic",
+                  "broadcasterAbbreviation": "WPEN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612755,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -211079,15 +211217,15 @@
               "seed": 2
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
