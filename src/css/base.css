@@ -247,6 +247,11 @@ body{font-size:15px;line-height:1.42;}
   gap:32px;align-items:start;min-height:240px;
 }
 .game-card{
+  --playoff-badge-left: 10px;
+  --playoff-badge-bottom: 12px;
+  --playoff-icon-right: 6px;
+  --playoff-icon-bottom: 12px;
+  --playoff-icon-size: 25px;
   background:var(--surface);border:1.2px solid var(--border);
   border-radius:var(--radius-card);aspect-ratio:1/1;
   padding:12px 12px 8px;display:flex;flex-direction:column;gap:8px;
@@ -255,6 +260,32 @@ body{font-size:15px;line-height:1.42;}
 }
 .game-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-md);border-color:var(--accent);}
 .game-card:focus-within{border-color:var(--accent);box-shadow:var(--focus-ring);}
+.game-card-badge{
+  position:absolute;
+  left:var(--playoff-badge-left);
+  bottom:var(--playoff-badge-bottom);
+  padding:4px 8px;
+  border-radius:999px;
+  background:rgba(148,156,169,0.16);
+  border:1px solid rgba(148,156,169,0.28);
+  color:var(--accent);
+  font-size:.56rem;
+  font-weight:700;
+  letter-spacing:.75px;
+  line-height:1;
+  text-transform:uppercase;
+  pointer-events:none;
+}
+.game-card-playoff-icon{
+  position:absolute;
+  right:var(--playoff-icon-right);
+  bottom:var(--playoff-icon-bottom);
+  width:var(--playoff-icon-size);
+  height:var(--playoff-icon-size);
+  object-fit:contain;
+  line-height:1;
+  pointer-events:none;
+}
 .logos-row{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:2px;}
 .logo,.tri-fallback{
   width:var(--logo-size-base);height:var(--logo-size-base);
@@ -279,7 +310,7 @@ body{font-size:15px;line-height:1.42;}
   text-align:center;font-size:.56rem;letter-spacing:1.05px;
   text-transform:uppercase;font-weight:600;line-height:1.12;color:var(--text-faint);
 }
-.countdown-line{text-align:center;font-size:.60rem;letter-spacing:1px;font-weight:600;text-transform:uppercase;margin-top:4px;color:var(--accent-dark);}
+.countdown-line{text-align:center;font-size:.60rem;letter-spacing:1px;font-weight:600;text-transform:uppercase;margin:1px 0 -1px;color:var(--accent-dark);line-height:1;}
 .no-games{grid-column:1/-1;text-align:center;font-size:.85rem;color:var(--text-faint);padding:32px 0;}
 
 .btn-float{

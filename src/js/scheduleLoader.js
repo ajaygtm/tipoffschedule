@@ -1,7 +1,7 @@
 // scheduleLoader.js – Commit 3 refinement (remove game_number logic)
 // Loads raw leagueSchedule (homeTeam/awayTeam variant) and normalizes.
-// Includes preseason (00125...) and regular season (00225...) only.
-// Adds season_stage label. Excludes any game numbering sequence logic now.
+// Includes preseason (00125...), regular season (00225...), and playoffs (00425...).
+// Adds season_stage label and keeps playoff game labels for UI display.
 
 const RAW_SCHEDULE_URL = "data/schedule/nba_schedule_25_26.json";
 
@@ -43,7 +43,8 @@ function transformRaw(raw) {
 
       const isPreseason = g.gameId.startsWith("00125");
       const isRegular   = g.gameId.startsWith("00225");
-      if (!isPreseason && !isRegular) continue;
+      const isPlayoffs  = g.gameId.startsWith("00425") || Number.parseInt(g.seasonStageId, 10) === 4;
+      if (!isPreseason && !isRegular && !isPlayoffs) continue;
       if (isPreseason) sawPreseason = true;
 
       const startUTC = deriveStartUTC(g);
@@ -72,7 +73,8 @@ function transformRaw(raw) {
         away_tri: awayTri,
         venue: g.arenaName || null,
         venue_city: g.arenaCity || null,
-        season_stage: isPreseason ? "Preseason" : "Regular Season",
+        season_stage: isPreseason ? "Preseason" : (isPlayoffs ? "Playoffs" : "Regular Season"),
+        series_game_number: normalizeSeriesGameNumber(g),
         status,
         homeScore,
         awayScore,
@@ -131,6 +133,11 @@ function normalizeGameStatus(game) {
   const text = String(game?.gameStatusText || "").toLowerCase();
   if (game?.gameStatus === 3 || text === "final") return "final";
   return "scheduled";
+}
+
+function normalizeSeriesGameNumber(game) {
+  const value = String(game?.seriesGameNumber || game?.gameSubLabel || "").trim();
+  return value || null;
 }
 
 function parseScore(value) {

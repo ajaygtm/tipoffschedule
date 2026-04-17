@@ -250,6 +250,12 @@ function renderGameCard(game){
   card.className = "game-card";
   card.setAttribute("data-tipoff", game.date_utc);
 
+  const playoffIcon = createPlayoffIcon(game);
+  if (playoffIcon) card.appendChild(playoffIcon);
+
+  const playoffBadge = createPlayoffBadge(game);
+  if (playoffBadge) card.appendChild(playoffBadge);
+
   const awayScore = parseScoreValue(game.awayScore);
   const homeScore = parseScoreValue(game.homeScore);
   const isFinal = game.status === "final" && awayScore !== null && homeScore !== null;
@@ -297,14 +303,9 @@ function renderGameCard(game){
   const primaryMetaLine = document.createElement("div");
   primaryMetaLine.className = "meta-line season-line";
 
-  const isRegularSeason = (game.season_stage || "Regular Season") === "Regular Season";
   const tvText = formatTvMeta(game);
-  if (isRegularSeason) {
-    if (tvText) primaryMetaLine.textContent = tvText;
-    else primaryMetaLine.style.display = "none";
-  } else {
-    primaryMetaLine.textContent = game.season_stage || "Regular Season";
-  }
+  if (tvText) primaryMetaLine.textContent = tvText;
+  else primaryMetaLine.style.display = "none";
 
   const venueLine = document.createElement("div");
   venueLine.className = "meta-line venue-line";
@@ -364,6 +365,47 @@ function createLogo(tri, resultClass = "normal"){
 function parseScoreValue(value) {
   const n = Number.parseInt(value, 10);
   return Number.isFinite(n) ? n : null;
+}
+
+function createPlayoffBadge(game) {
+  const isPlayoffGame = game?.season_stage === "Playoffs";
+  const label = formatPlayoffBadgeLabel(game?.series_game_number);
+  if (!isPlayoffGame || !label) return null;
+
+  const badge = document.createElement("div");
+  badge.className = "game-card-badge";
+  badge.textContent = label;
+  badge.setAttribute("aria-hidden", "true");
+  return badge;
+}
+
+function createPlayoffIcon(game) {
+  if (game?.season_stage !== "Playoffs") return null;
+
+  const icon = document.createElement("img");
+  icon.className = "game-card-playoff-icon";
+  icon.src = "assets/logos/nba_trophy.png?v=2";
+  icon.alt = "";
+  icon.loading = "lazy";
+  icon.decoding = "async";
+  icon.onerror = () => {
+    if (icon.dataset.fallbackApplied === "true") {
+      icon.style.display = "none";
+      return;
+    }
+    icon.dataset.fallbackApplied = "true";
+    icon.src = "assets/logos/nba_trophy.svg";
+  };
+  icon.setAttribute("aria-hidden", "true");
+  return icon;
+}
+
+function formatPlayoffBadgeLabel(value) {
+  const raw = String(value || "").trim();
+  if (!raw) return "";
+  const m = raw.match(/(?:game\s*)?(\d+)/i);
+  if (!m) return raw;
+  return `G${m[1]}`;
 }
 
 function formatTvMeta(game) {
