@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-17T20:50:19.549Z",
+    "scores_updated_utc": "2026-04-18T06:14:18.153Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-17T20:49:49.732Z"
+    "schedule_synced_utc": "2026-04-18T06:14:03.078Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -8325,16 +8325,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1642273,
-                "firstName": "Kyshawn",
-                "lastName": "George",
-                "teamId": 1610612764,
-                "teamCity": "Washington",
-                "teamName": "Wizards",
-                "teamTricode": "WAS",
-                "points": 20
-              },
-              {
                 "personId": 1631105,
                 "firstName": "Jalen",
                 "lastName": "Duren",
@@ -8342,6 +8332,16 @@
                 "teamCity": "Detroit",
                 "teamName": "Pistons",
                 "teamTricode": "DET",
+                "points": 20
+              },
+              {
+                "personId": 1642273,
+                "firstName": "Kyshawn",
+                "lastName": "George",
+                "teamId": 1610612764,
+                "teamCity": "Washington",
+                "teamName": "Wizards",
+                "teamTricode": "WAS",
                 "points": 20
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 1627750,
                 "firstName": "Jamal",
                 "lastName": "Murray",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -113650,6 +113650,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 201566,
+                "firstName": "Russell",
+                "lastName": "Westbrook",
+                "teamId": 1610612758,
+                "teamCity": "Sacramento",
+                "teamName": "Kings",
+                "teamTricode": "SAC",
+                "points": 23
+              },
+              {
                 "personId": 1627742,
                 "firstName": "Brandon",
                 "lastName": "Ingram",
@@ -113667,16 +113677,6 @@
                 "teamCity": "Toronto",
                 "teamName": "Raptors",
                 "teamTricode": "TOR",
-                "points": 23
-              },
-              {
-                "personId": 201566,
-                "firstName": "Russell",
-                "lastName": "Westbrook",
-                "teamId": 1610612758,
-                "teamCity": "Sacramento",
-                "teamName": "Kings",
-                "teamTricode": "SAC",
                 "points": 23
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630178,
-                "firstName": "Tyrese",
-                "lastName": "Maxey",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 30
-              },
-              {
                 "personId": 1641739,
                 "firstName": "Toumani",
                 "lastName": "Camara",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Portland",
                 "teamName": "Trail Blazers",
                 "teamTricode": "POR",
+                "points": 30
+              },
+              {
+                "personId": 1630178,
+                "firstName": "Tyrese",
+                "lastName": "Maxey",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 30
               }
             ],
@@ -205495,7 +205495,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -205730,10 +205744,38 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1730,
+                  "broadcasterDisplay": "Altitude Sports Radio 92.5 FM",
+                  "broadcasterAbbreviation": "KKSE-FM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612743,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1126,
+                  "broadcasterDisplay": "KTLK-AM 1130 / FM 103.5",
+                  "broadcasterAbbreviation": "KTLK",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612750,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -205911,7 +205953,7 @@
         "games": [
           {
             "gameId": "0042500101",
-            "gameCode": "",
+            "gameCode": "20260419/ORLDET",
             "gameStatus": 1,
             "gameStatusText": "6:30 pm ET",
             "gameSequence": 3,
@@ -205921,7 +205963,7 @@
             "gameDateUTC": "2026-04-19T04:00:00Z",
             "gameTimeUTC": "1900-01-01T22:30:00Z",
             "gameDateTimeUTC": "2026-04-19T22:30:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-19T18:30:00Z",
             "homeTeamTime": "2026-04-19T18:30:00Z",
             "day": "Sun",
             "monthNum": 4,
@@ -206002,7 +206044,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -206017,15 +206073,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -206175,7 +206231,7 @@
           },
           {
             "gameId": "0042500141",
-            "gameCode": "",
+            "gameCode": "20260419/PHXOKC",
             "gameStatus": 1,
             "gameStatusText": "3:30 pm ET",
             "gameSequence": 2,
@@ -206185,7 +206241,7 @@
             "gameDateUTC": "2026-04-19T04:00:00Z",
             "gameTimeUTC": "1900-01-01T19:30:00Z",
             "gameDateTimeUTC": "2026-04-19T19:30:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-19T12:30:00Z",
             "homeTeamTime": "2026-04-19T14:30:00Z",
             "day": "Sun",
             "monthNum": 4,
@@ -206268,15 +206324,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -206535,7 +206591,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -206668,7 +206738,7 @@
                   "broadcasterAbbreviation": "TSN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.tsn.ca/nba/event/toronto-raptors-cleveland-cavaliers-20260420/2976795",
                   "broadcasterTeamId": 1610612761,
                   "broadcasterRanking": null,
                   "localizationRegion": ""
@@ -206799,7 +206869,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1126,
+                  "broadcasterDisplay": "KTLK-AM 1130 / FM 103.5",
+                  "broadcasterAbbreviation": "KTLK",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612750,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -207259,7 +207343,7 @@
         "games": [
           {
             "gameId": "0042500102",
-            "gameCode": "",
+            "gameCode": "20260422/ORLDET",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
@@ -207269,7 +207353,7 @@
             "gameDateUTC": "2026-04-22T04:00:00Z",
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-04-22T23:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-22T19:00:00Z",
             "homeTeamTime": "2026-04-22T19:00:00Z",
             "day": "Wed",
             "monthNum": 4,
@@ -207297,7 +207381,7 @@
                   "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://espn.smart.link/b4uxwf8ow?ex_cid=NBA&gameId=401869411&referringapp=nba",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 2,
                   "localizationRegion": ""
@@ -207337,7 +207421,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -207352,15 +207450,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -207371,7 +207469,7 @@
           },
           {
             "gameId": "0042500142",
-            "gameCode": "",
+            "gameCode": "20260422/PHXOKC",
             "gameStatus": 1,
             "gameStatusText": "9:30 pm ET",
             "gameSequence": 2,
@@ -207381,7 +207479,7 @@
             "gameDateUTC": "2026-04-22T04:00:00Z",
             "gameTimeUTC": "1900-01-01T01:30:00Z",
             "gameDateTimeUTC": "2026-04-23T01:30:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-22T18:30:00Z",
             "homeTeamTime": "2026-04-22T20:30:00Z",
             "day": "Wed",
             "monthNum": 4,
@@ -207464,15 +207562,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -207549,7 +207647,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -207801,7 +207913,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1001099,
+                  "broadcasterDisplay": "KFAN FM / Wolves App / iHeart Radio",
+                  "broadcasterAbbreviation": "KFAN/Apps",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612750,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
@@ -208212,7 +208338,7 @@
         "games": [
           {
             "gameId": "0042500103",
-            "gameCode": "",
+            "gameCode": "20260425/DETORL",
             "gameStatus": 1,
             "gameStatusText": "1:00 pm ET",
             "gameSequence": 1,
@@ -208223,7 +208349,7 @@
             "gameTimeUTC": "1900-01-01T17:00:00Z",
             "gameDateTimeUTC": "2026-04-25T17:00:00Z",
             "awayTeamTime": "2026-04-25T13:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "homeTeamTime": "2026-04-25T13:00:00Z",
             "day": "Sat",
             "monthNum": 4,
             "weekNumber": 27,
@@ -208233,9 +208359,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 3",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Kia Center",
+            "arenaState": "FL",
+            "arenaCity": "Orlando",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -208286,7 +208412,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -208307,15 +208447,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612765,
@@ -208411,7 +208551,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -208462,7 +208616,7 @@
           },
           {
             "gameId": "0042500143",
-            "gameCode": "",
+            "gameCode": "20260425/OKCPHX",
             "gameStatus": 1,
             "gameStatusText": "3:30 pm ET",
             "gameSequence": 2,
@@ -208473,7 +208627,7 @@
             "gameTimeUTC": "1900-01-01T19:30:00Z",
             "gameDateTimeUTC": "2026-04-25T19:30:00Z",
             "awayTeamTime": "2026-04-25T14:30:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "homeTeamTime": "2026-04-25T12:30:00Z",
             "day": "Sat",
             "monthNum": 4,
             "weekNumber": 27,
@@ -208483,9 +208637,9 @@
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 3",
             "seriesText": "Series tied 0-0",
-            "arenaName": "Paycom Center",
-            "arenaState": "OK",
-            "arenaCity": "Oklahoma City",
+            "arenaName": "Mortgage Matchup Center",
+            "arenaState": "AZ",
+            "arenaCity": "Phoenix",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -208557,15 +208711,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612760,
@@ -208661,7 +208815,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1001099,
+                  "broadcasterDisplay": "KFAN FM / Wolves App / iHeart Radio",
+                  "broadcasterAbbreviation": "KFAN/Apps",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612750,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [],
@@ -209251,7 +209419,7 @@
         "games": [
           {
             "gameId": "0042500104",
-            "gameCode": "",
+            "gameCode": "20260427/DETORL",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -209261,8 +209429,8 @@
             "gameDateUTC": "2026-04-27T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-27T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-27T00:00:00Z",
+            "homeTeamTime": "2026-04-27T00:00:00Z",
             "day": "Mon",
             "monthNum": 4,
             "weekNumber": 28,
@@ -209272,9 +209440,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 4",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Kia Center",
+            "arenaState": "FL",
+            "arenaCity": "Orlando",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -209312,7 +209480,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -209333,15 +209515,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612765,
@@ -209363,7 +209545,7 @@
           },
           {
             "gameId": "0042500144",
-            "gameCode": "",
+            "gameCode": "20260427/OKCPHX",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 2,
@@ -209373,8 +209555,8 @@
             "gameDateUTC": "2026-04-27T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-27T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-27T00:00:00Z",
+            "homeTeamTime": "2026-04-27T00:00:00Z",
             "day": "Mon",
             "monthNum": 4,
             "weekNumber": 28,
@@ -209384,9 +209566,9 @@
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 4",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Mortgage Matchup Center",
+            "arenaState": "AZ",
+            "arenaCity": "Phoenix",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -209445,15 +209627,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612760,
@@ -209782,7 +209964,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -209947,7 +210143,7 @@
         "games": [
           {
             "gameId": "0042500105",
-            "gameCode": "",
+            "gameCode": "20260429/ORLDET",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -209957,8 +210153,8 @@
             "gameDateUTC": "2026-04-29T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-29T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-29T00:00:00Z",
+            "homeTeamTime": "2026-04-29T00:00:00Z",
             "day": "Wed",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210025,7 +210221,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -210040,15 +210250,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -210199,7 +210409,7 @@
           },
           {
             "gameId": "0042500145",
-            "gameCode": "",
+            "gameCode": "20260429/PHXOKC",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 3,
@@ -210209,8 +210419,8 @@
             "gameDateUTC": "2026-04-29T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-04-29T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-04-29T00:00:00Z",
+            "homeTeamTime": "2026-04-29T00:00:00Z",
             "day": "Wed",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210292,15 +210502,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -210615,7 +210825,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -210895,7 +211119,7 @@
         "games": [
           {
             "gameId": "0042500106",
-            "gameCode": "",
+            "gameCode": "20260501/DETORL",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -210905,8 +211129,8 @@
             "gameDateUTC": "2026-05-01T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-01T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-01T00:00:00Z",
+            "homeTeamTime": "2026-05-01T00:00:00Z",
             "day": "Fri",
             "monthNum": 5,
             "weekNumber": 28,
@@ -210916,9 +211140,9 @@
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 6",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Kia Center",
+            "arenaState": "FL",
+            "arenaCity": "Orlando",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -210956,7 +211180,21 @@
               ],
               "nationalOttBroadcasters": [],
               "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [],
+              "homeRadioBroadcasters": [
+                {
+                  "broadcasterScope": "home",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
               "awayRadioBroadcasters": [
@@ -210977,15 +211215,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612765,
@@ -211147,7 +211385,7 @@
           },
           {
             "gameId": "0042500146",
-            "gameCode": "",
+            "gameCode": "20260501/OKCPHX",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 3,
@@ -211157,8 +211395,8 @@
             "gameDateUTC": "2026-05-01T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-01T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-01T00:00:00Z",
+            "homeTeamTime": "2026-05-01T00:00:00Z",
             "day": "Fri",
             "monthNum": 5,
             "weekNumber": 28,
@@ -211168,9 +211406,9 @@
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 6",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Mortgage Matchup Center",
+            "arenaState": "AZ",
+            "arenaCity": "Phoenix",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -211229,15 +211467,15 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "awayTeam": {
               "teamId": 1610612760,
@@ -211580,7 +211818,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1491,
+                  "broadcasterDisplay": "WZGC",
+                  "broadcasterAbbreviation": "WZGC",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612737,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -211843,7 +212095,7 @@
         "games": [
           {
             "gameId": "0042500107",
-            "gameCode": "",
+            "gameCode": "20260503/ORLDET",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -211853,8 +212105,8 @@
             "gameDateUTC": "2026-05-03T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-03T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-03T00:00:00Z",
+            "homeTeamTime": "2026-05-03T00:00:00Z",
             "day": "Sun",
             "monthNum": 5,
             "weekNumber": 28,
@@ -211907,7 +212159,21 @@
               "homeRadioBroadcasters": [],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1000273,
+                  "broadcasterDisplay": "WYGM 96.9 FM / 740AM",
+                  "broadcasterAbbreviation": "WYGM-FM/AM",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612753,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -211922,15 +212188,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612753,
+              "teamName": "Magic",
+              "teamCity": "Orlando",
+              "teamTricode": "ORL",
+              "teamSlug": "magic",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -212081,7 +212347,7 @@
           },
           {
             "gameId": "0042500147",
-            "gameCode": "",
+            "gameCode": "20260503/PHXOKC",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 3,
@@ -212091,8 +212357,8 @@
             "gameDateUTC": "2026-05-03T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-03T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-03T00:00:00Z",
+            "homeTeamTime": "2026-05-03T00:00:00Z",
             "day": "Sun",
             "monthNum": 5,
             "weekNumber": 28,
@@ -212174,15 +212440,15 @@
               "seed": 1
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612756,
+              "teamName": "Suns",
+              "teamCity": "Phoenix",
+              "teamTricode": "PHX",
+              "teamSlug": "suns",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 8
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
