@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-21T20:56:52.141Z",
+    "scores_updated_utc": "2026-04-22T06:58:05.734Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-21T20:56:17.897Z"
+    "schedule_synced_utc": "2026-04-22T06:57:29.947Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203897,
-                "firstName": "Zach",
-                "lastName": "LaVine",
-                "teamId": 1610612758,
-                "teamCity": "Sacramento",
-                "teamName": "Kings",
-                "teamTricode": "SAC",
-                "points": 26
-              },
-              {
                 "personId": 1630162,
                 "firstName": "Anthony",
                 "lastName": "Edwards",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 26
+              },
+              {
+                "personId": 203897,
+                "firstName": "Zach",
+                "lastName": "LaVine",
+                "teamId": 1610612758,
+                "teamCity": "Sacramento",
+                "teamName": "Kings",
+                "teamTricode": "SAC",
                 "points": 26
               }
             ],
@@ -49276,16 +49276,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630595,
-                "firstName": "Cade",
-                "lastName": "Cunningham",
-                "teamId": 1610612765,
-                "teamCity": "Detroit",
-                "teamName": "Pistons",
-                "teamTricode": "DET",
-                "points": 24
-              },
-              {
                 "personId": 1627783,
                 "firstName": "Pascal",
                 "lastName": "Siakam",
@@ -49293,6 +49283,16 @@
                 "teamCity": "Indiana",
                 "teamName": "Pacers",
                 "teamTricode": "IND",
+                "points": 24
+              },
+              {
+                "personId": 1630595,
+                "firstName": "Cade",
+                "lastName": "Cunningham",
+                "teamId": 1610612765,
+                "teamCity": "Detroit",
+                "teamName": "Pistons",
+                "teamTricode": "DET",
                 "points": 24
               }
             ],
@@ -69867,6 +69867,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
+                "points": 20
+              },
+              {
                 "personId": 1630530,
                 "firstName": "Trey",
                 "lastName": "Murphy III",
@@ -69884,16 +69894,6 @@
                 "teamCity": "New Orleans",
                 "teamName": "Pelicans",
                 "teamTricode": "NOP",
-                "points": 20
-              },
-              {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
                 "points": 20
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 1627750,
                 "firstName": "Jamal",
                 "lastName": "Murray",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641739,
-                "firstName": "Toumani",
-                "lastName": "Camara",
-                "teamId": 1610612757,
-                "teamCity": "Portland",
-                "teamName": "Trail Blazers",
-                "teamTricode": "POR",
-                "points": 30
-              },
-              {
                 "personId": 1630178,
                 "firstName": "Tyrese",
                 "lastName": "Maxey",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Philadelphia",
                 "teamName": "76ers",
                 "teamTricode": "PHI",
+                "points": 30
+              },
+              {
+                "personId": 1641739,
+                "firstName": "Toumani",
+                "lastName": "Camara",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
                 "points": 30
               }
             ],
@@ -200186,16 +200186,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630604,
-                "firstName": "E.J.",
-                "lastName": "Liddell",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 26
-              },
-              {
                 "personId": 1630167,
                 "firstName": "Obi",
                 "lastName": "Toppin",
@@ -200203,6 +200193,16 @@
                 "teamCity": "Indiana",
                 "teamName": "Pacers",
                 "teamTricode": "IND",
+                "points": 26
+              },
+              {
+                "personId": 1630604,
+                "firstName": "E.J.",
+                "lastName": "Liddell",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 26
               }
             ],
@@ -207082,8 +207082,8 @@
           {
             "gameId": "0042500112",
             "gameCode": "20260421/PHIBOS",
-            "gameStatus": 1,
-            "gameStatusText": "7:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 1,
             "gameDateEst": "2026-04-21T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:00:00Z",
@@ -207101,7 +207101,7 @@
             "seriesGameNumber": "Game 2",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 2",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -207196,8 +207196,8 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
-              "score": 0,
+              "losses": 1,
+              "score": 97,
               "seed": 2
             },
             "awayTeam": {
@@ -207206,23 +207206,34 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
-              "score": 0,
+              "score": 111,
               "seed": 7
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 1627759,
+                "firstName": "Jaylen",
+                "lastName": "Brown",
+                "teamId": 1610612738,
+                "teamCity": "Boston",
+                "teamName": "Celtics",
+                "teamTricode": "BOS",
+                "points": 36
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 111,
+            "homeScore": 97
           },
           {
             "gameId": "0042500152",
             "gameCode": "20260421/PORSAS",
-            "gameStatus": 1,
-            "gameStatusText": "8:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 2,
             "gameDateEst": "2026-04-21T00:00:00Z",
             "gameTimeEst": "1900-01-01T20:00:00Z",
@@ -207240,7 +207251,7 @@
             "seriesGameNumber": "Game 2",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 2",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Frost Bank Center",
             "arenaState": "TX",
             "arenaCity": "San Antonio",
@@ -207348,8 +207359,8 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
-              "score": 0,
+              "losses": 1,
+              "score": 103,
               "seed": 2
             },
             "awayTeam": {
@@ -207358,23 +207369,34 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
-              "score": 0,
+              "score": 106,
               "seed": 7
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 1630703,
+                "firstName": "Scoot",
+                "lastName": "Henderson",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
+                "points": 31
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 106,
+            "homeScore": 103
           },
           {
             "gameId": "0042500172",
             "gameCode": "20260421/HOULAL",
-            "gameStatus": 1,
-            "gameStatusText": "10:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 3,
             "gameDateEst": "2026-04-21T00:00:00Z",
             "gameTimeEst": "1900-01-01T22:30:00Z",
@@ -207392,7 +207414,7 @@
             "seriesGameNumber": "Game 2",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 2",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Crypto.com Arena",
             "arenaState": "CA",
             "arenaCity": "Los Angeles",
@@ -207486,9 +207508,9 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
-              "score": 0,
+              "score": 101,
               "seed": 4
             },
             "awayTeam": {
@@ -207498,16 +207520,27 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
-              "score": 0,
+              "losses": 2,
+              "score": 94,
               "seed": 5
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 2544,
+                "firstName": "LeBron",
+                "lastName": "James",
+                "teamId": 1610612747,
+                "teamCity": "Los Angeles",
+                "teamName": "Lakers",
+                "teamTricode": "LAL",
+                "points": 28
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 94,
+            "homeScore": 101
           }
         ]
       },
@@ -208176,7 +208209,7 @@
             "seriesGameNumber": "Game 3",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 3",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Xfinity Mobile Arena",
             "arenaState": "PA",
             "arenaCity": "Philadelphia",
@@ -208257,7 +208290,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -208269,7 +208302,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -208302,7 +208335,7 @@
             "seriesGameNumber": "Game 3",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 3",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Moda Center",
             "arenaState": "OR",
             "arenaCity": "Portland",
@@ -208383,7 +208416,7 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -208395,7 +208428,7 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -208428,7 +208461,7 @@
             "seriesGameNumber": "Game 3",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 3",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Toyota Center",
             "arenaState": "TX",
             "arenaCity": "Houston",
@@ -208510,7 +208543,7 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 5
             },
@@ -208520,7 +208553,7 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
               "score": 0,
               "seed": 4
@@ -209106,7 +209139,7 @@
             "seriesGameNumber": "Game 4",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 4",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Xfinity Mobile Arena",
             "arenaState": "PA",
             "arenaCity": "Philadelphia",
@@ -209200,7 +209233,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -209212,7 +209245,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -209385,7 +209418,7 @@
             "seriesGameNumber": "Game 4",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 4",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Moda Center",
             "arenaState": "OR",
             "arenaCity": "Portland",
@@ -209479,7 +209512,7 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -209491,7 +209524,7 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -209524,7 +209557,7 @@
             "seriesGameNumber": "Game 4",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 4",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Toyota Center",
             "arenaState": "TX",
             "arenaCity": "Houston",
@@ -209619,7 +209652,7 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 5
             },
@@ -209629,7 +209662,7 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
               "score": 0,
               "seed": 4
@@ -210058,11 +210091,11 @@
             "monthNum": 4,
             "weekNumber": 28,
             "weekName": "Week 28",
-            "ifNecessary": "true",
+            "ifNecessary": "false",
             "seriesGameNumber": "Game 5",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -210144,7 +210177,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -210154,7 +210187,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -210310,11 +210343,11 @@
             "monthNum": 4,
             "weekNumber": 28,
             "weekName": "Week 28",
-            "ifNecessary": "true",
+            "ifNecessary": "false",
             "seriesGameNumber": "Game 5",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Frost Bank Center",
             "arenaState": "TX",
             "arenaCity": "San Antonio",
@@ -210396,7 +210429,7 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -210406,7 +210439,7 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -210837,7 +210870,7 @@
             "seriesGameNumber": "Game 5",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Crypto.com Arena",
             "arenaState": "CA",
             "arenaCity": "Los Angeles",
@@ -210904,7 +210937,7 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
               "score": 0,
               "seed": 4
@@ -210916,7 +210949,7 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 5
             },
@@ -210954,7 +210987,7 @@
             "seriesGameNumber": "Game 6",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 6",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Xfinity Mobile Arena",
             "arenaState": "PA",
             "arenaCity": "Philadelphia",
@@ -211035,7 +211068,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -211047,7 +211080,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -211206,7 +211239,7 @@
             "seriesGameNumber": "Game 6",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 6",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Moda Center",
             "arenaState": "OR",
             "arenaCity": "Portland",
@@ -211287,7 +211320,7 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -211299,7 +211332,7 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -211827,7 +211860,7 @@
             "seriesGameNumber": "Game 6",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 6",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Toyota Center",
             "arenaState": "TX",
             "arenaCity": "Houston",
@@ -211895,7 +211928,7 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 5
             },
@@ -211905,7 +211938,7 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
               "score": 0,
               "seed": 4
@@ -211944,7 +211977,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "BOS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -212026,7 +212059,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -212036,7 +212069,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -212196,7 +212229,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "SAS leads 1-0",
+            "seriesText": "Series tied 1-1",
             "arenaName": "Frost Bank Center",
             "arenaState": "TX",
             "arenaCity": "San Antonio",
@@ -212278,7 +212311,7 @@
               "teamTricode": "SAS",
               "teamSlug": "spurs",
               "wins": 1,
-              "losses": 0,
+              "losses": 1,
               "score": 0,
               "seed": 2
             },
@@ -212288,7 +212321,7 @@
               "teamCity": "Portland",
               "teamTricode": "POR",
               "teamSlug": "blazers",
-              "wins": 0,
+              "wins": 1,
               "losses": 1,
               "score": 0,
               "seed": 7
@@ -212803,7 +212836,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "LAL leads 1-0",
+            "seriesText": "LAL leads 2-0",
             "arenaName": "Crypto.com Arena",
             "arenaState": "CA",
             "arenaCity": "Los Angeles",
@@ -212870,7 +212903,7 @@
               "teamCity": "Los Angeles",
               "teamTricode": "LAL",
               "teamSlug": "lakers",
-              "wins": 1,
+              "wins": 2,
               "losses": 0,
               "score": 0,
               "seed": 4
@@ -212882,7 +212915,7 @@
               "teamTricode": "HOU",
               "teamSlug": "rockets",
               "wins": 0,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 5
             },
