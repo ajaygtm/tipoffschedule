@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-22T13:47:57.899Z",
+    "scores_updated_utc": "2026-04-22T20:58:47.356Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-22T13:47:21.482Z"
+    "schedule_synced_utc": "2026-04-22T20:58:22.506Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -8325,16 +8325,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1631105,
-                "firstName": "Jalen",
-                "lastName": "Duren",
-                "teamId": 1610612765,
-                "teamCity": "Detroit",
-                "teamName": "Pistons",
-                "teamTricode": "DET",
-                "points": 20
-              },
-              {
                 "personId": 1642273,
                 "firstName": "Kyshawn",
                 "lastName": "George",
@@ -8342,6 +8332,16 @@
                 "teamCity": "Washington",
                 "teamName": "Wizards",
                 "teamTricode": "WAS",
+                "points": 20
+              },
+              {
+                "personId": 1631105,
+                "firstName": "Jalen",
+                "lastName": "Duren",
+                "teamId": 1610612765,
+                "teamCity": "Detroit",
+                "teamName": "Pistons",
+                "teamTricode": "DET",
                 "points": 20
               }
             ],
@@ -24448,16 +24448,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630560,
-                "firstName": "Cam",
-                "lastName": "Thomas",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 25
-              },
-              {
                 "personId": 1628978,
                 "firstName": "Donte",
                 "lastName": "DiVincenzo",
@@ -24465,6 +24455,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 25
+              },
+              {
+                "personId": 1630560,
+                "firstName": "Cam",
+                "lastName": "Thomas",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 25
               }
             ],
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203897,
-                "firstName": "Zach",
-                "lastName": "LaVine",
-                "teamId": 1610612758,
-                "teamCity": "Sacramento",
-                "teamName": "Kings",
-                "teamTricode": "SAC",
-                "points": 26
-              },
-              {
                 "personId": 1630162,
                 "firstName": "Anthony",
                 "lastName": "Edwards",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 26
+              },
+              {
+                "personId": 203897,
+                "firstName": "Zach",
+                "lastName": "LaVine",
+                "teamId": 1610612758,
+                "teamCity": "Sacramento",
+                "teamName": "Kings",
+                "teamTricode": "SAC",
                 "points": 26
               }
             ],
@@ -69867,6 +69867,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
+                "points": 20
+              },
+              {
                 "personId": 1630530,
                 "firstName": "Trey",
                 "lastName": "Murphy III",
@@ -69884,16 +69894,6 @@
                 "teamCity": "New Orleans",
                 "teamName": "Pelicans",
                 "teamTricode": "NOP",
-                "points": 20
-              },
-              {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
                 "points": 20
               }
             ],
@@ -78012,16 +78012,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
-                "points": 24
-              },
-              {
                 "personId": 1630552,
                 "firstName": "Jalen",
                 "lastName": "Johnson",
@@ -78029,6 +78019,16 @@
                 "teamCity": "Atlanta",
                 "teamName": "Hawks",
                 "teamTricode": "ATL",
+                "points": 24
+              },
+              {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
                 "points": 24
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 1627750,
                 "firstName": "Jamal",
                 "lastName": "Murray",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630178,
-                "firstName": "Tyrese",
-                "lastName": "Maxey",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 30
-              },
-              {
                 "personId": 1641739,
                 "firstName": "Toumani",
                 "lastName": "Camara",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Portland",
                 "teamName": "Trail Blazers",
                 "teamTricode": "POR",
+                "points": 30
+              },
+              {
+                "personId": 1630178,
+                "firstName": "Tyrese",
+                "lastName": "Maxey",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 30
               }
             ],
@@ -210077,16 +210077,16 @@
             "gameId": "0042500115",
             "gameCode": "20260428/PHIBOS",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
+            "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
             "gameDateEst": "2026-04-28T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-28T00:00:00Z",
+            "gameTimeEst": "1900-01-01T19:00:00Z",
+            "gameDateTimeEst": "2026-04-28T19:00:00Z",
             "gameDateUTC": "2026-04-28T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-28T04:00:00Z",
-            "awayTeamTime": "2026-04-28T00:00:00Z",
-            "homeTeamTime": "2026-04-28T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T23:00:00Z",
+            "gameDateTimeUTC": "2026-04-28T23:00:00Z",
+            "awayTeamTime": "2026-04-28T19:00:00Z",
+            "homeTeamTime": "2026-04-28T19:00:00Z",
             "day": "Tue",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210108,14 +210108,14 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 2,
+                  "broadcasterDisplay": "ESPN",
+                  "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 2,
                   "localizationRegion": ""
                 }
               ],
@@ -210203,16 +210203,16 @@
             "gameId": "0042500125",
             "gameCode": "20260428/ATLNYK",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
+            "gameStatusText": "8:00 pm ET",
             "gameSequence": 2,
             "gameDateEst": "2026-04-28T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-28T00:00:00Z",
+            "gameTimeEst": "1900-01-01T20:00:00Z",
+            "gameDateTimeEst": "2026-04-28T20:00:00Z",
             "gameDateUTC": "2026-04-28T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-28T04:00:00Z",
-            "awayTeamTime": "2026-04-28T00:00:00Z",
-            "homeTeamTime": "2026-04-28T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T00:00:00Z",
+            "gameDateTimeUTC": "2026-04-29T00:00:00Z",
+            "awayTeamTime": "2026-04-28T20:00:00Z",
+            "homeTeamTime": "2026-04-28T20:00:00Z",
             "day": "Tue",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210234,14 +210234,27 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 1001452,
+                  "broadcasterDisplay": "NBC",
+                  "broadcasterAbbreviation": "NBC",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 5,
+                  "localizationRegion": "National"
+                },
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001453,
+                  "broadcasterDisplay": "Peacock",
+                  "broadcasterAbbreviation": "Peacock",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": 3,
                   "localizationRegion": ""
                 }
               ],
@@ -210329,16 +210342,16 @@
             "gameId": "0042500155",
             "gameCode": "20260428/PORSAS",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
+            "gameStatusText": "9:30 pm ET",
             "gameSequence": 3,
             "gameDateEst": "2026-04-28T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-28T00:00:00Z",
+            "gameTimeEst": "1900-01-01T21:30:00Z",
+            "gameDateTimeEst": "2026-04-28T21:30:00Z",
             "gameDateUTC": "2026-04-28T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-28T04:00:00Z",
-            "awayTeamTime": "2026-04-28T00:00:00Z",
-            "homeTeamTime": "2026-04-28T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T01:30:00Z",
+            "gameDateTimeUTC": "2026-04-29T01:30:00Z",
+            "awayTeamTime": "2026-04-28T18:30:00Z",
+            "homeTeamTime": "2026-04-28T20:30:00Z",
             "day": "Tue",
             "monthNum": 4,
             "weekNumber": 28,
@@ -210360,14 +210373,14 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 2,
+                  "broadcasterDisplay": "ESPN",
+                  "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 2,
                   "localizationRegion": ""
                 }
               ],
