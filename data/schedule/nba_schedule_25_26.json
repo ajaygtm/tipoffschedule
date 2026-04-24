@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-24T07:05:04.002Z",
+    "scores_updated_utc": "2026-04-24T13:41:50.527Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-24T07:04:34.380Z"
+    "schedule_synced_utc": "2026-04-24T13:41:19.286Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -23499,16 +23499,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628374,
-                "firstName": "Lauri",
-                "lastName": "Markkanen",
-                "teamId": 1610612762,
-                "teamCity": "Utah",
-                "teamName": "Jazz",
-                "teamTricode": "UTA",
-                "points": 29
-              },
-              {
                 "personId": 1628970,
                 "firstName": "Miles",
                 "lastName": "Bridges",
@@ -23516,6 +23506,16 @@
                 "teamCity": "Charlotte",
                 "teamName": "Hornets",
                 "teamTricode": "CHA",
+                "points": 29
+              },
+              {
+                "personId": 1628374,
+                "firstName": "Lauri",
+                "lastName": "Markkanen",
+                "teamId": 1610612762,
+                "teamCity": "Utah",
+                "teamName": "Jazz",
+                "teamTricode": "UTA",
                 "points": 29
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 1627750,
                 "firstName": "Jamal",
                 "lastName": "Murray",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -192204,6 +192204,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
+                "points": 25
+              },
+              {
                 "personId": 1630611,
                 "firstName": "Gui",
                 "lastName": "Santos",
@@ -192221,16 +192231,6 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
-                "points": 25
-              },
-              {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
                 "points": 25
               }
             ],
