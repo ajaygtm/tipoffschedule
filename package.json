@@ -2,6 +2,7 @@
   "name": "tipoffschedule",
   "private": true,
   "scripts": {
+    "build-playoffs": "node scripts/buildPlayoffBracket.js",
     "update-schedule": "node scripts/updateSchedule.js",
     "update-scores": "node scripts/updateScores.js",
     "update-standings": "node scripts/updateStandings.js",

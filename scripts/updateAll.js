@@ -13,6 +13,7 @@ const scriptsDir = __dirname;
 const scripts = [
   "updateSchedule.js",
   "updateScores.js",
+  "buildPlayoffBracket.js",
   "updateStandings.js"
 ];
 

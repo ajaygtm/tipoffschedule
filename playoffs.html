@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TipOffSchedule - Playoffs</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NBA playoff bracket with conference toggle, game cards, and live-updating series state." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='52' font-size='52'%3E%F0%9F%8F%80%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="src/css/base.css" />
+  <link rel="stylesheet" href="src/css/util.css" />
+  <link rel="stylesheet" href="src/css/playoffs.css" />
+</head>
+<body class="layout playoffs-page">
+  <header class="app-header">
+    <div class="header-cell header-left">
+      <a href="index.html" class="site-home-link" aria-label="Go to today's schedule">
+        <img src="assets/logos/NBA.svg" alt="NBA Logo" class="nba-logo" onerror="this.style.visibility='hidden'">
+      </a>
+    </div>
+
+    <div class="header-cell header-center">
+      <h1 class="site-title">TipOff Schedule</h1>
+      <nav class="main-tabs" aria-label="Primary Views">
+        <a href="index.html" class="main-tab">Dates</a>
+        <a href="teams.html" class="main-tab">Teams</a>
+        <a href="standings.html" class="main-tab">Standings</a>
+        <a href="playoffs.html" class="main-tab is-active" aria-current="page">Playoffs</a>
+      </nav>
+    </div>
+
+    <div class="header-cell header-right">
+      <div class="tz-wrapper">
+        <button id="tz-trigger" class="tz-pill" type="button" aria-haspopup="menu" aria-expanded="false">
+          TIMEZONES
+        </button>
+        <div id="tz-menu" class="tz-menu" role="menu" aria-label="Select timezone"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main playoffs-main">
+    <section class="playoffs-hero" aria-labelledby="playoffs-heading">
+      <div>
+        <p class="playoffs-kicker">2026 Postseason</p>
+        <h2 id="playoffs-heading" class="playoffs-heading">Bracket view for the playoff run, with live series state and scheduled if-necessary games.</h2>
+      </div>
+      <div class="playoffs-controls">
+        <div class="playoff-toggle" role="group" aria-label="Select conference">
+          <button id="conf-east" class="playoff-toggle-btn is-active" type="button" aria-pressed="true">East</button>
+          <button id="conf-west" class="playoff-toggle-btn" type="button" aria-pressed="false">West</button>
+        </div>
+        <p id="playoffs-updated" class="playoffs-updated"></p>
+      </div>
+    </section>
+
+    <section class="playoffs-bracket-shell" aria-labelledby="playoff-bracket-heading">
+      <h3 id="playoff-bracket-heading" class="visually-hidden">NBA playoff bracket</h3>
+      <div id="playoff-bracket" class="playoff-bracket" aria-live="polite"></div>
+      <div id="playoff-error" class="playoff-error" hidden></div>
+    </section>
+  </main>
+
+  <div id="announce" class="visually-hidden" aria-live="polite"></div>
+
+  <footer class="footer">
+    <small>Unofficial schedule viewer. Not affiliated with or endorsed by the NBA.</small>
+  </footer>
+
+  <script type="module" src="src/js/playoffsPage.js" defer></script>
+</body>
+</html>
