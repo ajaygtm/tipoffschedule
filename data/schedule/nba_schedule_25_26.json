@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-04-28T10:29:54.294Z",
+    "scores_updated_utc": "2026-04-29T07:25:18.569Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-04-28T12:36:52.821Z"
+    "schedule_synced_utc": "2026-04-29T07:24:52.943Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203897,
-                "firstName": "Zach",
-                "lastName": "LaVine",
-                "teamId": 1610612758,
-                "teamCity": "Sacramento",
-                "teamName": "Kings",
-                "teamTricode": "SAC",
-                "points": 26
-              },
-              {
                 "personId": 1630162,
                 "firstName": "Anthony",
                 "lastName": "Edwards",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 26
+              },
+              {
+                "personId": 203897,
+                "firstName": "Zach",
+                "lastName": "LaVine",
+                "teamId": 1610612758,
+                "teamCity": "Sacramento",
+                "teamName": "Kings",
+                "teamTricode": "SAC",
                 "points": 26
               }
             ],
@@ -69867,6 +69867,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
+                "points": 20
+              },
+              {
                 "personId": 1630530,
                 "firstName": "Trey",
                 "lastName": "Murphy III",
@@ -69884,16 +69894,6 @@
                 "teamCity": "New Orleans",
                 "teamName": "Pelicans",
                 "teamTricode": "NOP",
-                "points": 20
-              },
-              {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
                 "points": 20
               }
             ],
@@ -92356,16 +92356,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629008,
-                "firstName": "Michael",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 27
-              },
-              {
                 "personId": 1627750,
                 "firstName": "Jamal",
                 "lastName": "Murray",
@@ -92373,6 +92363,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 27
+              },
+              {
+                "personId": 1629008,
+                "firstName": "Michael",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 27
               }
             ],
@@ -125630,16 +125630,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630217,
-                "firstName": "Desmond",
-                "lastName": "Bane",
-                "teamId": 1610612753,
-                "teamCity": "Orlando",
-                "teamName": "Magic",
-                "teamTricode": "ORL",
-                "points": 25
-              },
-              {
                 "personId": 1641705,
                 "firstName": "Victor",
                 "lastName": "Wembanyama",
@@ -125647,6 +125637,16 @@
                 "teamCity": "San Antonio",
                 "teamName": "Spurs",
                 "teamTricode": "SAS",
+                "points": 25
+              },
+              {
+                "personId": 1630217,
+                "firstName": "Desmond",
+                "lastName": "Bane",
+                "teamId": 1610612753,
+                "teamCity": "Orlando",
+                "teamName": "Magic",
+                "teamTricode": "ORL",
                 "points": 25
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630178,
-                "firstName": "Tyrese",
-                "lastName": "Maxey",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 30
-              },
-              {
                 "personId": 1641739,
                 "firstName": "Toumani",
                 "lastName": "Camara",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Portland",
                 "teamName": "Trail Blazers",
                 "teamTricode": "POR",
+                "points": 30
+              },
+              {
+                "personId": 1630178,
+                "firstName": "Tyrese",
+                "lastName": "Maxey",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 30
               }
             ],
@@ -177985,16 +177985,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629656,
-                "firstName": "Quentin",
-                "lastName": "Grimes",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 25
-              },
-              {
                 "personId": 1642846,
                 "firstName": "Ace",
                 "lastName": "Bailey",
@@ -178002,6 +177992,16 @@
                 "teamCity": "Utah",
                 "teamName": "Jazz",
                 "teamTricode": "UTA",
+                "points": 25
+              },
+              {
+                "personId": 1629656,
+                "firstName": "Quentin",
+                "lastName": "Grimes",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 25
               }
             ],
@@ -185593,16 +185593,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203954,
-                "firstName": "Joel",
-                "lastName": "Embiid",
-                "teamId": 1610612755,
-                "teamCity": "Philadelphia",
-                "teamName": "76ers",
-                "teamTricode": "PHI",
-                "points": 29
-              },
-              {
                 "personId": 1641706,
                 "firstName": "Brandon",
                 "lastName": "Miller",
@@ -185610,6 +185600,16 @@
                 "teamCity": "Charlotte",
                 "teamName": "Hornets",
                 "teamTricode": "CHA",
+                "points": 29
+              },
+              {
+                "personId": 203954,
+                "firstName": "Joel",
+                "lastName": "Embiid",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
                 "points": 29
               }
             ],
@@ -192204,6 +192204,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
+                "points": 25
+              },
+              {
                 "personId": 1630611,
                 "firstName": "Gui",
                 "lastName": "Santos",
@@ -192221,16 +192231,6 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
-                "points": 25
-              },
-              {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
                 "points": 25
               }
             ],
@@ -210371,8 +210371,8 @@
           {
             "gameId": "0042500115",
             "gameCode": "20260428/PHIBOS",
-            "gameStatus": 1,
-            "gameStatusText": "7:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 1,
             "gameDateEst": "2026-04-28T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:00:00Z",
@@ -210390,7 +210390,7 @@
             "seriesGameNumber": "Game 5",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "BOS leads 3-1",
+            "seriesText": "BOS leads 3-2",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -210472,8 +210472,8 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 3,
-              "losses": 1,
-              "score": 0,
+              "losses": 2,
+              "score": 97,
               "seed": 2
             },
             "awayTeam": {
@@ -210482,23 +210482,34 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 1,
+              "wins": 2,
               "losses": 3,
-              "score": 0,
+              "score": 113,
               "seed": 7
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 203954,
+                "firstName": "Joel",
+                "lastName": "Embiid",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
+                "points": 33
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 113,
+            "homeScore": 97
           },
           {
             "gameId": "0042500125",
             "gameCode": "20260428/ATLNYK",
-            "gameStatus": 1,
-            "gameStatusText": "8:00 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 2,
             "gameDateEst": "2026-04-28T00:00:00Z",
             "gameTimeEst": "1900-01-01T20:00:00Z",
@@ -210516,7 +210527,7 @@
             "seriesGameNumber": "Game 5",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "Series tied 2-2",
+            "seriesText": "NYK leads 3-2",
             "arenaName": "Madison Square Garden",
             "arenaState": "NY",
             "arenaCity": "New York",
@@ -210547,7 +210558,7 @@
                   "broadcasterAbbreviation": "Peacock",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "https://peacocktv.app.link/oDcq0UdpG2b",
+                  "broadcasterVideoLink": "https://peacocktv.app.link/dLfR8Q83H2b",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 3,
                   "localizationRegion": ""
@@ -210623,9 +210634,9 @@
               "teamCity": "New York",
               "teamTricode": "NYK",
               "teamSlug": "knicks",
-              "wins": 2,
+              "wins": 3,
               "losses": 2,
-              "score": 0,
+              "score": 126,
               "seed": 3
             },
             "awayTeam": {
@@ -210635,22 +210646,33 @@
               "teamTricode": "ATL",
               "teamSlug": "hawks",
               "wins": 2,
-              "losses": 2,
-              "score": 0,
+              "losses": 3,
+              "score": 97,
               "seed": 6
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 1628973,
+                "firstName": "Jalen",
+                "lastName": "Brunson",
+                "teamId": 1610612752,
+                "teamCity": "New York",
+                "teamName": "Knicks",
+                "teamTricode": "NYK",
+                "points": 39
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 97,
+            "homeScore": 126
           },
           {
             "gameId": "0042500155",
             "gameCode": "20260428/PORSAS",
-            "gameStatus": 1,
-            "gameStatusText": "9:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 3,
             "gameDateEst": "2026-04-28T00:00:00Z",
             "gameTimeEst": "1900-01-01T21:30:00Z",
@@ -210668,7 +210690,7 @@
             "seriesGameNumber": "Game 5",
             "gameLabel": "West First Round",
             "gameSubLabel": "Game 5",
-            "seriesText": "SAS leads 3-1",
+            "seriesText": "SAS wins 4-1",
             "arenaName": "Frost Bank Center",
             "arenaState": "TX",
             "arenaCity": "San Antonio",
@@ -210749,9 +210771,9 @@
               "teamCity": "San Antonio",
               "teamTricode": "SAS",
               "teamSlug": "spurs",
-              "wins": 3,
+              "wins": 4,
               "losses": 1,
-              "score": 0,
+              "score": 114,
               "seed": 2
             },
             "awayTeam": {
@@ -210761,16 +210783,27 @@
               "teamTricode": "POR",
               "teamSlug": "blazers",
               "wins": 1,
-              "losses": 3,
-              "score": 0,
+              "losses": 4,
+              "score": 95,
               "seed": 7
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 1630166,
+                "firstName": "Deni",
+                "lastName": "Avdija",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
+                "points": 22
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 95,
+            "homeScore": 114
           }
         ]
       },
@@ -211123,7 +211156,21 @@
               ],
               "homeOttBroadcasters": [],
               "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [],
+              "awayRadioBroadcasters": [
+                {
+                  "broadcasterScope": "away",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 1001698,
+                  "broadcasterDisplay": "790 AM / S: KLTN TUDN",
+                  "broadcasterAbbreviation": "KTRH/KLTN",
+                  "broadcasterDescription": "790 AM / S: KLTN TUDN",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": 1610612745,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "awayOttBroadcasters": []
             },
             "homeTeam": {
@@ -211164,25 +211211,25 @@
             "gameId": "0042500116",
             "gameCode": "20260430/BOSPHI",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
-            "gameSequence": 1,
+            "gameStatusText": "8:00 pm ET",
+            "gameSequence": 3,
             "gameDateEst": "2026-04-30T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-30T00:00:00Z",
+            "gameTimeEst": "1900-01-01T20:00:00Z",
+            "gameDateTimeEst": "2026-04-30T20:00:00Z",
             "gameDateUTC": "2026-04-30T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-30T04:00:00Z",
-            "awayTeamTime": "2026-04-30T00:00:00Z",
-            "homeTeamTime": "2026-04-30T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T00:00:00Z",
+            "gameDateTimeUTC": "2026-05-01T00:00:00Z",
+            "awayTeamTime": "2026-04-30T20:00:00Z",
+            "homeTeamTime": "2026-04-30T20:00:00Z",
             "day": "Thu",
             "monthNum": 4,
             "weekNumber": 28,
             "weekName": "Week 28",
-            "ifNecessary": "true",
+            "ifNecessary": "false",
             "seriesGameNumber": "Game 6",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 6",
-            "seriesText": "BOS leads 3-1",
+            "seriesText": "BOS leads 3-2",
             "arenaName": "Xfinity Mobile Arena",
             "arenaState": "PA",
             "arenaCity": "Philadelphia",
@@ -211195,15 +211242,28 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 1001453,
+                  "broadcasterDisplay": "Peacock",
+                  "broadcasterAbbreviation": "Peacock",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 3,
                   "localizationRegion": ""
+                },
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001488,
+                  "broadcasterDisplay": "NBC Sports Network",
+                  "broadcasterAbbreviation": "NBCSN",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": 7,
+                  "localizationRegion": "National"
                 }
               ],
               "nationalRadioBroadcasters": [
@@ -211263,7 +211323,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 1,
+              "wins": 2,
               "losses": 3,
               "score": 0,
               "seed": 7
@@ -211275,7 +211335,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 3,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 2
             },
@@ -211290,16 +211350,16 @@
             "gameId": "0042500126",
             "gameCode": "20260430/NYKATL",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
+            "gameStatusText": "7:00 pm ET",
             "gameSequence": 2,
             "gameDateEst": "2026-04-30T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-30T00:00:00Z",
+            "gameTimeEst": "1900-01-01T19:00:00Z",
+            "gameDateTimeEst": "2026-04-30T19:00:00Z",
             "gameDateUTC": "2026-04-30T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-30T04:00:00Z",
-            "awayTeamTime": "2026-04-30T00:00:00Z",
-            "homeTeamTime": "2026-04-30T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T23:00:00Z",
+            "gameDateTimeUTC": "2026-04-30T23:00:00Z",
+            "awayTeamTime": "2026-04-30T19:00:00Z",
+            "homeTeamTime": "2026-04-30T19:00:00Z",
             "day": "Thu",
             "monthNum": 4,
             "weekNumber": 28,
@@ -211308,7 +211368,7 @@
             "seriesGameNumber": "Game 6",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 6",
-            "seriesText": "Series tied 2-2",
+            "seriesText": "NYK leads 3-2",
             "arenaName": "State Farm Arena",
             "arenaState": "GA",
             "arenaCity": "Atlanta",
@@ -211321,14 +211381,14 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 2,
+                  "broadcasterDisplay": "ESPN",
+                  "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 2,
                   "localizationRegion": ""
                 }
               ],
@@ -211390,7 +211450,7 @@
               "teamTricode": "ATL",
               "teamSlug": "hawks",
               "wins": 2,
-              "losses": 2,
+              "losses": 3,
               "score": 0,
               "seed": 6
             },
@@ -211400,7 +211460,7 @@
               "teamCity": "New York",
               "teamTricode": "NYK",
               "teamSlug": "knicks",
-              "wins": 2,
+              "wins": 3,
               "losses": 2,
               "score": 0,
               "seed": 3
@@ -211413,145 +211473,19 @@
             "homeScore": null
           },
           {
-            "gameId": "0042500156",
-            "gameCode": "20260430/SASPOR",
-            "gameStatus": 1,
-            "gameStatusText": "TBD",
-            "gameSequence": 3,
-            "gameDateEst": "2026-04-30T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-30T00:00:00Z",
-            "gameDateUTC": "2026-04-30T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-30T04:00:00Z",
-            "awayTeamTime": "2026-04-30T00:00:00Z",
-            "homeTeamTime": "2026-04-30T00:00:00Z",
-            "day": "Thu",
-            "monthNum": 4,
-            "weekNumber": 28,
-            "weekName": "Week 28",
-            "ifNecessary": "true",
-            "seriesGameNumber": "Game 6",
-            "gameLabel": "West First Round",
-            "gameSubLabel": "Game 6",
-            "seriesText": "SAS leads 3-1",
-            "arenaName": "Moda Center",
-            "arenaState": "OR",
-            "arenaCity": "Portland",
-            "postponedStatus": "N",
-            "branchLink": "",
-            "gameSubtype": "",
-            "isNeutral": false,
-            "broadcasters": {
-              "nationalBroadcasters": [
-                {
-                  "broadcasterScope": "natl",
-                  "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "nationalRadioBroadcasters": [
-                {
-                  "broadcasterScope": "natl",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1001098,
-                  "broadcasterDisplay": "SiriusXM",
-                  "broadcasterAbbreviation": "SiriusXM",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "https://www.siriusxm.com/sports/nba",
-                  "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "nationalOttBroadcasters": [],
-              "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [
-                {
-                  "broadcasterScope": "home",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1472,
-                  "broadcasterDisplay": "Rip City Radio 620",
-                  "broadcasterAbbreviation": "KPOJ",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": 1610612757,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "homeOttBroadcasters": [],
-              "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [
-                {
-                  "broadcasterScope": "away",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1000260,
-                  "broadcasterDisplay": "WOAI/KXTN",
-                  "broadcasterAbbreviation": "WOAI/KXTN",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": 1610612759,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "awayOttBroadcasters": []
-            },
-            "homeTeam": {
-              "teamId": 1610612757,
-              "teamName": "Trail Blazers",
-              "teamCity": "Portland",
-              "teamTricode": "POR",
-              "teamSlug": "blazers",
-              "wins": 1,
-              "losses": 3,
-              "score": 0,
-              "seed": 7
-            },
-            "awayTeam": {
-              "teamId": 1610612759,
-              "teamName": "Spurs",
-              "teamCity": "San Antonio",
-              "teamTricode": "SAS",
-              "teamSlug": "spurs",
-              "wins": 3,
-              "losses": 1,
-              "score": 0,
-              "seed": 2
-            },
-            "pointsLeaders": [],
-            "seasonStageId": 4,
-            "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
-          },
-          {
             "gameId": "0042500166",
             "gameCode": "20260430/DENMIN",
             "gameStatus": 1,
-            "gameStatusText": "TBD",
+            "gameStatusText": "9:30 pm ET",
             "gameSequence": 4,
             "gameDateEst": "2026-04-30T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-04-30T00:00:00Z",
+            "gameTimeEst": "1900-01-01T21:30:00Z",
+            "gameDateTimeEst": "2026-04-30T21:30:00Z",
             "gameDateUTC": "2026-04-30T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-04-30T04:00:00Z",
-            "awayTeamTime": "2026-04-30T00:00:00Z",
-            "homeTeamTime": "2026-04-30T00:00:00Z",
+            "gameTimeUTC": "1900-01-01T01:30:00Z",
+            "gameDateTimeUTC": "2026-05-01T01:30:00Z",
+            "awayTeamTime": "2026-04-30T19:30:00Z",
+            "homeTeamTime": "2026-04-30T20:30:00Z",
             "day": "Thu",
             "monthNum": 4,
             "weekNumber": 28,
@@ -211573,14 +211507,14 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterId": 2,
+                  "broadcasterDisplay": "ESPN",
+                  "broadcasterAbbreviation": "ESPN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
+                  "broadcasterRanking": 2,
                   "localizationRegion": ""
                 }
               ],
@@ -211702,6 +211636,19 @@
                 }
               ],
               "nationalRadioBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
@@ -211852,7 +211799,7 @@
                   "broadcasterAbbreviation": "TSN",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.tsn.ca/nba/event/cleveland-cavaliers-toronto-raptors-20260501/2976802",
                   "broadcasterTeamId": 1610612761,
                   "broadcasterRanking": null,
                   "localizationRegion": ""
@@ -212060,7 +212007,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "BOS leads 3-1",
+            "seriesText": "BOS leads 3-2",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -212142,7 +212089,7 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 3,
-              "losses": 1,
+              "losses": 2,
               "score": 0,
               "seed": 2
             },
@@ -212152,7 +212099,7 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 1,
+              "wins": 2,
               "losses": 3,
               "score": 0,
               "seed": 7
@@ -212186,7 +212133,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "Series tied 2-2",
+            "seriesText": "NYK leads 3-2",
             "arenaName": "Madison Square Garden",
             "arenaState": "NY",
             "arenaCity": "New York",
@@ -212267,7 +212214,7 @@
               "teamCity": "New York",
               "teamTricode": "NYK",
               "teamSlug": "knicks",
-              "wins": 2,
+              "wins": 3,
               "losses": 2,
               "score": 0,
               "seed": 3
@@ -212279,135 +212226,9 @@
               "teamTricode": "ATL",
               "teamSlug": "hawks",
               "wins": 2,
-              "losses": 2,
-              "score": 0,
-              "seed": 6
-            },
-            "pointsLeaders": [],
-            "seasonStageId": 4,
-            "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
-          },
-          {
-            "gameId": "0042500157",
-            "gameCode": "20260502/PORSAS",
-            "gameStatus": 1,
-            "gameStatusText": "TBD",
-            "gameSequence": 3,
-            "gameDateEst": "2026-05-02T00:00:00Z",
-            "gameTimeEst": "0001-01-01T00:00:00Z",
-            "gameDateTimeEst": "2026-05-02T00:00:00Z",
-            "gameDateUTC": "2026-05-02T04:00:00Z",
-            "gameTimeUTC": "1900-01-01T04:00:00Z",
-            "gameDateTimeUTC": "2026-05-02T04:00:00Z",
-            "awayTeamTime": "2026-05-02T00:00:00Z",
-            "homeTeamTime": "2026-05-02T00:00:00Z",
-            "day": "Sat",
-            "monthNum": 5,
-            "weekNumber": 28,
-            "weekName": "Week 28",
-            "ifNecessary": "true",
-            "seriesGameNumber": "Game 7",
-            "gameLabel": "West First Round",
-            "gameSubLabel": "Game 7",
-            "seriesText": "SAS leads 3-1",
-            "arenaName": "Frost Bank Center",
-            "arenaState": "TX",
-            "arenaCity": "San Antonio",
-            "postponedStatus": "N",
-            "branchLink": "",
-            "gameSubtype": "",
-            "isNeutral": false,
-            "broadcasters": {
-              "nationalBroadcasters": [
-                {
-                  "broadcasterScope": "natl",
-                  "broadcasterMedia": "tv",
-                  "broadcasterId": 1001042,
-                  "broadcasterDisplay": "TBD",
-                  "broadcasterAbbreviation": "TBD",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "nationalRadioBroadcasters": [
-                {
-                  "broadcasterScope": "natl",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1001098,
-                  "broadcasterDisplay": "SiriusXM",
-                  "broadcasterAbbreviation": "SiriusXM",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "https://www.siriusxm.com/sports/nba",
-                  "broadcasterTeamId": -1,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "nationalOttBroadcasters": [],
-              "homeTvBroadcasters": [],
-              "homeRadioBroadcasters": [
-                {
-                  "broadcasterScope": "home",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1000260,
-                  "broadcasterDisplay": "WOAI/KXTN",
-                  "broadcasterAbbreviation": "WOAI/KXTN",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": 1610612759,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "homeOttBroadcasters": [],
-              "awayTvBroadcasters": [],
-              "awayRadioBroadcasters": [
-                {
-                  "broadcasterScope": "away",
-                  "broadcasterMedia": "radio",
-                  "broadcasterId": 1472,
-                  "broadcasterDisplay": "Rip City Radio 620",
-                  "broadcasterAbbreviation": "KPOJ",
-                  "broadcasterDescription": "",
-                  "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
-                  "broadcasterTeamId": 1610612757,
-                  "broadcasterRanking": null,
-                  "localizationRegion": ""
-                }
-              ],
-              "awayOttBroadcasters": []
-            },
-            "homeTeam": {
-              "teamId": 1610612759,
-              "teamName": "Spurs",
-              "teamCity": "San Antonio",
-              "teamTricode": "SAS",
-              "teamSlug": "spurs",
-              "wins": 3,
-              "losses": 1,
-              "score": 0,
-              "seed": 2
-            },
-            "awayTeam": {
-              "teamId": 1610612757,
-              "teamName": "Trail Blazers",
-              "teamCity": "Portland",
-              "teamTricode": "POR",
-              "teamSlug": "blazers",
-              "wins": 1,
               "losses": 3,
               "score": 0,
-              "seed": 7
+              "seed": 6
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
