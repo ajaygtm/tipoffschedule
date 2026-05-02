@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-01T20:56:03.963Z",
-  "source_schedule_updated_utc": "2026-05-01T20:55:49.377Z",
-  "source_scores_updated_utc": "2026-05-01T20:56:03.680Z",
+  "generated_utc": "2026-05-02T07:02:29.178Z",
+  "source_schedule_updated_utc": "2026-05-02T07:01:54.607Z",
+  "source_scores_updated_utc": "2026-05-02T07:02:28.928Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -66,32 +66,32 @@
                 }
               ],
               "score": {
-                "top": 2,
+                "top": 3,
                 "bottom": 3
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500106",
-                "gameNumber": 6,
-                "label": "Game 6",
+                "id": "0042500107",
+                "gameNumber": 7,
+                "label": "Game 7",
                 "status": "scheduled",
-                "statusText": "7:00 pm ET",
+                "statusText": "3:30 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-01T23:00:00Z",
-                "tv": "Prime Video",
+                "date_utc": "2026-05-03T19:30:00Z",
+                "tv": "ABC",
                 "home": {
-                  "tri": "ORL",
-                  "seed": 8,
-                  "name": "Orlando Magic",
-                  "shortName": "Magic",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "DET",
                   "seed": 1,
                   "name": "Detroit Pistons",
                   "shortName": "Pistons",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "ORL",
+                  "seed": 8,
+                  "name": "Orlando Magic",
+                  "shortName": "Magic",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -243,8 +243,8 @@
                   "id": "0042500106",
                   "gameNumber": 6,
                   "label": "Game 6",
-                  "status": "scheduled",
-                  "statusText": "7:00 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-01T23:00:00Z",
                   "tv": "Prime Video",
@@ -264,18 +264,18 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 79,
+                  "awayScore": 93
                 },
                 {
                   "id": "0042500107",
                   "gameNumber": 7,
                   "label": "Game 7",
                   "status": "scheduled",
-                  "statusText": "TBD",
-                  "ifNecessary": true,
-                  "date_utc": "2026-05-03T04:00:00Z",
-                  "tv": "TBD",
+                  "statusText": "3:30 pm ET",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-03T19:30:00Z",
+                  "tv": "ABC",
                   "home": {
                     "tri": "DET",
                     "seed": 1,
@@ -296,7 +296,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "ORL leads 3-2",
+              "seriesText": "Series tied 3-3",
               "status": "in-progress",
               "seeds": [
                 1,
@@ -332,31 +332,31 @@
               ],
               "score": {
                 "top": 3,
-                "bottom": 2
+                "bottom": 3
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500136",
-                "gameNumber": 6,
-                "label": "Game 6",
+                "id": "0042500137",
+                "gameNumber": 7,
+                "label": "Game 7",
                 "status": "scheduled",
                 "statusText": "7:30 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-01T23:30:00Z",
-                "tv": "Prime Video",
+                "date_utc": "2026-05-03T23:30:00Z",
+                "tv": "NBC",
                 "home": {
-                  "tri": "TOR",
-                  "seed": 5,
-                  "name": "Toronto Raptors",
-                  "shortName": "Raptors",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "CLE",
                   "seed": 4,
                   "name": "Cleveland Cavaliers",
                   "shortName": "Cavaliers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "TOR",
+                  "seed": 5,
+                  "name": "Toronto Raptors",
+                  "shortName": "Raptors",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -508,8 +508,8 @@
                   "id": "0042500136",
                   "gameNumber": 6,
                   "label": "Game 6",
-                  "status": "scheduled",
-                  "statusText": "7:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final/OT",
                   "ifNecessary": false,
                   "date_utc": "2026-05-01T23:30:00Z",
                   "tv": "Prime Video",
@@ -529,18 +529,18 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 112,
+                  "awayScore": 110
                 },
                 {
                   "id": "0042500137",
                   "gameNumber": 7,
                   "label": "Game 7",
                   "status": "scheduled",
-                  "statusText": "TBD",
-                  "ifNecessary": true,
-                  "date_utc": "2026-05-03T04:00:00Z",
-                  "tv": "TBD",
+                  "statusText": "7:30 pm ET",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-03T23:30:00Z",
+                  "tv": "NBC",
                   "home": {
                     "tri": "CLE",
                     "seed": 4,
@@ -561,7 +561,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "CLE leads 3-2",
+              "seriesText": "Series tied 3-3",
               "status": "in-progress",
               "seeds": [
                 4,
@@ -1054,7 +1054,7 @@
               "roundKey": "conference-semis",
               "conference": "east",
               "title": "Semifinal A",
-              "label": "East Semifinals",
+              "label": "East Conf. Semifinals",
               "feederSeriesIds": [
                 "0010",
                 "0013"
@@ -1084,10 +1084,122 @@
                 "bottom": 0
               },
               "winnerPosition": null,
-              "nextGame": null,
-              "games": [],
+              "nextGame": {
+                "id": "0042500201",
+                "gameNumber": 1,
+                "label": "Game 1",
+                "status": "scheduled",
+                "statusText": "TBD",
+                "ifNecessary": false,
+                "date_utc": "2026-05-05T04:00:00Z",
+                "tv": "TBD",
+                "home": null,
+                "away": null,
+                "homeScore": null,
+                "awayScore": null
+              },
+              "games": [
+                {
+                  "id": "0042500201",
+                  "gameNumber": 1,
+                  "label": "Game 1",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-05T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500202",
+                  "gameNumber": 2,
+                  "label": "Game 2",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-07T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500203",
+                  "gameNumber": 3,
+                  "label": "Game 3",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-09T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500204",
+                  "gameNumber": 4,
+                  "label": "Game 4",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-11T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500205",
+                  "gameNumber": 5,
+                  "label": "Game 5",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-13T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500206",
+                  "gameNumber": 6,
+                  "label": "Game 6",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-15T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500207",
+                  "gameNumber": 7,
+                  "label": "Game 7",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-17T04:00:00Z",
+                  "tv": "TBD",
+                  "home": null,
+                  "away": null,
+                  "homeScore": null,
+                  "awayScore": null
+                }
+              ],
               "seriesText": "Series tied 0-0",
-              "status": "tbd",
+              "status": "upcoming",
               "seeds": null
             },
             {
@@ -1399,38 +1511,11 @@
                 }
               ],
               "score": {
-                "top": 3,
+                "top": 4,
                 "bottom": 2
               },
-              "winnerPosition": null,
-              "nextGame": {
-                "id": "0042500176",
-                "gameNumber": 6,
-                "label": "Game 6",
-                "status": "scheduled",
-                "statusText": "9:30 pm ET",
-                "ifNecessary": false,
-                "date_utc": "2026-05-02T01:30:00Z",
-                "tv": "Prime Video",
-                "home": {
-                  "tri": "HOU",
-                  "seed": 5,
-                  "name": "Houston Rockets",
-                  "shortName": "Rockets",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
-                  "tri": "LAL",
-                  "seed": 4,
-                  "name": "Los Angeles Lakers",
-                  "shortName": "Lakers",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "homeScore": null,
-                "awayScore": null
-              },
+              "winnerPosition": "top",
+              "nextGame": null,
               "games": [
                 {
                   "id": "0042500171",
@@ -1576,8 +1661,8 @@
                   "id": "0042500176",
                   "gameNumber": 6,
                   "label": "Game 6",
-                  "status": "scheduled",
-                  "statusText": "9:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-02T01:30:00Z",
                   "tv": "Prime Video",
@@ -1597,40 +1682,12 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
-                },
-                {
-                  "id": "0042500177",
-                  "gameNumber": 7,
-                  "label": "Game 7",
-                  "status": "scheduled",
-                  "statusText": "TBD",
-                  "ifNecessary": true,
-                  "date_utc": "2026-05-03T04:00:00Z",
-                  "tv": "TBD",
-                  "home": {
-                    "tri": "LAL",
-                    "seed": 4,
-                    "name": "Los Angeles Lakers",
-                    "shortName": "Lakers",
-                    "placeholder": false,
-                    "conferenceHint": null
-                  },
-                  "away": {
-                    "tri": "HOU",
-                    "seed": 5,
-                    "name": "Houston Rockets",
-                    "shortName": "Rockets",
-                    "placeholder": false,
-                    "conferenceHint": null
-                  },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 78,
+                  "awayScore": 98
                 }
               ],
-              "seriesText": "LAL leads 3-2",
-              "status": "in-progress",
+              "seriesText": "LAL wins 4-2",
+              "status": "completed",
               "seeds": [
                 4,
                 5
@@ -2039,7 +2096,7 @@
               "roundKey": "conference-semis",
               "conference": "west",
               "title": "Semifinal A",
-              "label": "West Semifinals",
+              "label": "West Conf. Semifinals",
               "feederSeriesIds": [
                 "0014",
                 "0017"
@@ -2051,17 +2108,15 @@
                   "name": "Oklahoma City Thunder",
                   "shortName": "Thunder",
                   "placeholder": false,
-                  "conferenceHint": "west",
-                  "placeholderLabel": "Seed 1"
+                  "conferenceHint": "west"
                 },
                 {
-                  "tri": null,
-                  "seed": null,
-                  "name": "Winner 4 vs 5",
-                  "shortName": "Winner 4 vs 5",
-                  "placeholder": true,
-                  "conferenceHint": null,
-                  "placeholderLabel": "Winner 4 vs 5"
+                  "tri": "LAL",
+                  "seed": 4,
+                  "name": "Los Angeles Lakers",
+                  "shortName": "Lakers",
+                  "placeholder": false,
+                  "conferenceHint": "west"
                 }
               ],
               "score": {
@@ -2069,10 +2124,234 @@
                 "bottom": 0
               },
               "winnerPosition": null,
-              "nextGame": null,
-              "games": [],
+              "nextGame": {
+                "id": "0042500221",
+                "gameNumber": 1,
+                "label": "Game 1",
+                "status": "scheduled",
+                "statusText": "TBD",
+                "ifNecessary": false,
+                "date_utc": "2026-05-05T04:00:00Z",
+                "tv": "TBD",
+                "home": {
+                  "tri": "OKC",
+                  "seed": 1,
+                  "name": "Oklahoma City Thunder",
+                  "shortName": "Thunder",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "LAL",
+                  "seed": 4,
+                  "name": "Los Angeles Lakers",
+                  "shortName": "Lakers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "homeScore": null,
+                "awayScore": null
+              },
+              "games": [
+                {
+                  "id": "0042500221",
+                  "gameNumber": 1,
+                  "label": "Game 1",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-05T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500222",
+                  "gameNumber": 2,
+                  "label": "Game 2",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-07T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500223",
+                  "gameNumber": 3,
+                  "label": "Game 3",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-09T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500224",
+                  "gameNumber": 4,
+                  "label": "Game 4",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": false,
+                  "date_utc": "2026-05-11T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500225",
+                  "gameNumber": 5,
+                  "label": "Game 5",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-13T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500226",
+                  "gameNumber": 6,
+                  "label": "Game 6",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-16T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                },
+                {
+                  "id": "0042500227",
+                  "gameNumber": 7,
+                  "label": "Game 7",
+                  "status": "scheduled",
+                  "statusText": "TBD",
+                  "ifNecessary": true,
+                  "date_utc": "2026-05-18T04:00:00Z",
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "OKC",
+                    "seed": 1,
+                    "name": "Oklahoma City Thunder",
+                    "shortName": "Thunder",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "LAL",
+                    "seed": 4,
+                    "name": "Los Angeles Lakers",
+                    "shortName": "Lakers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "homeScore": null,
+                  "awayScore": null
+                }
+              ],
               "seriesText": "Series tied 0-0",
-              "status": "tbd",
+              "status": "upcoming",
               "seeds": null
             },
             {
