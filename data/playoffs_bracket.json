@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-03T13:16:33.420Z",
-  "source_schedule_updated_utc": "2026-05-03T13:16:05.006Z",
-  "source_scores_updated_utc": "2026-05-03T13:16:33.138Z",
+  "generated_utc": "2026-05-03T20:48:29.756Z",
+  "source_schedule_updated_utc": "2026-05-03T20:47:57.062Z",
+  "source_scores_updated_utc": "2026-05-03T20:48:29.505Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -75,7 +75,7 @@
                 "gameNumber": 7,
                 "label": "Game 7",
                 "status": "scheduled",
-                "statusText": "3:30 pm ET",
+                "statusText": "Halftime",
                 "ifNecessary": false,
                 "date_utc": "2026-05-03T19:30:00Z",
                 "tv": "ABC",
@@ -272,7 +272,7 @@
                   "gameNumber": 7,
                   "label": "Game 7",
                   "status": "scheduled",
-                  "statusText": "3:30 pm ET",
+                  "statusText": "Halftime",
                   "ifNecessary": false,
                   "date_utc": "2026-05-03T19:30:00Z",
                   "tv": "ABC",

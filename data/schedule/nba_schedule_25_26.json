@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-05-03T13:16:33.138Z",
+    "scores_updated_utc": "2026-05-03T20:48:29.505Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-05-03T13:16:05.006Z"
+    "schedule_synced_utc": "2026-05-03T20:47:57.062Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -19644,16 +19644,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1642847,
-                "firstName": "Jeremiah",
-                "lastName": "Fears",
-                "teamId": 1610612740,
-                "teamCity": "New Orleans",
-                "teamName": "Pelicans",
-                "teamTricode": "NOP",
-                "points": 21
-              },
-              {
                 "personId": 203999,
                 "firstName": "Nikola",
                 "lastName": "Jokic",
@@ -19661,6 +19651,16 @@
                 "teamCity": "Denver",
                 "teamName": "Nuggets",
                 "teamTricode": "DEN",
+                "points": 21
+              },
+              {
+                "personId": 1642847,
+                "firstName": "Jeremiah",
+                "lastName": "Fears",
+                "teamId": 1610612740,
+                "teamCity": "New Orleans",
+                "teamName": "Pelicans",
+                "teamTricode": "NOP",
                 "points": 21
               }
             ],
@@ -24448,16 +24448,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630560,
-                "firstName": "Cam",
-                "lastName": "Thomas",
-                "teamId": 1610612751,
-                "teamCity": "Brooklyn",
-                "teamName": "Nets",
-                "teamTricode": "BKN",
-                "points": 25
-              },
-              {
                 "personId": 1628978,
                 "firstName": "Donte",
                 "lastName": "DiVincenzo",
@@ -24465,6 +24455,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 25
+              },
+              {
+                "personId": 1630560,
+                "firstName": "Cam",
+                "lastName": "Thomas",
+                "teamId": 1610612751,
+                "teamCity": "Brooklyn",
+                "teamName": "Nets",
+                "teamTricode": "BKN",
                 "points": 25
               }
             ],
@@ -49276,16 +49276,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630595,
-                "firstName": "Cade",
-                "lastName": "Cunningham",
-                "teamId": 1610612765,
-                "teamCity": "Detroit",
-                "teamName": "Pistons",
-                "teamTricode": "DET",
-                "points": 24
-              },
-              {
                 "personId": 1627783,
                 "firstName": "Pascal",
                 "lastName": "Siakam",
@@ -49293,6 +49283,16 @@
                 "teamCity": "Indiana",
                 "teamName": "Pacers",
                 "teamTricode": "IND",
+                "points": 24
+              },
+              {
+                "personId": 1630595,
+                "firstName": "Cade",
+                "lastName": "Cunningham",
+                "teamId": 1610612765,
+                "teamCity": "Detroit",
+                "teamName": "Pistons",
+                "teamTricode": "DET",
                 "points": 24
               }
             ],
@@ -60643,16 +60643,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1642843,
-                "firstName": "Cooper",
-                "lastName": "Flagg",
-                "teamId": 1610612742,
-                "teamCity": "Dallas",
-                "teamName": "Mavericks",
-                "teamTricode": "DAL",
-                "points": 22
-              },
-              {
                 "personId": 1642276,
                 "firstName": "Kel'el",
                 "lastName": "Ware",
@@ -60660,6 +60650,16 @@
                 "teamCity": "Miami",
                 "teamName": "Heat",
                 "teamTricode": "MIA",
+                "points": 22
+              },
+              {
+                "personId": 1642843,
+                "firstName": "Cooper",
+                "lastName": "Flagg",
+                "teamId": 1610612742,
+                "teamCity": "Dallas",
+                "teamName": "Mavericks",
+                "teamTricode": "DAL",
                 "points": 22
               }
             ],
@@ -69867,6 +69867,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
+                "points": 20
+              },
+              {
                 "personId": 1630530,
                 "firstName": "Trey",
                 "lastName": "Murphy III",
@@ -69884,16 +69894,6 @@
                 "teamCity": "New Orleans",
                 "teamName": "Pelicans",
                 "teamTricode": "NOP",
-                "points": 20
-              },
-              {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
                 "points": 20
               }
             ],
@@ -76265,16 +76265,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629645,
-                "firstName": "Kevin",
-                "lastName": "Porter Jr.",
-                "teamId": 1610612749,
-                "teamCity": "Milwaukee",
-                "teamName": "Bucks",
-                "teamTricode": "MIL",
-                "points": 24
-              },
-              {
                 "personId": 1630162,
                 "firstName": "Anthony",
                 "lastName": "Edwards",
@@ -76282,6 +76272,16 @@
                 "teamCity": "Minnesota",
                 "teamName": "Timberwolves",
                 "teamTricode": "MIN",
+                "points": 24
+              },
+              {
+                "personId": 1629645,
+                "firstName": "Kevin",
+                "lastName": "Porter Jr.",
+                "teamId": 1610612749,
+                "teamCity": "Milwaukee",
+                "teamName": "Bucks",
+                "teamTricode": "MIL",
                 "points": 24
               }
             ],
@@ -78012,16 +78012,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1629632,
-                "firstName": "Coby",
-                "lastName": "White",
-                "teamId": 1610612741,
-                "teamCity": "Chicago",
-                "teamName": "Bulls",
-                "teamTricode": "CHI",
-                "points": 24
-              },
-              {
                 "personId": 1630552,
                 "firstName": "Jalen",
                 "lastName": "Johnson",
@@ -78029,6 +78019,16 @@
                 "teamCity": "Atlanta",
                 "teamName": "Hawks",
                 "teamTricode": "ATL",
+                "points": 24
+              },
+              {
+                "personId": 1629632,
+                "firstName": "Coby",
+                "lastName": "White",
+                "teamId": 1610612741,
+                "teamCity": "Chicago",
+                "teamName": "Bulls",
+                "teamTricode": "CHI",
                 "points": 24
               }
             ],
@@ -113650,16 +113650,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 201566,
-                "firstName": "Russell",
-                "lastName": "Westbrook",
-                "teamId": 1610612758,
-                "teamCity": "Sacramento",
-                "teamName": "Kings",
-                "teamTricode": "SAC",
-                "points": 23
-              },
-              {
                 "personId": 1627742,
                 "firstName": "Brandon",
                 "lastName": "Ingram",
@@ -113677,6 +113667,16 @@
                 "teamCity": "Toronto",
                 "teamName": "Raptors",
                 "teamTricode": "TOR",
+                "points": 23
+              },
+              {
+                "personId": 201566,
+                "firstName": "Russell",
+                "lastName": "Westbrook",
+                "teamId": 1610612758,
+                "teamCity": "Sacramento",
+                "teamName": "Kings",
+                "teamTricode": "SAC",
                 "points": 23
               }
             ],
@@ -173966,16 +173966,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630180,
-                "firstName": "Saddiq",
-                "lastName": "Bey",
-                "teamId": 1610612740,
-                "teamCity": "New Orleans",
-                "teamName": "Pelicans",
-                "teamTricode": "NOP",
-                "points": 25
-              },
-              {
                 "personId": 202695,
                 "firstName": "Kawhi",
                 "lastName": "Leonard",
@@ -173983,6 +173973,16 @@
                 "teamCity": "LA",
                 "teamName": "Clippers",
                 "teamTricode": "LAC",
+                "points": 25
+              },
+              {
+                "personId": 1630180,
+                "firstName": "Saddiq",
+                "lastName": "Bey",
+                "teamId": 1610612740,
+                "teamCity": "New Orleans",
+                "teamName": "Pelicans",
+                "teamTricode": "NOP",
                 "points": 25
               }
             ],
@@ -212293,8 +212293,8 @@
           {
             "gameId": "0042500107",
             "gameCode": "20260503/ORLDET",
-            "gameStatus": 1,
-            "gameStatusText": "3:30 pm ET",
+            "gameStatus": 2,
+            "gameStatusText": "Halftime            ",
             "gameSequence": 2,
             "gameDateEst": "2026-05-03T00:00:00Z",
             "gameTimeEst": "1900-01-01T15:30:00Z",
@@ -212482,7 +212482,7 @@
                   "broadcasterAbbreviation": "Peacock",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.peacocktv.com/sports/nba?cid=2508sptnbaexterndinapplk26427&utm_campaign=2508sptnba&utm_source=nba_nba_nba&utm_medium=ernd_inapplk_acq_inapbnr&utm_term=nbafans&utm_content=nbaapplinks",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 3,
                   "localizationRegion": ""
@@ -212640,13 +212640,26 @@
                   "broadcasterAbbreviation": "Peacock",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.peacocktv.com/sports/nba?cid=2508sptnbaexterndinapplk26427&utm_campaign=2508sptnba&utm_source=nba_nba_nba&utm_medium=ernd_inapplk_acq_inapbnr&utm_term=nbafans&utm_content=nbaapplinks",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 3,
                   "localizationRegion": ""
                 }
               ],
               "nationalRadioBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
@@ -212738,7 +212751,7 @@
                   "broadcasterAbbreviation": "Peacock",
                   "broadcasterDescription": "",
                   "tapeDelayComments": "",
-                  "broadcasterVideoLink": "",
+                  "broadcasterVideoLink": "https://www.peacocktv.com/sports/nba?cid=2508sptnbaexterndinapplk26427&utm_campaign=2508sptnba&utm_source=nba_nba_nba&utm_medium=ernd_inapplk_acq_inapbnr&utm_term=nbafans&utm_content=nbaapplinks",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 3,
                   "localizationRegion": ""
@@ -213292,6 +213305,19 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
                   "broadcasterId": 1001098,
                   "broadcasterDisplay": "SiriusXM",
                   "broadcasterAbbreviation": "SiriusXM",
@@ -213490,6 +213516,19 @@
                 }
               ],
               "nationalRadioBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
@@ -213805,6 +213844,19 @@
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
                   "broadcasterId": 1001098,
                   "broadcasterDisplay": "SiriusXM",
                   "broadcasterAbbreviation": "SiriusXM",
@@ -213905,6 +213957,19 @@
                 }
               ],
               "nationalRadioBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "radio",
+                  "broadcasterId": 3,
+                  "broadcasterDisplay": "ESPN Radio",
+                  "broadcasterAbbreviation": "ESPNR",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                },
                 {
                   "broadcasterScope": "natl",
                   "broadcasterMedia": "radio",
