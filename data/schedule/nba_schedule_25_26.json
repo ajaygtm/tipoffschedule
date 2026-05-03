@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-05-02T20:45:55.423Z",
+    "scores_updated_utc": "2026-05-03T07:20:25.057Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-05-02T20:45:29.370Z"
+    "schedule_synced_utc": "2026-05-03T07:19:49.643Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -23499,16 +23499,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1628374,
-                "firstName": "Lauri",
-                "lastName": "Markkanen",
-                "teamId": 1610612762,
-                "teamCity": "Utah",
-                "teamName": "Jazz",
-                "teamTricode": "UTA",
-                "points": 29
-              },
-              {
                 "personId": 1628970,
                 "firstName": "Miles",
                 "lastName": "Bridges",
@@ -23516,6 +23506,16 @@
                 "teamCity": "Charlotte",
                 "teamName": "Hornets",
                 "teamTricode": "CHA",
+                "points": 29
+              },
+              {
+                "personId": 1628374,
+                "firstName": "Lauri",
+                "lastName": "Markkanen",
+                "teamId": 1610612762,
+                "teamCity": "Utah",
+                "teamName": "Jazz",
+                "teamTricode": "UTA",
                 "points": 29
               }
             ],
@@ -32714,16 +32714,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630162,
-                "firstName": "Anthony",
-                "lastName": "Edwards",
-                "teamId": 1610612750,
-                "teamCity": "Minnesota",
-                "teamName": "Timberwolves",
-                "teamTricode": "MIN",
-                "points": 26
-              },
-              {
                 "personId": 203897,
                 "firstName": "Zach",
                 "lastName": "LaVine",
@@ -32731,6 +32721,16 @@
                 "teamCity": "Sacramento",
                 "teamName": "Kings",
                 "teamTricode": "SAC",
+                "points": 26
+              },
+              {
+                "personId": 1630162,
+                "firstName": "Anthony",
+                "lastName": "Edwards",
+                "teamId": 1610612750,
+                "teamCity": "Minnesota",
+                "teamName": "Timberwolves",
+                "teamTricode": "MIN",
                 "points": 26
               }
             ],
@@ -78012,16 +78012,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1630552,
-                "firstName": "Jalen",
-                "lastName": "Johnson",
-                "teamId": 1610612737,
-                "teamCity": "Atlanta",
-                "teamName": "Hawks",
-                "teamTricode": "ATL",
-                "points": 24
-              },
-              {
                 "personId": 1629632,
                 "firstName": "Coby",
                 "lastName": "White",
@@ -78029,6 +78019,16 @@
                 "teamCity": "Chicago",
                 "teamName": "Bulls",
                 "teamTricode": "CHI",
+                "points": 24
+              },
+              {
+                "personId": 1630552,
+                "firstName": "Jalen",
+                "lastName": "Johnson",
+                "teamId": 1610612737,
+                "teamCity": "Atlanta",
+                "teamName": "Hawks",
+                "teamTricode": "ATL",
                 "points": 24
               }
             ],
@@ -174141,16 +174141,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203468,
-                "firstName": "CJ",
-                "lastName": "McCollum",
-                "teamId": 1610612737,
-                "teamCity": "Atlanta",
-                "teamName": "Hawks",
-                "teamTricode": "ATL",
-                "points": 24
-              },
-              {
                 "personId": 1629655,
                 "firstName": "Daniel",
                 "lastName": "Gafford",
@@ -174158,6 +174148,16 @@
                 "teamCity": "Dallas",
                 "teamName": "Mavericks",
                 "teamTricode": "DAL",
+                "points": 24
+              },
+              {
+                "personId": 203468,
+                "firstName": "CJ",
+                "lastName": "McCollum",
+                "teamId": 1610612737,
+                "teamCity": "Atlanta",
+                "teamName": "Hawks",
+                "teamTricode": "ATL",
                 "points": 24
               }
             ],
@@ -192204,6 +192204,16 @@
             },
             "pointsLeaders": [
               {
+                "personId": 1628378,
+                "firstName": "Donovan",
+                "lastName": "Mitchell",
+                "teamId": 1610612739,
+                "teamCity": "Cleveland",
+                "teamName": "Cavaliers",
+                "teamTricode": "CLE",
+                "points": 25
+              },
+              {
                 "personId": 1630611,
                 "firstName": "Gui",
                 "lastName": "Santos",
@@ -192221,16 +192231,6 @@
                 "teamCity": "Golden State",
                 "teamName": "Warriors",
                 "teamTricode": "GSW",
-                "points": 25
-              },
-              {
-                "personId": 1628378,
-                "firstName": "Donovan",
-                "lastName": "Mitchell",
-                "teamId": 1610612739,
-                "teamCity": "Cleveland",
-                "teamName": "Cavaliers",
-                "teamTricode": "CLE",
                 "points": 25
               }
             ],
@@ -212125,8 +212125,8 @@
           {
             "gameId": "0042500117",
             "gameCode": "20260502/PHIBOS",
-            "gameStatus": 1,
-            "gameStatusText": "7:30 pm ET",
+            "gameStatus": 3,
+            "gameStatusText": "Final",
             "gameSequence": 4,
             "gameDateEst": "2026-05-02T00:00:00Z",
             "gameTimeEst": "1900-01-01T19:30:00Z",
@@ -212144,7 +212144,7 @@
             "seriesGameNumber": "Game 7",
             "gameLabel": "East First Round",
             "gameSubLabel": "Game 7",
-            "seriesText": "Series tied 3-3",
+            "seriesText": "PHI wins 4-3",
             "arenaName": "TD Garden",
             "arenaState": "MA",
             "arenaCity": "Boston",
@@ -212252,8 +212252,8 @@
               "teamTricode": "BOS",
               "teamSlug": "celtics",
               "wins": 3,
-              "losses": 3,
-              "score": 0,
+              "losses": 4,
+              "score": 100,
               "seed": 2
             },
             "awayTeam": {
@@ -212262,17 +212262,28 @@
               "teamCity": "Philadelphia",
               "teamTricode": "PHI",
               "teamSlug": "sixers",
-              "wins": 3,
+              "wins": 4,
               "losses": 3,
-              "score": 0,
+              "score": 109,
               "seed": 7
             },
-            "pointsLeaders": [],
+            "pointsLeaders": [
+              {
+                "personId": 203954,
+                "firstName": "Joel",
+                "lastName": "Embiid",
+                "teamId": 1610612755,
+                "teamCity": "Philadelphia",
+                "teamName": "76ers",
+                "teamTricode": "PHI",
+                "points": 34
+              }
+            ],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 109,
+            "homeScore": 100
           }
         ]
       },
@@ -212578,7 +212589,7 @@
         "games": [
           {
             "gameId": "0042500211",
-            "gameCode": "",
+            "gameCode": "20260504/PHINYK",
             "gameStatus": 1,
             "gameStatusText": "8:00 pm ET",
             "gameSequence": 1,
@@ -212588,8 +212599,8 @@
             "gameDateUTC": "2026-05-04T04:00:00Z",
             "gameTimeUTC": "1900-01-01T00:00:00Z",
             "gameDateTimeUTC": "2026-05-05T00:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-04T20:00:00Z",
+            "homeTeamTime": "2026-05-04T20:00:00Z",
             "day": "Mon",
             "monthNum": 5,
             "weekNumber": 29,
@@ -212599,9 +212610,9 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 1",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Madison Square Garden",
+            "arenaState": "NY",
+            "arenaCity": "New York",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -212659,26 +212670,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -212859,7 +212870,7 @@
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 7,
-                  "localizationRegion": "West"
+                  "localizationRegion": "National"
                 }
               ],
               "nationalRadioBroadcasters": [
@@ -212957,7 +212968,7 @@
                   "broadcasterVideoLink": "",
                   "broadcasterTeamId": -1,
                   "broadcasterRanking": 5,
-                  "localizationRegion": "East"
+                  "localizationRegion": "National"
                 },
                 {
                   "broadcasterScope": "natl",
@@ -213032,7 +213043,7 @@
         "games": [
           {
             "gameId": "0042500212",
-            "gameCode": "",
+            "gameCode": "20260506/PHINYK",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
@@ -213042,8 +213053,8 @@
             "gameDateUTC": "2026-05-06T04:00:00Z",
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-05-06T23:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-06T19:00:00Z",
+            "homeTeamTime": "2026-05-06T19:00:00Z",
             "day": "Wed",
             "monthNum": 5,
             "weekNumber": 29,
@@ -213053,9 +213064,9 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 2",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Madison Square Garden",
+            "arenaState": "NY",
+            "arenaCity": "New York",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -213100,26 +213111,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -213133,7 +213144,7 @@
             "gameCode": "20260506/MINSAS",
             "gameStatus": 1,
             "gameStatusText": "9:30 pm ET",
-            "gameSequence": 1,
+            "gameSequence": 2,
             "gameDateEst": "2026-05-06T00:00:00Z",
             "gameTimeEst": "1900-01-01T21:30:00Z",
             "gameDateTimeEst": "2026-05-06T21:30:00Z",
@@ -213434,7 +213445,7 @@
         "games": [
           {
             "gameId": "0042500213",
-            "gameCode": "",
+            "gameCode": "20260508/NYKPHI",
             "gameStatus": 1,
             "gameStatusText": "7:00 pm ET",
             "gameSequence": 1,
@@ -213444,8 +213455,8 @@
             "gameDateUTC": "2026-05-08T04:00:00Z",
             "gameTimeUTC": "1900-01-01T23:00:00Z",
             "gameDateTimeUTC": "2026-05-08T23:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-08T19:00:00Z",
+            "homeTeamTime": "2026-05-08T19:00:00Z",
             "day": "Fri",
             "monthNum": 5,
             "weekNumber": 29,
@@ -213455,9 +213466,9 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 3",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -213502,26 +213513,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -213849,7 +213860,7 @@
         "games": [
           {
             "gameId": "0042500214",
-            "gameCode": "",
+            "gameCode": "20260510/NYKPHI",
             "gameStatus": 1,
             "gameStatusText": "3:30 pm ET",
             "gameSequence": 1,
@@ -213859,8 +213870,8 @@
             "gameDateUTC": "2026-05-10T04:00:00Z",
             "gameTimeUTC": "1900-01-01T19:30:00Z",
             "gameDateTimeUTC": "2026-05-10T19:30:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-10T15:30:00Z",
+            "homeTeamTime": "2026-05-10T15:30:00Z",
             "day": "Sun",
             "monthNum": 5,
             "weekNumber": 29,
@@ -213870,9 +213881,9 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 4",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
@@ -213917,26 +213928,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -214277,7 +214288,7 @@
         "games": [
           {
             "gameId": "0042500215",
-            "gameCode": "",
+            "gameCode": "20260512/PHINYK",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -214287,8 +214298,8 @@
             "gameDateUTC": "2026-05-12T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-12T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-12T00:00:00Z",
+            "homeTeamTime": "2026-05-12T00:00:00Z",
             "day": "Tue",
             "monthNum": 5,
             "weekNumber": 30,
@@ -214298,15 +214309,29 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 5",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Madison Square Garden",
+            "arenaState": "NY",
+            "arenaCity": "New York",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -214331,26 +214356,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -214665,7 +214690,7 @@
         "games": [
           {
             "gameId": "0042500216",
-            "gameCode": "",
+            "gameCode": "20260514/NYKPHI",
             "gameStatus": 1,
             "gameStatusText": "TBD",
             "gameSequence": 1,
@@ -214675,8 +214700,8 @@
             "gameDateUTC": "2026-05-14T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-14T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-14T00:00:00Z",
+            "homeTeamTime": "2026-05-14T00:00:00Z",
             "day": "Thu",
             "monthNum": 5,
             "weekNumber": 30,
@@ -214686,15 +214711,29 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 6",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Xfinity Mobile Arena",
+            "arenaState": "PA",
+            "arenaCity": "Philadelphia",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -214719,26 +214758,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -215156,18 +215195,18 @@
           },
           {
             "gameId": "0042500217",
-            "gameCode": "",
+            "gameCode": "20260517/PHINYK",
             "gameStatus": 1,
             "gameStatusText": "TBD",
-            "gameSequence": 2,
+            "gameSequence": 1,
             "gameDateEst": "2026-05-17T00:00:00Z",
             "gameTimeEst": "0001-01-01T00:00:00Z",
             "gameDateTimeEst": "2026-05-17T00:00:00Z",
             "gameDateUTC": "2026-05-17T04:00:00Z",
             "gameTimeUTC": "1900-01-01T04:00:00Z",
             "gameDateTimeUTC": "2026-05-17T04:00:00Z",
-            "awayTeamTime": "0001-01-01T00:00:00Z",
-            "homeTeamTime": "0001-01-01T00:00:00Z",
+            "awayTeamTime": "2026-05-17T00:00:00Z",
+            "homeTeamTime": "2026-05-17T00:00:00Z",
             "day": "Sun",
             "monthNum": 5,
             "weekNumber": 30,
@@ -215177,15 +215216,29 @@
             "gameLabel": "East Conf. Semifinals",
             "gameSubLabel": "Game 7",
             "seriesText": "Series tied 0-0",
-            "arenaName": "",
-            "arenaState": "",
-            "arenaCity": "",
+            "arenaName": "Madison Square Garden",
+            "arenaState": "NY",
+            "arenaCity": "New York",
             "postponedStatus": "N",
             "branchLink": "",
             "gameSubtype": "",
             "isNeutral": false,
             "broadcasters": {
-              "nationalBroadcasters": [],
+              "nationalBroadcasters": [
+                {
+                  "broadcasterScope": "natl",
+                  "broadcasterMedia": "tv",
+                  "broadcasterId": 1001042,
+                  "broadcasterDisplay": "TBD",
+                  "broadcasterAbbreviation": "TBD",
+                  "broadcasterDescription": "",
+                  "tapeDelayComments": "",
+                  "broadcasterVideoLink": "",
+                  "broadcasterTeamId": -1,
+                  "broadcasterRanking": null,
+                  "localizationRegion": ""
+                }
+              ],
               "nationalRadioBroadcasters": [
                 {
                   "broadcasterScope": "natl",
@@ -215210,26 +215263,26 @@
               "awayOttBroadcasters": []
             },
             "homeTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612752,
+              "teamName": "Knicks",
+              "teamCity": "New York",
+              "teamTricode": "NYK",
+              "teamSlug": "knicks",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 3
             },
             "awayTeam": {
-              "teamId": 0,
-              "teamName": null,
-              "teamCity": null,
-              "teamTricode": null,
-              "teamSlug": null,
+              "teamId": 1610612755,
+              "teamName": "76ers",
+              "teamCity": "Philadelphia",
+              "teamTricode": "PHI",
+              "teamSlug": "sixers",
               "wins": 0,
               "losses": 0,
               "score": 0,
-              "seed": 0
+              "seed": 7
             },
             "pointsLeaders": [],
             "seasonStageId": 4,
@@ -215243,7 +215296,7 @@
             "gameCode": "20260517/MINSAS",
             "gameStatus": 1,
             "gameStatusText": "TBD",
-            "gameSequence": 3,
+            "gameSequence": 2,
             "gameDateEst": "2026-05-17T00:00:00Z",
             "gameTimeEst": "0001-01-01T00:00:00Z",
             "gameDateTimeEst": "2026-05-17T00:00:00Z",

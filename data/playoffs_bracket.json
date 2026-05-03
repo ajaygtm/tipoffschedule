@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-02T20:45:55.674Z",
-  "source_schedule_updated_utc": "2026-05-02T20:45:29.370Z",
-  "source_scores_updated_utc": "2026-05-02T20:45:55.423Z",
+  "generated_utc": "2026-05-03T07:20:25.319Z",
+  "source_schedule_updated_utc": "2026-05-03T07:19:49.643Z",
+  "source_scores_updated_utc": "2026-05-03T07:20:25.057Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -597,37 +597,10 @@
               ],
               "score": {
                 "top": 3,
-                "bottom": 3
+                "bottom": 4
               },
-              "winnerPosition": null,
-              "nextGame": {
-                "id": "0042500117",
-                "gameNumber": 7,
-                "label": "Game 7",
-                "status": "scheduled",
-                "statusText": "7:30 pm ET",
-                "ifNecessary": false,
-                "date_utc": "2026-05-02T23:30:00Z",
-                "tv": "NBC",
-                "home": {
-                  "tri": "BOS",
-                  "seed": 2,
-                  "name": "Boston Celtics",
-                  "shortName": "Celtics",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
-                  "tri": "PHI",
-                  "seed": 7,
-                  "name": "Philadelphia 76ers",
-                  "shortName": "76ers",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "homeScore": null,
-                "awayScore": null
-              },
+              "winnerPosition": "bottom",
+              "nextGame": null,
               "games": [
                 {
                   "id": "0042500111",
@@ -801,8 +774,8 @@
                   "id": "0042500117",
                   "gameNumber": 7,
                   "label": "Game 7",
-                  "status": "scheduled",
-                  "statusText": "7:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-02T23:30:00Z",
                   "tv": "NBC",
@@ -822,12 +795,12 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 100,
+                  "awayScore": 109
                 }
               ],
-              "seriesText": "Series tied 3-3",
-              "status": "in-progress",
+              "seriesText": "PHI wins 4-3",
+              "status": "completed",
               "seeds": [
                 2,
                 7
@@ -1214,22 +1187,20 @@
               ],
               "participants": [
                 {
-                  "tri": null,
-                  "seed": null,
-                  "name": "Winner 2 vs 7",
-                  "shortName": "Winner 2 vs 7",
-                  "placeholder": true,
-                  "conferenceHint": null,
-                  "placeholderLabel": "Winner 2 vs 7"
-                },
-                {
                   "tri": "NYK",
                   "seed": 3,
                   "name": "New York Knicks",
                   "shortName": "Knicks",
                   "placeholder": false,
-                  "conferenceHint": "east",
-                  "placeholderLabel": "Seed 3"
+                  "conferenceHint": "east"
+                },
+                {
+                  "tri": "PHI",
+                  "seed": 7,
+                  "name": "Philadelphia 76ers",
+                  "shortName": "76ers",
+                  "placeholder": false,
+                  "conferenceHint": "east"
                 }
               ],
               "score": {
@@ -1246,8 +1217,22 @@
                 "ifNecessary": false,
                 "date_utc": "2026-05-05T00:00:00Z",
                 "tv": "NBC",
-                "home": null,
-                "away": null,
+                "home": {
+                  "tri": "NYK",
+                  "seed": 3,
+                  "name": "New York Knicks",
+                  "shortName": "Knicks",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "PHI",
+                  "seed": 7,
+                  "name": "Philadelphia 76ers",
+                  "shortName": "76ers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
                 "homeScore": null,
                 "awayScore": null
               },
@@ -1261,8 +1246,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-05T00:00:00Z",
                   "tv": "NBC",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1275,8 +1274,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-06T23:00:00Z",
                   "tv": "ESPN",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1289,8 +1302,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-08T23:00:00Z",
                   "tv": "Prime Video",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1303,8 +1330,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-10T19:30:00Z",
                   "tv": "ABC",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1316,9 +1357,23 @@
                   "statusText": "TBD",
                   "ifNecessary": true,
                   "date_utc": "2026-05-12T04:00:00Z",
-                  "tv": null,
-                  "home": null,
-                  "away": null,
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1330,9 +1385,23 @@
                   "statusText": "TBD",
                   "ifNecessary": true,
                   "date_utc": "2026-05-14T04:00:00Z",
-                  "tv": null,
-                  "home": null,
-                  "away": null,
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1344,9 +1413,23 @@
                   "statusText": "TBD",
                   "ifNecessary": true,
                   "date_utc": "2026-05-17T04:00:00Z",
-                  "tv": null,
-                  "home": null,
-                  "away": null,
+                  "tv": "TBD",
+                  "home": {
+                    "tri": "NYK",
+                    "seed": 3,
+                    "name": "New York Knicks",
+                    "shortName": "Knicks",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "PHI",
+                    "seed": 7,
+                    "name": "Philadelphia 76ers",
+                    "shortName": "76ers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 }
