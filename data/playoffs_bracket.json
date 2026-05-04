@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-03T20:48:29.756Z",
-  "source_schedule_updated_utc": "2026-05-03T20:47:57.062Z",
-  "source_scores_updated_utc": "2026-05-03T20:48:29.505Z",
+  "generated_utc": "2026-05-04T07:48:16.042Z",
+  "source_schedule_updated_utc": "2026-05-04T07:47:52.131Z",
+  "source_scores_updated_utc": "2026-05-04T07:48:15.821Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -66,38 +66,11 @@
                 }
               ],
               "score": {
-                "top": 3,
+                "top": 4,
                 "bottom": 3
               },
-              "winnerPosition": null,
-              "nextGame": {
-                "id": "0042500107",
-                "gameNumber": 7,
-                "label": "Game 7",
-                "status": "scheduled",
-                "statusText": "Halftime",
-                "ifNecessary": false,
-                "date_utc": "2026-05-03T19:30:00Z",
-                "tv": "ABC",
-                "home": {
-                  "tri": "DET",
-                  "seed": 1,
-                  "name": "Detroit Pistons",
-                  "shortName": "Pistons",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
-                  "tri": "ORL",
-                  "seed": 8,
-                  "name": "Orlando Magic",
-                  "shortName": "Magic",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "homeScore": null,
-                "awayScore": null
-              },
+              "winnerPosition": "top",
+              "nextGame": null,
               "games": [
                 {
                   "id": "0042500101",
@@ -271,8 +244,8 @@
                   "id": "0042500107",
                   "gameNumber": 7,
                   "label": "Game 7",
-                  "status": "scheduled",
-                  "statusText": "Halftime",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-03T19:30:00Z",
                   "tv": "ABC",
@@ -292,12 +265,12 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 116,
+                  "awayScore": 94
                 }
               ],
-              "seriesText": "Series tied 3-3",
-              "status": "in-progress",
+              "seriesText": "DET wins 4-3",
+              "status": "completed",
               "seeds": [
                 1,
                 8
@@ -331,38 +304,11 @@
                 }
               ],
               "score": {
-                "top": 3,
+                "top": 4,
                 "bottom": 3
               },
-              "winnerPosition": null,
-              "nextGame": {
-                "id": "0042500137",
-                "gameNumber": 7,
-                "label": "Game 7",
-                "status": "scheduled",
-                "statusText": "7:30 pm ET",
-                "ifNecessary": false,
-                "date_utc": "2026-05-03T23:30:00Z",
-                "tv": "NBC",
-                "home": {
-                  "tri": "CLE",
-                  "seed": 4,
-                  "name": "Cleveland Cavaliers",
-                  "shortName": "Cavaliers",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
-                  "tri": "TOR",
-                  "seed": 5,
-                  "name": "Toronto Raptors",
-                  "shortName": "Raptors",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "homeScore": null,
-                "awayScore": null
-              },
+              "winnerPosition": "top",
+              "nextGame": null,
               "games": [
                 {
                   "id": "0042500131",
@@ -536,8 +482,8 @@
                   "id": "0042500137",
                   "gameNumber": 7,
                   "label": "Game 7",
-                  "status": "scheduled",
-                  "statusText": "7:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-03T23:30:00Z",
                   "tv": "NBC",
@@ -557,12 +503,12 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 114,
+                  "awayScore": 102
                 }
               ],
-              "seriesText": "Series tied 3-3",
-              "status": "in-progress",
+              "seriesText": "CLE wins 4-3",
+              "status": "completed",
               "seeds": [
                 4,
                 5
@@ -1034,22 +980,20 @@
               ],
               "participants": [
                 {
-                  "tri": null,
-                  "seed": null,
-                  "name": "Winner 1 vs 8",
-                  "shortName": "Winner 1 vs 8",
-                  "placeholder": true,
-                  "conferenceHint": null,
-                  "placeholderLabel": "Winner 1 vs 8"
+                  "tri": "DET",
+                  "seed": 1,
+                  "name": "Detroit Pistons",
+                  "shortName": "Pistons",
+                  "placeholder": false,
+                  "conferenceHint": "east"
                 },
                 {
-                  "tri": null,
-                  "seed": null,
-                  "name": "Winner 4 vs 5",
-                  "shortName": "Winner 4 vs 5",
-                  "placeholder": true,
-                  "conferenceHint": null,
-                  "placeholderLabel": "Winner 4 vs 5"
+                  "tri": "CLE",
+                  "seed": 4,
+                  "name": "Cleveland Cavaliers",
+                  "shortName": "Cavaliers",
+                  "placeholder": false,
+                  "conferenceHint": "east"
                 }
               ],
               "score": {
@@ -1066,8 +1010,22 @@
                 "ifNecessary": false,
                 "date_utc": "2026-05-05T23:00:00Z",
                 "tv": "Peacock",
-                "home": null,
-                "away": null,
+                "home": {
+                  "tri": "DET",
+                  "seed": 1,
+                  "name": "Detroit Pistons",
+                  "shortName": "Pistons",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "CLE",
+                  "seed": 4,
+                  "name": "Cleveland Cavaliers",
+                  "shortName": "Cavaliers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
                 "homeScore": null,
                 "awayScore": null
               },
@@ -1081,8 +1039,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-05T23:00:00Z",
                   "tv": "Peacock",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1095,8 +1067,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-07T23:00:00Z",
                   "tv": "Prime Video",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1109,8 +1095,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-09T19:00:00Z",
                   "tv": "NBC",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1123,8 +1123,22 @@
                   "ifNecessary": false,
                   "date_utc": "2026-05-12T00:00:00Z",
                   "tv": "NBC",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1137,8 +1151,22 @@
                   "ifNecessary": true,
                   "date_utc": "2026-05-13T04:00:00Z",
                   "tv": "TBD",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1151,8 +1179,22 @@
                   "ifNecessary": true,
                   "date_utc": "2026-05-15T04:00:00Z",
                   "tv": "TBD",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 },
@@ -1165,8 +1207,22 @@
                   "ifNecessary": true,
                   "date_utc": "2026-05-17T04:00:00Z",
                   "tv": "TBD",
-                  "home": null,
-                  "away": null,
+                  "home": {
+                    "tri": "DET",
+                    "seed": 1,
+                    "name": "Detroit Pistons",
+                    "shortName": "Pistons",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
+                  "away": {
+                    "tri": "CLE",
+                    "seed": 4,
+                    "name": "Cleveland Cavaliers",
+                    "shortName": "Cavaliers",
+                    "placeholder": false,
+                    "conferenceHint": null
+                  },
                   "homeScore": null,
                   "awayScore": null
                 }
