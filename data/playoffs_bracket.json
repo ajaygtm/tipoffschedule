@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-06T21:13:20.226Z",
-  "source_schedule_updated_utc": "2026-05-06T21:12:46.776Z",
-  "source_scores_updated_utc": "2026-05-06T21:13:19.976Z",
+  "generated_utc": "2026-05-07T07:43:36.995Z",
+  "source_schedule_updated_utc": "2026-05-07T07:43:03.106Z",
+  "source_scores_updated_utc": "2026-05-07T07:43:36.727Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -1260,32 +1260,32 @@
                 }
               ],
               "score": {
-                "top": 1,
+                "top": 2,
                 "bottom": 0
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500212",
-                "gameNumber": 2,
-                "label": "Game 2",
+                "id": "0042500213",
+                "gameNumber": 3,
+                "label": "Game 3",
                 "status": "scheduled",
                 "statusText": "7:00 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-06T23:00:00Z",
-                "tv": "ESPN",
+                "date_utc": "2026-05-08T23:00:00Z",
+                "tv": "Prime Video",
                 "home": {
-                  "tri": "NYK",
-                  "seed": 3,
-                  "name": "New York Knicks",
-                  "shortName": "Knicks",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "PHI",
                   "seed": 7,
                   "name": "Philadelphia 76ers",
                   "shortName": "76ers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "NYK",
+                  "seed": 3,
+                  "name": "New York Knicks",
+                  "shortName": "Knicks",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -1325,8 +1325,8 @@
                   "id": "0042500212",
                   "gameNumber": 2,
                   "label": "Game 2",
-                  "status": "scheduled",
-                  "statusText": "7:00 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-06T23:00:00Z",
                   "tv": "ESPN",
@@ -1346,8 +1346,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 108,
+                  "awayScore": 102
                 },
                 {
                   "id": "0042500213",
@@ -1490,7 +1490,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "NYK leads 1-0",
+              "seriesText": "NYK leads 2-0",
               "status": "in-progress",
               "seeds": null
             }
@@ -2634,32 +2634,32 @@
                 }
               ],
               "score": {
-                "top": 0,
+                "top": 1,
                 "bottom": 1
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500232",
-                "gameNumber": 2,
-                "label": "Game 2",
+                "id": "0042500233",
+                "gameNumber": 3,
+                "label": "Game 3",
                 "status": "scheduled",
                 "statusText": "9:30 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-07T01:30:00Z",
-                "tv": "ESPN",
+                "date_utc": "2026-05-09T01:30:00Z",
+                "tv": "Prime Video",
                 "home": {
-                  "tri": "SAS",
-                  "seed": 2,
-                  "name": "San Antonio Spurs",
-                  "shortName": "Spurs",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "MIN",
                   "seed": 6,
                   "name": "Minnesota Timberwolves",
                   "shortName": "Timberwolves",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "SAS",
+                  "seed": 2,
+                  "name": "San Antonio Spurs",
+                  "shortName": "Spurs",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -2699,8 +2699,8 @@
                   "id": "0042500232",
                   "gameNumber": 2,
                   "label": "Game 2",
-                  "status": "scheduled",
-                  "statusText": "9:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-07T01:30:00Z",
                   "tv": "ESPN",
@@ -2720,8 +2720,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 133,
+                  "awayScore": 95
                 },
                 {
                   "id": "0042500233",
@@ -2785,7 +2785,7 @@
                   "label": "Game 5",
                   "status": "scheduled",
                   "statusText": "TBD",
-                  "ifNecessary": true,
+                  "ifNecessary": false,
                   "date_utc": "2026-05-12T04:00:00Z",
                   "tv": "TBD",
                   "home": {
@@ -2864,7 +2864,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "MIN leads 1-0",
+              "seriesText": "Series tied 1-1",
               "status": "in-progress",
               "seeds": null
             }
