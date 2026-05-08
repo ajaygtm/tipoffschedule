@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-05-08T13:55:44.601Z",
+    "scores_updated_utc": "2026-05-08T21:04:14.962Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-05-08T13:55:18.228Z"
+    "schedule_synced_utc": "2026-05-08T21:03:50.255Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -121185,16 +121185,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641706,
-                "firstName": "Brandon",
-                "lastName": "Miller",
-                "teamId": 1610612766,
-                "teamCity": "Charlotte",
-                "teamName": "Hornets",
-                "teamTricode": "CHA",
-                "points": 26
-              },
-              {
                 "personId": 1628991,
                 "firstName": "Jaren",
                 "lastName": "Jackson Jr.",
@@ -121202,6 +121192,16 @@
                 "teamCity": "Memphis",
                 "teamName": "Grizzlies",
                 "teamTricode": "MEM",
+                "points": 26
+              },
+              {
+                "personId": 1641706,
+                "firstName": "Brandon",
+                "lastName": "Miller",
+                "teamId": 1610612766,
+                "teamCity": "Charlotte",
+                "teamName": "Hornets",
+                "teamTricode": "CHA",
                 "points": 26
               }
             ],
@@ -136250,16 +136250,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 1641739,
-                "firstName": "Toumani",
-                "lastName": "Camara",
-                "teamId": 1610612757,
-                "teamCity": "Portland",
-                "teamName": "Trail Blazers",
-                "teamTricode": "POR",
-                "points": 30
-              },
-              {
                 "personId": 1630178,
                 "firstName": "Tyrese",
                 "lastName": "Maxey",
@@ -136267,6 +136257,16 @@
                 "teamCity": "Philadelphia",
                 "teamName": "76ers",
                 "teamTricode": "PHI",
+                "points": 30
+              },
+              {
+                "personId": 1641739,
+                "firstName": "Toumani",
+                "lastName": "Camara",
+                "teamId": 1610612757,
+                "teamCity": "Portland",
+                "teamName": "Trail Blazers",
+                "teamTricode": "POR",
                 "points": 30
               }
             ],
@@ -143119,16 +143119,6 @@
             },
             "pointsLeaders": [
               {
-                "personId": 203952,
-                "firstName": "Andrew",
-                "lastName": "Wiggins",
-                "teamId": 1610612748,
-                "teamCity": "Miami",
-                "teamName": "Heat",
-                "teamTricode": "MIA",
-                "points": 28
-              },
-              {
                 "personId": 1641713,
                 "firstName": "GG",
                 "lastName": "Jackson",
@@ -143136,6 +143126,16 @@
                 "teamCity": "Memphis",
                 "teamName": "Grizzlies",
                 "teamTricode": "MEM",
+                "points": 28
+              },
+              {
+                "personId": 203952,
+                "firstName": "Andrew",
+                "lastName": "Wiggins",
+                "teamId": 1610612748,
+                "teamCity": "Miami",
+                "teamName": "Heat",
+                "teamTricode": "MIA",
                 "points": 28
               }
             ],
