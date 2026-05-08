@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-07T21:06:40.244Z",
-  "source_schedule_updated_utc": "2026-05-07T21:06:04.325Z",
-  "source_scores_updated_utc": "2026-05-07T21:06:39.989Z",
+  "generated_utc": "2026-05-08T06:52:48.282Z",
+  "source_schedule_updated_utc": "2026-05-08T06:52:23.821Z",
+  "source_scores_updated_utc": "2026-05-08T06:52:47.984Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -997,32 +997,32 @@
                 }
               ],
               "score": {
-                "top": 1,
+                "top": 2,
                 "bottom": 0
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500202",
-                "gameNumber": 2,
-                "label": "Game 2",
+                "id": "0042500203",
+                "gameNumber": 3,
+                "label": "Game 3",
                 "status": "scheduled",
-                "statusText": "7:00 pm ET",
+                "statusText": "3:00 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-07T23:00:00Z",
-                "tv": "Prime Video",
+                "date_utc": "2026-05-09T19:00:00Z",
+                "tv": "NBC",
                 "home": {
-                  "tri": "DET",
-                  "seed": 1,
-                  "name": "Detroit Pistons",
-                  "shortName": "Pistons",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "CLE",
                   "seed": 4,
                   "name": "Cleveland Cavaliers",
                   "shortName": "Cavaliers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "DET",
+                  "seed": 1,
+                  "name": "Detroit Pistons",
+                  "shortName": "Pistons",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -1062,8 +1062,8 @@
                   "id": "0042500202",
                   "gameNumber": 2,
                   "label": "Game 2",
-                  "status": "scheduled",
-                  "statusText": "7:00 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-07T23:00:00Z",
                   "tv": "Prime Video",
@@ -1083,8 +1083,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 107,
+                  "awayScore": 97
                 },
                 {
                   "id": "0042500203",
@@ -1227,7 +1227,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "DET leads 1-0",
+              "seriesText": "DET leads 2-0",
               "status": "in-progress",
               "seeds": null
             },
@@ -2371,32 +2371,32 @@
                 }
               ],
               "score": {
-                "top": 1,
+                "top": 2,
                 "bottom": 0
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500222",
-                "gameNumber": 2,
-                "label": "Game 2",
+                "id": "0042500223",
+                "gameNumber": 3,
+                "label": "Game 3",
                 "status": "scheduled",
-                "statusText": "9:30 pm ET",
+                "statusText": "8:30 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-08T01:30:00Z",
-                "tv": "Prime Video",
+                "date_utc": "2026-05-10T00:30:00Z",
+                "tv": "ABC",
                 "home": {
-                  "tri": "OKC",
-                  "seed": 1,
-                  "name": "Oklahoma City Thunder",
-                  "shortName": "Thunder",
-                  "placeholder": false,
-                  "conferenceHint": null
-                },
-                "away": {
                   "tri": "LAL",
                   "seed": 4,
                   "name": "Los Angeles Lakers",
                   "shortName": "Lakers",
+                  "placeholder": false,
+                  "conferenceHint": null
+                },
+                "away": {
+                  "tri": "OKC",
+                  "seed": 1,
+                  "name": "Oklahoma City Thunder",
+                  "shortName": "Thunder",
                   "placeholder": false,
                   "conferenceHint": null
                 },
@@ -2436,8 +2436,8 @@
                   "id": "0042500222",
                   "gameNumber": 2,
                   "label": "Game 2",
-                  "status": "scheduled",
-                  "statusText": "9:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-08T01:30:00Z",
                   "tv": "Prime Video",
@@ -2457,8 +2457,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 125,
+                  "awayScore": 107
                 },
                 {
                   "id": "0042500223",
@@ -2601,7 +2601,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "OKC leads 1-0",
+              "seriesText": "OKC leads 2-0",
               "status": "in-progress",
               "seeds": null
             },
