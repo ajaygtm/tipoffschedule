@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-09T13:22:57.671Z",
-  "source_schedule_updated_utc": "2026-05-09T13:22:43.479Z",
-  "source_scores_updated_utc": "2026-05-09T13:22:57.409Z",
+  "generated_utc": "2026-05-09T20:49:33.506Z",
+  "source_schedule_updated_utc": "2026-05-09T20:49:10.986Z",
+  "source_scores_updated_utc": "2026-05-09T20:49:33.250Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -1006,7 +1006,7 @@
                 "gameNumber": 3,
                 "label": "Game 3",
                 "status": "scheduled",
-                "statusText": "3:00 pm ET",
+                "statusText": "Halftime",
                 "ifNecessary": false,
                 "date_utc": "2026-05-09T19:00:00Z",
                 "tv": "NBC",
@@ -1091,7 +1091,7 @@
                   "gameNumber": 3,
                   "label": "Game 3",
                   "status": "scheduled",
-                  "statusText": "3:00 pm ET",
+                  "statusText": "Halftime",
                   "ifNecessary": false,
                   "date_utc": "2026-05-09T19:00:00Z",
                   "tv": "NBC",
