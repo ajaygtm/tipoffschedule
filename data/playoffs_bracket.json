@@ -1,7 +1,7 @@
 {
-  "generated_utc": "2026-05-09T20:49:33.506Z",
-  "source_schedule_updated_utc": "2026-05-09T20:49:10.986Z",
-  "source_scores_updated_utc": "2026-05-09T20:49:33.250Z",
+  "generated_utc": "2026-05-10T07:26:25.015Z",
+  "source_schedule_updated_utc": "2026-05-10T07:26:10.928Z",
+  "source_scores_updated_utc": "2026-05-10T07:26:24.756Z",
   "conferences": {
     "east": {
       "key": "east",
@@ -998,17 +998,17 @@
               ],
               "score": {
                 "top": 2,
-                "bottom": 0
+                "bottom": 1
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500203",
-                "gameNumber": 3,
-                "label": "Game 3",
+                "id": "0042500204",
+                "gameNumber": 4,
+                "label": "Game 4",
                 "status": "scheduled",
-                "statusText": "Halftime",
+                "statusText": "8:00 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-09T19:00:00Z",
+                "date_utc": "2026-05-12T00:00:00Z",
                 "tv": "NBC",
                 "home": {
                   "tri": "CLE",
@@ -1090,8 +1090,8 @@
                   "id": "0042500203",
                   "gameNumber": 3,
                   "label": "Game 3",
-                  "status": "scheduled",
-                  "statusText": "Halftime",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-09T19:00:00Z",
                   "tv": "NBC",
@@ -1111,8 +1111,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 116,
+                  "awayScore": 109
                 },
                 {
                   "id": "0042500204",
@@ -1148,7 +1148,7 @@
                   "label": "Game 5",
                   "status": "scheduled",
                   "statusText": "TBD",
-                  "ifNecessary": true,
+                  "ifNecessary": false,
                   "date_utc": "2026-05-13T04:00:00Z",
                   "tv": "TBD",
                   "home": {
@@ -1227,7 +1227,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "DET leads 2-0",
+              "seriesText": "DET leads 2-1",
               "status": "in-progress",
               "seeds": null
             },
@@ -2371,19 +2371,19 @@
                 }
               ],
               "score": {
-                "top": 2,
+                "top": 3,
                 "bottom": 0
               },
               "winnerPosition": null,
               "nextGame": {
-                "id": "0042500223",
-                "gameNumber": 3,
-                "label": "Game 3",
+                "id": "0042500224",
+                "gameNumber": 4,
+                "label": "Game 4",
                 "status": "scheduled",
-                "statusText": "8:30 pm ET",
+                "statusText": "10:30 pm ET",
                 "ifNecessary": false,
-                "date_utc": "2026-05-10T00:30:00Z",
-                "tv": "ABC",
+                "date_utc": "2026-05-12T02:30:00Z",
+                "tv": "Prime Video",
                 "home": {
                   "tri": "LAL",
                   "seed": 4,
@@ -2464,8 +2464,8 @@
                   "id": "0042500223",
                   "gameNumber": 3,
                   "label": "Game 3",
-                  "status": "scheduled",
-                  "statusText": "8:30 pm ET",
+                  "status": "final",
+                  "statusText": "Final",
                   "ifNecessary": false,
                   "date_utc": "2026-05-10T00:30:00Z",
                   "tv": "ABC",
@@ -2485,8 +2485,8 @@
                     "placeholder": false,
                     "conferenceHint": null
                   },
-                  "homeScore": null,
-                  "awayScore": null
+                  "homeScore": 108,
+                  "awayScore": 131
                 },
                 {
                   "id": "0042500224",
@@ -2601,7 +2601,7 @@
                   "awayScore": null
                 }
               ],
-              "seriesText": "OKC leads 2-0",
+              "seriesText": "OKC leads 3-0",
               "status": "in-progress",
               "seeds": null
             },
