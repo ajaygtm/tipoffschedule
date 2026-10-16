@@ -181,31 +181,29 @@ async function fetchBalldontlieSchedule() {
   const startYear = Number(String(CURRENT_SEASON).split("-")[0]);
   if (!Number.isFinite(startYear)) throw new Error("Invalid CURRENT_SEASON for balldontlie adapter");
 
-  const perPage = 100;
-  let page = 1;
-  let totalPages = 1;
-  const allGames = [];
+  // Try multiple candidate years to find the upcoming season data (startYear, startYear+1, startYear-1)
+  const candidateYears = [startYear, startYear + 1, startYear - 1];
+  let allGames = [];
+  let usedYear = null;
 
-  while (page <= totalPages) {
-    const url = `https://www.balldontlie.io/api/v1/games?seasons[]=${startYear}&per_page=${perPage}&page=${page}`;
-    const json = await getJson(url);
-    const data = json && json.data ? json.data : json && json.games ? json.games : [];
-
-    if (!Array.isArray(data)) break;
-    allGames.push(...data);
-
-    // balldontlie may return meta with total_pages
-    if (json && json.meta && Number.isFinite(json.meta.total_pages)) {
-      totalPages = json.meta.total_pages;
-    } else if (json && json.meta && Number.isFinite(json.meta.total_pages)) {
-      totalPages = json.meta.total_pages;
-    } else {
-      // if meta not present, break when less than perPage
-      if (data.length < perPage) break;
-      totalPages = page + 1; // allow next iteration to try
+  for (const y of candidateYears) {
+    try {
+      const games = await fetchBalldontlieGamesForYear(y);
+      if (Array.isArray(games) && games.length) {
+        allGames = games;
+        usedYear = y;
+        console.log(`balldontlie: found ${games.length} games for season ${y}`);
+        break;
+      }
+      console.log(`balldontlie: no games for season ${y}`);
+    } catch (err) {
+      console.warn(`balldontlie: fetch for season ${y} failed: ${err.message}`);
     }
+  }
 
-    page += 1;
+  if (!allGames.length) {
+    console.warn("balldontlie: no schedule data found for candidate years");
+    return { leagueSchedule: { gameDates: [] } };
   }
 
   // Group games by date (UTC date)
@@ -240,7 +238,34 @@ async function fetchBalldontlieSchedule() {
     .sort((a, b) => a[0].localeCompare(b[0]))
     .map(([dateKey, games]) => ({ date: dateKey, games }));
 
-  return { leagueSchedule: { gameDates } };
+  return { leagueSchedule: { gameDates }, _meta: { provider: 'balldontlie', year: usedYear } };
+}
+
+async function fetchBalldontlieGamesForYear(year) {
+  const perPage = 100;
+  let page = 1;
+  let totalPages = 1;
+  const allGames = [];
+
+  while (page <= totalPages) {
+    const url = `https://www.balldontlie.io/api/v1/games?seasons[]=${year}&per_page=${perPage}&page=${page}`;
+    const json = await getJson(url);
+    const data = json && json.data ? json.data : json && json.games ? json.games : [];
+
+    if (!Array.isArray(data)) break;
+    allGames.push(...data);
+
+    if (json && json.meta && Number.isFinite(json.meta.total_pages)) {
+      totalPages = json.meta.total_pages;
+    } else {
+      if (data.length < perPage) break;
+      totalPages = page + 1;
+    }
+
+    page += 1;
+  }
+
+  return allGames;
 }
 
 function toDateKey(isoValue) {
