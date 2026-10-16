@@ -22,8 +22,17 @@ async function main() {
   const schedulePath = getSchedulePath();
 
   console.log(`Refreshing schedule for ${CURRENT_SEASON}...`);
-  const existing = await readJsonFile(schedulePath);
-  const incoming = await getJson(SOURCE_SCHEDULE_URL);
+
+  // Read existing file if present, otherwise start from a minimal structure
+  let existing = { meta: {}, leagueSchedule: { gameDates: [] } };
+  try {
+    existing = await readJsonFile(schedulePath);
+  } catch (err) {
+    console.warn(`No existing schedule file found at ${schedulePath}, starting fresh.`);
+  }
+
+  // Fetch incoming schedule from API adapter (balldontlie) by default
+  const incoming = await getScheduleFromProvider();
 
   const existingDates = readGameDates(existing);
   const incomingDates = readGameDates(incoming);
@@ -78,7 +87,7 @@ async function main() {
     },
     meta: {
       ...(existing.meta || {}),
-      source: SOURCE_SCHEDULE_URL,
+      source: SOURCE_SCHEDULE_URL || "balldontlie",
       season: CURRENT_SEASON,
       schedule_synced_utc: new Date().toISOString()
     }
@@ -140,6 +149,100 @@ async function readJsonFile(filePath) {
   return JSON.parse(text);
 }
 
+// Provider adapter: fetch schedule from balldontlie and return a schedule object
+async function getScheduleFromProvider() {
+  // Default to balldontlie for free/no-auth schedule data
+  try {
+    return await fetchBalldontlieSchedule();
+  } catch (err) {
+    console.warn("balldontlie fetch failed, falling back to SOURCE_SCHEDULE_URL if configured:", err.message);
+    if (SOURCE_SCHEDULE_URL) {
+      // Keep backward compatibility: fetch the original SOURCE_SCHEDULE_URL
+      const incoming = await getJson(SOURCE_SCHEDULE_URL);
+      return incoming;
+    }
+    throw err;
+  }
+}
+
+async function fetchBalldontlieSchedule() {
+  // balldontlie seasons use the starting year (e.g., 2025 for 2025-26)
+  const startYear = Number(String(CURRENT_SEASON).split("-")[0]);
+  if (!Number.isFinite(startYear)) throw new Error("Invalid CURRENT_SEASON for balldontlie adapter");
+
+  const perPage = 100;
+  let page = 1;
+  let totalPages = 1;
+  const allGames = [];
+
+  while (page <= totalPages) {
+    const url = `https://www.balldontlie.io/api/v1/games?seasons[]=${startYear}&per_page=${perPage}&page=${page}`;
+    const json = await getJson(url);
+    const data = json && json.data ? json.data : json && json.games ? json.games : [];
+
+    if (!Array.isArray(data)) break;
+    allGames.push(...data);
+
+    // balldontlie may return meta with total_pages
+    if (json && json.meta && Number.isFinite(json.meta.total_pages)) {
+      totalPages = json.meta.total_pages;
+    } else if (json && json.meta && Number.isFinite(json.meta.total_pages)) {
+      totalPages = json.meta.total_pages;
+    } else {
+      // if meta not present, break when less than perPage
+      if (data.length < perPage) break;
+      totalPages = page + 1; // allow next iteration to try
+    }
+
+    page += 1;
+  }
+
+  // Group games by date (UTC date)
+  const byDate = new Map();
+  for (const g of allGames) {
+    const iso = g && g.date;
+    if (!iso) continue;
+    const dateKey = toDateKey(iso);
+    if (!dateKey) continue;
+
+    const awayAbbr = (g.visitor_team && g.visitor_team.abbreviation) || null;
+    const homeAbbr = (g.home_team && g.home_team.abbreviation) || null;
+
+    const gameObj = {
+      gameId: `bdl-${g.id}`,
+      startTimeUTC: iso,
+      // preserve some legacy fields used by other scripts
+      gameDateUTC: iso.split("T")[0] ? `${iso.split("T")[0]}T00:00:00Z` : null,
+      gameTimeUTC: iso.includes("T") ? iso.split("T")[1].replace(/Z$/, "") : null,
+      awayTeam: { teamTricode: awayAbbr, score: g.visitor_team_score },
+      homeTeam: { teamTricode: homeAbbr, score: g.home_team_score },
+      vTeam: { triCode: awayAbbr },
+      hTeam: { triCode: homeAbbr },
+      seasonStageId: g.postseason ? 4 : 2
+    };
+
+    if (!byDate.has(dateKey)) byDate.set(dateKey, []);
+    byDate.get(dateKey).push(gameObj);
+  }
+
+  const gameDates = Array.from(byDate.entries())
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([dateKey, games]) => ({ date: dateKey, games }));
+
+  return { leagueSchedule: { gameDates } };
+}
+
+function toDateKey(isoValue) {
+  if (!isoValue) return null;
+  const t = Date.parse(isoValue);
+  if (Number.isNaN(t)) return null;
+  const d = new Date(t);
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(d.getUTCDate()).padStart(2, "0");
+  return `${yyyy}${mm}${dd}`;
+}
+
 function getJson(urlString) {
   return new Promise((resolve, reject) => {
     const parsed = new URL(urlString);
@@ -167,7 +270,7 @@ function getJson(urlString) {
 
       if (statusCode < 200 || statusCode >= 300) {
         res.resume();
-        reject(new Error(`Schedule fetch failed: HTTP ${statusCode}`));
+        reject(new Error(`Fetch failed: HTTP ${statusCode}`));
         return;
       }
 
