@@ -145,7 +145,17 @@ function getJson(urlString) {
     const parsed = new URL(urlString);
     const client = parsed.protocol === "https:" ? https : http;
 
-    const req = client.get(parsed, res => {
+    // Include a browser-like User-Agent and Accept header to avoid CDN 403s
+    const options = {
+      hostname: parsed.hostname,
+      path: parsed.pathname + parsed.search,
+      headers: {
+        "User-Agent": "Mozilla/5.0 (compatible; tipoffschedule/1.0)",
+        "Accept": "application/json"
+      }
+    };
+
+    const req = client.get(options, res => {
       const statusCode = res.statusCode || 0;
 
       if (statusCode >= 300 && statusCode < 400 && res.headers.location) {
