@@ -31,8 +31,19 @@ async function main() {
     console.warn(`No existing schedule file found at ${schedulePath}, starting fresh.`);
   }
 
-  // Fetch incoming schedule from API adapter (balldontlie) by default
-  const incoming = await getScheduleFromProvider();
+  // Fetch incoming schedule from API adapter (balldontlie) by default.
+  // If the provider fails or returns no usable data, fall back to the existing schedule
+  let incoming;
+  try {
+    incoming = await getScheduleFromProvider();
+    if (!incoming || !incoming.leagueSchedule || !Array.isArray(incoming.leagueSchedule.gameDates) || incoming.leagueSchedule.gameDates.length === 0) {
+      console.warn("Provider returned no schedule data; using existing schedule instead.");
+      incoming = existing;
+    }
+  } catch (err) {
+    console.warn("Schedule provider failed:", err.message || err, "-- using existing schedule instead.");
+    incoming = existing;
+  }
 
   const existingDates = readGameDates(existing);
   const incomingDates = readGameDates(incoming);
