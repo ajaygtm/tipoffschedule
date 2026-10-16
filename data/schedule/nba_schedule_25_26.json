@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-05-11T08:25:26.070Z",
+    "scores_updated_utc": "2026-10-16T10:50:16.355Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-05-11T08:25:00.846Z"
+    "schedule_synced_utc": "2026-10-16T10:49:50.309Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
@@ -215143,9 +215143,9 @@
             "pointsLeaders": [],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 97,
+            "homeScore": 126
           }
         ]
       },
@@ -215544,9 +215544,9 @@
             "pointsLeaders": [],
             "seasonStageId": 4,
             "seasonStageLabel": "Playoffs",
-            "status": "scheduled",
-            "awayScore": null,
-            "homeScore": null
+            "status": "final",
+            "awayScore": 115,
+            "homeScore": 94
           },
           {
             "gameId": "0042500236",
