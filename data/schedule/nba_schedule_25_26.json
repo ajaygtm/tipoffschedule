@@ -3,10 +3,10 @@
     "version": 1,
     "request": "http://nba.cloud/league/00/2025-26/scheduleleaguev2?Format=json",
     "time": "2025-10-05T08:40:17.4017Z",
-    "scores_updated_utc": "2026-10-20T22:59:00.683Z",
+    "scores_updated_utc": "2026-10-21T09:52:44.582Z",
     "source": "https://cdn.nba.com/static/json/staticData/scheduleLeagueV2.json",
     "season": "2025-26",
-    "schedule_synced_utc": "2026-10-20T22:58:33.910Z"
+    "schedule_synced_utc": "2026-10-21T09:52:25.672Z"
   },
   "leagueSchedule": {
     "seasonYear": "2025-26",
