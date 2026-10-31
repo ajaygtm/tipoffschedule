@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-31T16:57:58.638Z",
+  "updated": "2026-10-31T23:09:02.126Z",
   "eastern": [
     {
       "rank": 1,
@@ -224,12 +224,12 @@
       "tri": "POR",
       "name": "Portland Trail Blazers",
       "shortName": "Trail Blazers",
-      "wins": 3,
+      "wins": 4,
       "losses": 1,
-      "pct": ".750",
-      "gb": "1.5",
-      "streak": "L1",
-      "l10": "3-1"
+      "pct": ".800",
+      "gb": "1",
+      "streak": "W1",
+      "l10": "4-1"
     },
     {
       "rank": 5,
@@ -317,18 +317,6 @@
     },
     {
       "rank": 12,
-      "tri": "UTA",
-      "name": "Utah Jazz",
-      "shortName": "Jazz",
-      "wins": 1,
-      "losses": 4,
-      "pct": ".200",
-      "gb": "4",
-      "streak": "L3",
-      "l10": "1-4"
-    },
-    {
-      "rank": 13,
       "tri": "NOP",
       "name": "New Orleans Pelicans",
       "shortName": "Pelicans",
@@ -340,7 +328,7 @@
       "l10": "1-4"
     },
     {
-      "rank": 14,
+      "rank": 13,
       "tri": "LAC",
       "name": "LA Clippers",
       "shortName": "Clippers",
@@ -350,6 +338,18 @@
       "gb": "4",
       "streak": "L4",
       "l10": "1-4"
+    },
+    {
+      "rank": 14,
+      "tri": "UTA",
+      "name": "Utah Jazz",
+      "shortName": "Jazz",
+      "wins": 1,
+      "losses": 5,
+      "pct": ".167",
+      "gb": "4.5",
+      "streak": "L4",
+      "l10": "1-5"
     },
     {
       "rank": 15,
