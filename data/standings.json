@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09T13:40:29.736Z",
+  "updated": "2026-11-10T02:35:10.640Z",
   "eastern": [
     {
       "rank": 1,
@@ -43,11 +43,11 @@
       "name": "Atlanta Hawks",
       "shortName": "Hawks",
       "wins": 7,
-      "losses": 4,
-      "pct": ".636",
-      "gb": "2",
-      "streak": "W4",
-      "l10": "6-4"
+      "losses": 5,
+      "pct": ".583",
+      "gb": "2.5",
+      "streak": "L1",
+      "l10": "5-5"
     },
     {
       "rank": 5,
@@ -79,10 +79,10 @@
       "name": "Cleveland Cavaliers",
       "shortName": "Cavaliers",
       "wins": 5,
-      "losses": 5,
-      "pct": ".500",
-      "gb": "3.5",
-      "streak": "L1",
+      "losses": 6,
+      "pct": ".455",
+      "gb": "4",
+      "streak": "L2",
       "l10": "5-5"
     },
     {
@@ -114,11 +114,11 @@
       "tri": "CHA",
       "name": "Charlotte Hornets",
       "shortName": "Hornets",
-      "wins": 3,
+      "wins": 4,
       "losses": 7,
-      "pct": ".300",
-      "gb": "5.5",
-      "streak": "L6",
+      "pct": ".364",
+      "gb": "5",
+      "streak": "W1",
       "l10": "3-7"
     },
     {
@@ -188,11 +188,11 @@
       "tri": "LAL",
       "name": "Los Angeles Lakers",
       "shortName": "Lakers",
-      "wins": 9,
+      "wins": 10,
       "losses": 2,
-      "pct": ".818",
+      "pct": ".833",
       "gb": "-",
-      "streak": "W5",
+      "streak": "W6",
       "l10": "8-2"
     },
     {
@@ -203,7 +203,7 @@
       "wins": 8,
       "losses": 2,
       "pct": ".800",
-      "gb": "0.5",
+      "gb": "1",
       "streak": "W4",
       "l10": "8-2"
     },
@@ -215,7 +215,7 @@
       "wins": 8,
       "losses": 2,
       "pct": ".800",
-      "gb": "0.5",
+      "gb": "1",
       "streak": "W8",
       "l10": "8-2"
     },
@@ -227,7 +227,7 @@
       "wins": 8,
       "losses": 3,
       "pct": ".727",
-      "gb": "1",
+      "gb": "1.5",
       "streak": "W4",
       "l10": "7-3"
     },
@@ -239,7 +239,7 @@
       "wins": 7,
       "losses": 3,
       "pct": ".700",
-      "gb": "1.5",
+      "gb": "2",
       "streak": "W7",
       "l10": "7-3"
     },
@@ -251,7 +251,7 @@
       "wins": 7,
       "losses": 3,
       "pct": ".700",
-      "gb": "1.5",
+      "gb": "2",
       "streak": "L2",
       "l10": "7-3"
     },
@@ -263,7 +263,7 @@
       "wins": 6,
       "losses": 3,
       "pct": ".667",
-      "gb": "2",
+      "gb": "2.5",
       "streak": "L3",
       "l10": "6-3"
     },
@@ -275,7 +275,7 @@
       "wins": 6,
       "losses": 3,
       "pct": ".667",
-      "gb": "2",
+      "gb": "2.5",
       "streak": "L2",
       "l10": "6-3"
     },
@@ -287,7 +287,7 @@
       "wins": 5,
       "losses": 3,
       "pct": ".625",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W2",
       "l10": "5-3"
     },
@@ -299,7 +299,7 @@
       "wins": 6,
       "losses": 4,
       "pct": ".600",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W2",
       "l10": "6-4"
     },
@@ -311,7 +311,7 @@
       "wins": 4,
       "losses": 6,
       "pct": ".400",
-      "gb": "4.5",
+      "gb": "5",
       "streak": "L2",
       "l10": "4-6"
     },
@@ -323,7 +323,7 @@
       "wins": 3,
       "losses": 5,
       "pct": ".375",
-      "gb": "4.5",
+      "gb": "5",
       "streak": "W2",
       "l10": "3-5"
     },
@@ -335,7 +335,7 @@
       "wins": 2,
       "losses": 7,
       "pct": ".222",
-      "gb": "6",
+      "gb": "6.5",
       "streak": "W1",
       "l10": "2-7"
     },
@@ -347,7 +347,7 @@
       "wins": 1,
       "losses": 9,
       "pct": ".100",
-      "gb": "7.5",
+      "gb": "8",
       "streak": "L3",
       "l10": "1-9"
     },
@@ -359,7 +359,7 @@
       "wins": 1,
       "losses": 9,
       "pct": ".100",
-      "gb": "7.5",
+      "gb": "8",
       "streak": "L8",
       "l10": "1-9"
     }
