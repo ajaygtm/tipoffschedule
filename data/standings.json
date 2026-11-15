@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15T12:32:03.784Z",
+  "updated": "2026-11-15T23:50:35.557Z",
   "eastern": [
     {
       "rank": 1,
@@ -18,12 +18,12 @@
       "tri": "PHI",
       "name": "Philadelphia 76ers",
       "shortName": "76ers",
-      "wins": 10,
+      "wins": 11,
       "losses": 3,
-      "pct": ".769",
-      "gb": "0.5",
-      "streak": "W1",
-      "l10": "7-3"
+      "pct": ".786",
+      "gb": "-",
+      "streak": "W2",
+      "l10": "8-2"
     },
     {
       "rank": 3,
@@ -115,10 +115,10 @@
       "name": "Indiana Pacers",
       "shortName": "Pacers",
       "wins": 5,
-      "losses": 8,
-      "pct": ".385",
-      "gb": "5.5",
-      "streak": "W2",
+      "losses": 9,
+      "pct": ".357",
+      "gb": "6",
+      "streak": "L1",
       "l10": "3-7"
     },
     {
@@ -185,27 +185,27 @@
   "western": [
     {
       "rank": 1,
+      "tri": "LAL",
+      "name": "Los Angeles Lakers",
+      "shortName": "Lakers",
+      "wins": 12,
+      "losses": 2,
+      "pct": ".857",
+      "gb": "-",
+      "streak": "W8",
+      "l10": "9-1"
+    },
+    {
+      "rank": 2,
       "tri": "SAS",
       "name": "San Antonio Spurs",
       "shortName": "Spurs",
       "wins": 11,
       "losses": 2,
       "pct": ".846",
-      "gb": "-",
+      "gb": "0.5",
       "streak": "W11",
       "l10": "10-0"
-    },
-    {
-      "rank": 2,
-      "tri": "LAL",
-      "name": "Los Angeles Lakers",
-      "shortName": "Lakers",
-      "wins": 11,
-      "losses": 2,
-      "pct": ".846",
-      "gb": "-",
-      "streak": "W7",
-      "l10": "8-2"
     },
     {
       "rank": 3,
@@ -215,7 +215,7 @@
       "wins": 10,
       "losses": 3,
       "pct": ".769",
-      "gb": "1",
+      "gb": "1.5",
       "streak": "W3",
       "l10": "7-3"
     },
@@ -227,7 +227,7 @@
       "wins": 9,
       "losses": 3,
       "pct": ".750",
-      "gb": "1.5",
+      "gb": "2",
       "streak": "W3",
       "l10": "7-3"
     },
@@ -239,7 +239,7 @@
       "wins": 9,
       "losses": 4,
       "pct": ".692",
-      "gb": "2",
+      "gb": "2.5",
       "streak": "L1",
       "l10": "6-4"
     },
@@ -251,7 +251,7 @@
       "wins": 9,
       "losses": 4,
       "pct": ".692",
-      "gb": "2",
+      "gb": "2.5",
       "streak": "W2",
       "l10": "6-4"
     },
@@ -263,7 +263,7 @@
       "wins": 7,
       "losses": 4,
       "pct": ".636",
-      "gb": "3",
+      "gb": "3.5",
       "streak": "W2",
       "l10": "7-3"
     },
@@ -275,7 +275,7 @@
       "wins": 8,
       "losses": 5,
       "pct": ".615",
-      "gb": "3",
+      "gb": "3.5",
       "streak": "L2",
       "l10": "8-2"
     },
@@ -287,7 +287,7 @@
       "wins": 8,
       "losses": 5,
       "pct": ".615",
-      "gb": "3",
+      "gb": "3.5",
       "streak": "L3",
       "l10": "5-5"
     },
@@ -299,7 +299,7 @@
       "wins": 7,
       "losses": 6,
       "pct": ".538",
-      "gb": "4",
+      "gb": "4.5",
       "streak": "L2",
       "l10": "6-4"
     },
@@ -309,11 +309,11 @@
       "name": "Phoenix Suns",
       "shortName": "Suns",
       "wins": 5,
-      "losses": 6,
-      "pct": ".455",
-      "gb": "5",
-      "streak": "W2",
-      "l10": "5-5"
+      "losses": 7,
+      "pct": ".417",
+      "gb": "6",
+      "streak": "L1",
+      "l10": "4-6"
     },
     {
       "rank": 12,
@@ -323,7 +323,7 @@
       "wins": 4,
       "losses": 10,
       "pct": ".286",
-      "gb": "7.5",
+      "gb": "8",
       "streak": "L6",
       "l10": "4-6"
     },
@@ -335,7 +335,7 @@
       "wins": 3,
       "losses": 8,
       "pct": ".273",
-      "gb": "7",
+      "gb": "7.5",
       "streak": "W1",
       "l10": "2-8"
     },
@@ -347,7 +347,7 @@
       "wins": 1,
       "losses": 11,
       "pct": ".083",
-      "gb": "9.5",
+      "gb": "10",
       "streak": "L5",
       "l10": "1-9"
     },
@@ -359,7 +359,7 @@
       "wins": 1,
       "losses": 12,
       "pct": ".077",
-      "gb": "10",
+      "gb": "10.5",
       "streak": "L11",
       "l10": "0-10"
     }
