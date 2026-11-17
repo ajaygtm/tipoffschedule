@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16T13:24:35.338Z",
+  "updated": "2026-11-17T02:48:37.640Z",
   "eastern": [
     {
       "rank": 1,
@@ -7,11 +7,11 @@
       "name": "Boston Celtics",
       "shortName": "Celtics",
       "wins": 11,
-      "losses": 2,
-      "pct": ".846",
+      "losses": 3,
+      "pct": ".786",
       "gb": "-",
-      "streak": "W6",
-      "l10": "9-1"
+      "streak": "L1",
+      "l10": "8-2"
     },
     {
       "rank": 2,
@@ -21,7 +21,7 @@
       "wins": 11,
       "losses": 3,
       "pct": ".786",
-      "gb": "0.5",
+      "gb": "-",
       "streak": "W2",
       "l10": "8-2"
     },
@@ -33,7 +33,7 @@
       "wins": 8,
       "losses": 4,
       "pct": ".667",
-      "gb": "2.5",
+      "gb": "2",
       "streak": "L1",
       "l10": "6-4"
     },
@@ -45,7 +45,7 @@
       "wins": 8,
       "losses": 6,
       "pct": ".571",
-      "gb": "3.5",
+      "gb": "3",
       "streak": "W1",
       "l10": "6-4"
     },
@@ -57,7 +57,7 @@
       "wins": 7,
       "losses": 6,
       "pct": ".538",
-      "gb": "4",
+      "gb": "3.5",
       "streak": "W4",
       "l10": "7-3"
     },
@@ -69,7 +69,7 @@
       "wins": 7,
       "losses": 6,
       "pct": ".538",
-      "gb": "4",
+      "gb": "3.5",
       "streak": "W1",
       "l10": "7-3"
     },
@@ -78,23 +78,23 @@
       "tri": "CLE",
       "name": "Cleveland Cavaliers",
       "shortName": "Cavaliers",
-      "wins": 7,
+      "wins": 8,
       "losses": 7,
-      "pct": ".500",
-      "gb": "4.5",
-      "streak": "W1",
-      "l10": "4-6"
+      "pct": ".533",
+      "gb": "3.5",
+      "streak": "W2",
+      "l10": "5-5"
     },
     {
       "rank": 8,
       "tri": "ORL",
       "name": "Orlando Magic",
       "shortName": "Magic",
-      "wins": 5,
+      "wins": 6,
       "losses": 7,
-      "pct": ".417",
-      "gb": "5.5",
-      "streak": "W3",
+      "pct": ".462",
+      "gb": "4.5",
+      "streak": "W4",
       "l10": "5-5"
     },
     {
@@ -105,7 +105,7 @@
       "wins": 5,
       "losses": 8,
       "pct": ".385",
-      "gb": "6",
+      "gb": "5.5",
       "streak": "L4",
       "l10": "3-7"
     },
@@ -117,7 +117,7 @@
       "wins": 5,
       "losses": 9,
       "pct": ".357",
-      "gb": "6.5",
+      "gb": "6",
       "streak": "L1",
       "l10": "3-7"
     },
@@ -129,7 +129,7 @@
       "wins": 4,
       "losses": 9,
       "pct": ".308",
-      "gb": "7",
+      "gb": "6.5",
       "streak": "L2",
       "l10": "2-8"
     },
@@ -139,10 +139,10 @@
       "name": "Washington Wizards",
       "shortName": "Wizards",
       "wins": 4,
-      "losses": 10,
-      "pct": ".286",
+      "losses": 11,
+      "pct": ".267",
       "gb": "7.5",
-      "streak": "L7",
+      "streak": "L8",
       "l10": "2-8"
     },
     {
@@ -153,7 +153,7 @@
       "wins": 3,
       "losses": 9,
       "pct": ".250",
-      "gb": "7.5",
+      "gb": "7",
       "streak": "L1",
       "l10": "3-7"
     },
@@ -163,10 +163,10 @@
       "name": "Chicago Bulls",
       "shortName": "Bulls",
       "wins": 3,
-      "losses": 9,
-      "pct": ".250",
+      "losses": 10,
+      "pct": ".231",
       "gb": "7.5",
-      "streak": "W2",
+      "streak": "L1",
       "l10": "2-8"
     },
     {
@@ -177,7 +177,7 @@
       "wins": 1,
       "losses": 13,
       "pct": ".071",
-      "gb": "10.5",
+      "gb": "10",
       "streak": "L10",
       "l10": "0-10"
     }
@@ -233,6 +233,18 @@
     },
     {
       "rank": 5,
+      "tri": "MEM",
+      "name": "Memphis Grizzlies",
+      "shortName": "Grizzlies",
+      "wins": 10,
+      "losses": 4,
+      "pct": ".714",
+      "gb": "2",
+      "streak": "W3",
+      "l10": "6-4"
+    },
+    {
+      "rank": 6,
       "tri": "MIN",
       "name": "Minnesota Timberwolves",
       "shortName": "Timberwolves",
@@ -241,18 +253,6 @@
       "pct": ".692",
       "gb": "2.5",
       "streak": "L1",
-      "l10": "6-4"
-    },
-    {
-      "rank": 6,
-      "tri": "MEM",
-      "name": "Memphis Grizzlies",
-      "shortName": "Grizzlies",
-      "wins": 9,
-      "losses": 4,
-      "pct": ".692",
-      "gb": "2.5",
-      "streak": "W2",
       "l10": "6-4"
     },
     {
