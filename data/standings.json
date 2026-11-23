@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22T13:07:36.868Z",
+  "updated": "2026-11-23T00:37:35.683Z",
   "eastern": [
     {
       "rank": 1,
@@ -27,30 +27,18 @@
     },
     {
       "rank": 3,
-      "tri": "DET",
-      "name": "Detroit Pistons",
-      "shortName": "Pistons",
-      "wins": 10,
-      "losses": 5,
-      "pct": ".667",
-      "gb": "3",
-      "streak": "L1",
-      "l10": "6-4"
-    },
-    {
-      "rank": 4,
       "tri": "ATL",
       "name": "Atlanta Hawks",
       "shortName": "Hawks",
-      "wins": 10,
+      "wins": 11,
       "losses": 6,
-      "pct": ".625",
-      "gb": "3.5",
-      "streak": "W3",
-      "l10": "7-3"
+      "pct": ".647",
+      "gb": "3",
+      "streak": "W4",
+      "l10": "8-2"
     },
     {
-      "rank": 5,
+      "rank": 4,
       "tri": "NYK",
       "name": "New York Knicks",
       "shortName": "Knicks",
@@ -60,6 +48,18 @@
       "gb": "3.5",
       "streak": "W4",
       "l10": "8-2"
+    },
+    {
+      "rank": 5,
+      "tri": "DET",
+      "name": "Detroit Pistons",
+      "shortName": "Pistons",
+      "wins": 10,
+      "losses": 6,
+      "pct": ".625",
+      "gb": "3.5",
+      "streak": "L2",
+      "l10": "5-5"
     },
     {
       "rank": 6,
