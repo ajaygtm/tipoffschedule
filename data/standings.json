@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25T03:25:06.291Z",
+  "updated": "2026-11-25T15:20:33.745Z",
   "eastern": [
     {
       "rank": 1,
@@ -15,6 +15,18 @@
     },
     {
       "rank": 2,
+      "tri": "BOS",
+      "name": "Boston Celtics",
+      "shortName": "Celtics",
+      "wins": 12,
+      "losses": 6,
+      "pct": ".667",
+      "gb": "2",
+      "streak": "W1",
+      "l10": "6-4"
+    },
+    {
+      "rank": 3,
       "tri": "ATL",
       "name": "Atlanta Hawks",
       "shortName": "Hawks",
@@ -26,31 +38,7 @@
       "l10": "8-2"
     },
     {
-      "rank": 3,
-      "tri": "BOS",
-      "name": "Boston Celtics",
-      "shortName": "Celtics",
-      "wins": 11,
-      "losses": 6,
-      "pct": ".647",
-      "gb": "2.5",
-      "streak": "L4",
-      "l10": "6-4"
-    },
-    {
       "rank": 4,
-      "tri": "NYK",
-      "name": "New York Knicks",
-      "shortName": "Knicks",
-      "wins": 11,
-      "losses": 6,
-      "pct": ".647",
-      "gb": "2.5",
-      "streak": "W5",
-      "l10": "8-2"
-    },
-    {
-      "rank": 5,
       "tri": "DET",
       "name": "Detroit Pistons",
       "shortName": "Pistons",
@@ -60,6 +48,18 @@
       "gb": "2.5",
       "streak": "W1",
       "l10": "5-5"
+    },
+    {
+      "rank": 5,
+      "tri": "NYK",
+      "name": "New York Knicks",
+      "shortName": "Knicks",
+      "wins": 11,
+      "losses": 6,
+      "pct": ".647",
+      "gb": "2.5",
+      "streak": "W5",
+      "l10": "8-2"
     },
     {
       "rank": 6,
@@ -103,10 +103,10 @@
       "name": "Washington Wizards",
       "shortName": "Wizards",
       "wins": 7,
-      "losses": 11,
-      "pct": ".389",
-      "gb": "7",
-      "streak": "W3",
+      "losses": 12,
+      "pct": ".368",
+      "gb": "7.5",
+      "streak": "L1",
       "l10": "3-7"
     },
     {
@@ -245,18 +245,6 @@
     },
     {
       "rank": 6,
-      "tri": "DEN",
-      "name": "Denver Nuggets",
-      "shortName": "Nuggets",
-      "wins": 10,
-      "losses": 5,
-      "pct": ".667",
-      "gb": "3.5",
-      "streak": "W3",
-      "l10": "7-3"
-    },
-    {
-      "rank": 7,
       "tri": "POR",
       "name": "Portland Trail Blazers",
       "shortName": "Trail Blazers",
@@ -268,16 +256,28 @@
       "l10": "5-5"
     },
     {
+      "rank": 7,
+      "tri": "DEN",
+      "name": "Denver Nuggets",
+      "shortName": "Nuggets",
+      "wins": 10,
+      "losses": 6,
+      "pct": ".625",
+      "gb": "4",
+      "streak": "L1",
+      "l10": "7-3"
+    },
+    {
       "rank": 8,
       "tri": "DAL",
       "name": "Dallas Mavericks",
       "shortName": "Mavericks",
-      "wins": 10,
+      "wins": 11,
       "losses": 7,
-      "pct": ".588",
-      "gb": "4.5",
-      "streak": "W3",
-      "l10": "6-4"
+      "pct": ".611",
+      "gb": "4",
+      "streak": "W4",
+      "l10": "7-3"
     },
     {
       "rank": 9,
