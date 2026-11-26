@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-25T15:20:33.745Z",
+  "updated": "2026-11-26T02:41:23.251Z",
   "eastern": [
     {
       "rank": 1,
       "tri": "PHI",
       "name": "Philadelphia 76ers",
       "shortName": "76ers",
-      "wins": 14,
+      "wins": 15,
       "losses": 4,
-      "pct": ".778",
+      "pct": ".789",
       "gb": "-",
-      "streak": "L1",
+      "streak": "W1",
       "l10": "7-3"
     },
     {
@@ -21,7 +21,7 @@
       "wins": 12,
       "losses": 6,
       "pct": ".667",
-      "gb": "2",
+      "gb": "2.5",
       "streak": "W1",
       "l10": "6-4"
     },
@@ -33,7 +33,7 @@
       "wins": 11,
       "losses": 6,
       "pct": ".647",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W4",
       "l10": "8-2"
     },
@@ -45,7 +45,7 @@
       "wins": 11,
       "losses": 6,
       "pct": ".647",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W1",
       "l10": "5-5"
     },
@@ -57,7 +57,7 @@
       "wins": 11,
       "losses": 6,
       "pct": ".647",
-      "gb": "2.5",
+      "gb": "3",
       "streak": "W5",
       "l10": "8-2"
     },
@@ -67,10 +67,10 @@
       "name": "Miami Heat",
       "shortName": "Heat",
       "wins": 10,
-      "losses": 6,
-      "pct": ".625",
-      "gb": "3",
-      "streak": "W7",
+      "losses": 7,
+      "pct": ".588",
+      "gb": "4",
+      "streak": "L1",
       "l10": "8-2"
     },
     {
@@ -81,7 +81,7 @@
       "wins": 9,
       "losses": 9,
       "pct": ".500",
-      "gb": "5",
+      "gb": "5.5",
       "streak": "L1",
       "l10": "5-5"
     },
@@ -93,7 +93,7 @@
       "wins": 7,
       "losses": 10,
       "pct": ".412",
-      "gb": "6.5",
+      "gb": "7",
       "streak": "L2",
       "l10": "5-5"
     },
@@ -105,7 +105,7 @@
       "wins": 7,
       "losses": 12,
       "pct": ".368",
-      "gb": "7.5",
+      "gb": "8",
       "streak": "L1",
       "l10": "3-7"
     },
@@ -117,30 +117,30 @@
       "wins": 6,
       "losses": 11,
       "pct": ".353",
-      "gb": "7.5",
+      "gb": "8",
       "streak": "L1",
       "l10": "2-8"
     },
     {
       "rank": 11,
+      "tri": "CHI",
+      "name": "Chicago Bulls",
+      "shortName": "Bulls",
+      "wins": 6,
+      "losses": 12,
+      "pct": ".333",
+      "gb": "8.5",
+      "streak": "W2",
+      "l10": "5-5"
+    },
+    {
+      "rank": 12,
       "tri": "IND",
       "name": "Indiana Pacers",
       "shortName": "Pacers",
       "wins": 6,
       "losses": 12,
       "pct": ".333",
-      "gb": "8",
-      "streak": "W1",
-      "l10": "4-6"
-    },
-    {
-      "rank": 12,
-      "tri": "CHI",
-      "name": "Chicago Bulls",
-      "shortName": "Bulls",
-      "wins": 5,
-      "losses": 12,
-      "pct": ".294",
       "gb": "8.5",
       "streak": "W1",
       "l10": "4-6"
@@ -151,10 +151,10 @@
       "name": "Charlotte Hornets",
       "shortName": "Hornets",
       "wins": 4,
-      "losses": 12,
-      "pct": ".250",
-      "gb": "9",
-      "streak": "L5",
+      "losses": 13,
+      "pct": ".235",
+      "gb": "10",
+      "streak": "L6",
       "l10": "1-9"
     },
     {
@@ -165,7 +165,7 @@
       "wins": 3,
       "losses": 13,
       "pct": ".188",
-      "gb": "10",
+      "gb": "10.5",
       "streak": "L5",
       "l10": "2-8"
     },
@@ -177,7 +177,7 @@
       "wins": 2,
       "losses": 16,
       "pct": ".111",
-      "gb": "12",
+      "gb": "12.5",
       "streak": "W1",
       "l10": "1-9"
     }
